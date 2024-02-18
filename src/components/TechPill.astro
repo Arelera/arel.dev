@@ -1,0 +1,11 @@
+---
+import type { ProjectType } from '../schemas/project'
+
+type Props = {
+  tech: ProjectType['technologies'][number]
+}
+
+const tech = Astro.props.tech
+---
+
+<span class="rounded-full bg-slate-900 px-2 py-0.5 text-xs text-slate-400">{tech}</span>

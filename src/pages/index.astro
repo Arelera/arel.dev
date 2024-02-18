@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content'
+import ProjectList from '../components/ProjectList.astro'
+import Container from '../components/Container.astro'
+import Hero from '../components/Hero.astro'
+import { SITE_TITLE } from '../consts'
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+const projects = (await getCollection('projects')).sort(
+  (a, b) => a.data.createdAt.valueOf() - b.data.createdAt.valueOf(),
+)
+---
+
+<BaseLayout title={SITE_TITLE}>
+  <Hero />
+  <Container>
+    <ProjectList projects={projects} />
+  </Container>
+</BaseLayout>
