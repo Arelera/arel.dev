@@ -8,10 +8,6 @@ const projects = Astro.props.projects.sort((a, b) => (a.data.order ?? 99) - (b.d
 
 <section class="py-16">
   <h2 class="pb-4 text-center text-4xl font-medium">Projects</h2>
-  <p class="pb-10 text-center text-sm text-slate-400">
-    Most of these haven't been started yet so only the techs are listed (some prob won't ever get
-    made)
-  </p>
   <ul class="grid gap-x-6 gap-y-5 sm:grid-cols-2 lg:grid-cols-3">
     {
       projects.map(
