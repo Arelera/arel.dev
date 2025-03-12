@@ -5,9 +5,14 @@ import Container from '../components/Container.astro'
 import Hero from '../components/Hero.astro'
 import { SITE_TITLE } from '../consts'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import ExperienceList from '../components/ExperienceList.astro'
 
 const projects = (await getCollection('projects')).sort(
   (a, b) => a.data.createdAt.valueOf() - b.data.createdAt.valueOf(),
+)
+
+const experience = (await getCollection('experience')).sort(
+  (a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf(),
 )
 ---
 
@@ -15,5 +20,6 @@ const projects = (await getCollection('projects')).sort(
   <Hero />
   <Container>
     <ProjectList projects={projects} />
+    <ExperienceList experience={experience} />
   </Container>
 </BaseLayout>

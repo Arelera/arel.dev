@@ -1,0 +1,20 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import ExperienceItem from './ExperienceItem.astro'
+
+type Props = { experience: CollectionEntry<'experience'>[] }
+const experience = Astro.props.experience
+---
+
+<section class="py-24">
+  <h2 class="pb-16 text-center text-5xl font-thin tracking-wide text-slate-200">Experience</h2>
+  <ul class="mx-auto max-w-3xl space-y-12">
+    {
+      experience.map((p) => (
+        <li class="transform transition duration-300 ease-in-out hover:-translate-y-1">
+          <ExperienceItem {...p} />
+        </li>
+      ))
+    }
+  </ul>
+</section>

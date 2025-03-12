@@ -6,26 +6,44 @@ type Props = CollectionEntry<'projects'>
 const project = Astro.props
 ---
 
-<!-- border border-dashed border-slate-800 -->
 <div
   class:list={[
-    'bg-rain bg-clip rounded-lg p-6 px-8',
-    project.data.isFinished && 'transition-transform duration-200 hover:scale-105',
+    'group relative overflow-hidden rounded-xl bg-slate-900/30 p-6 shadow-lg backdrop-blur-sm',
+    project.data.isFinished && 'cursor-pointer',
   ]}
 >
-  <h3 class="mb-1 text-lg font-medium text-slate-200">
-    {project.data.isFinished ? project.data.name : 'TBA'}
-  </h3>
-  <div class="mb-2 flex flex-wrap gap-2">
-    {project.data.technologies.map((tech) => <TechPill tech={tech} />)}
+  <div
+    class="absolute inset-0 bg-gradient-to-tl from-slate-800/50 via-transparent to-transparent opacity-20 transition-opacity duration-300 group-hover:opacity-30"
+  >
   </div>
-  <p class="line-clamp-3 text-sm text-slate-400">
-    {
-      project.body || (
-        <span class="italic text-slate-500">
-          A project made with {project.data.technologies.join(', ')}.
-        </span>
+
+  <div class="relative">
+    <div class="mb-3">
+      <h3 class="text-xl font-medium text-slate-200">
+        {project.data.isFinished ? project.data.name : 'Coming Soon'}
+      </h3>
+    </div>
+
+    <div class="mb-4 flex flex-wrap gap-2">
+      {project.data.technologies.map((tech) => <TechPill tech={tech} />)}
+    </div>
+
+    <p class="line-clamp-3 text-sm leading-relaxed text-slate-400 group-hover:text-slate-300">
+      {
+        project.body || (
+          <span class="italic text-slate-500">
+            A project made with {project.data.technologies.join(', ')}.
+          </span>
+        )
+      }
+    </p>
+
+    <!-- {
+      project.data.isFinished && (
+        <div class="absolute right-4 top-2 text-xs text-slate-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          View Project →
+        </div>
       )
-    }
-  </p>
+    } -->
+  </div>
 </div>
