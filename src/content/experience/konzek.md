@@ -1,12 +1,12 @@
 ---
 company: Konzek
 position: Web Developer
-startDate: 2021-01-01
-endDate: 2021-12-31
-technologies: [TypeScript, Astro]
-description: I worked on the frontend of the Konzek website, which is a platform for buying and selling used goods.
+startDate: 2021-03-01
+endDate: 2021-05-01
+technologies: [TypeScript, Gatsby, SASS, TailwindCSS, Puppeteer]
+description: Worked on a landing page of a Gatsby website and maintained web applications.
 bulletPoints:
-  - Built a custom CMS for the website using Astro and Next.js
-  - Developed a custom search engine for the website using Algolia
-  - Implemented a custom payment gateway for the website using Stripe
+  - Implemented new designs for a Gatsby website
+  - Maintained web applications using Gatsby, SASS, and TailwindCSS
+  - Automated data extraction using Puppeteer
 ---

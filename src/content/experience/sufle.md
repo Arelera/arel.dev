@@ -1,12 +1,29 @@
 ---
 company: Sufle
-position: Software Engineer
-startDate: 2023-01-01
-endDate: 2023-12-31
-technologies: [TypeScript, Astro]
-description: I worked on the frontend of the Konzek website, which is a platform for buying and selling used goods.
+position: Software Developer
+startDate: 2021-06-01
+endDate: 2023-09-01
+technologies:
+  [
+    TypeScript,
+    React.js,
+    Next.js,
+    Redux,
+    Styled Components,
+    TailwindCSS,
+    Jest,
+    AWS SAM,
+    Cognito,
+    Express.js,
+    Netlify CMS,
+  ]
+description: Worked on various projects including landing pages, a React Native mobile app, and financial applications.
 bulletPoints:
-  - Built a custom CMS for the website using Astro and Next.js
-  - Developed a custom search engine for the website using Algolia
-  - Implemented a custom payment gateway for the website using Stripe
+  - Developed and maintained web and mobile applications
+  - Managed state using Redux and Redux Toolkit
+  - Styled applications using Styled Components and TailwindCSS
+  - Developed RESTful APIs using Express.js and Nest.js
+  - Implemented serverless functions with AWS SAM
+  - Used Cognito for user authentication
+  - Mentored interns through code reviews and guidance
 ---
