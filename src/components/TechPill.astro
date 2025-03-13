@@ -1,8 +1,6 @@
 ---
-import type { ProjectType } from '../schemas/project'
-
 type Props = {
-  tech: ProjectType['technologies'][number]
+  tech: string
 }
 
 const tech = Astro.props.tech
