@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   agentRules: false,
+  images: { unoptimized: true },
 }
 
 export default nextConfig

@@ -1,21 +1,13 @@
 import Link from 'next/link'
-import type { PostSummary } from '@/lib/posts'
+import { formatPostDate, type PostSummary } from '@/lib/posts'
 
-export default function ArticleCard({ post, index }: { post: PostSummary; index: number }) {
-  return (
-    <article className="article-card">
-      <Link href={`/blog/${post.slug}/`} className="article-card-link">
-        <div className="article-card-top">
-          <span className="article-number">{String(index + 1).padStart(2, '0')}</span>
-          <span className="topic-pill">{post.topic}</span>
-        </div>
-        <h3>{post.title}</h3>
-        <p>{post.description}</p>
-        <div className="article-card-bottom">
-          <span>{post.readingMinutes} min read</span>
-          <span className="arrow" aria-hidden="true">↗</span>
-        </div>
-      </Link>
-    </article>
-  )
+export default function ArticleCard({ post }: { post: PostSummary }) {
+  return <article className="article-row">
+    <Link href={`/blog/${post.slug}/`}>
+      <span className="article-meta">{post.topic} · {formatPostDate(post.date)}</span>
+      <span className="article-title">{post.title}</span>
+      <span className="article-description">{post.description}</span>
+      <span className="article-arrow" aria-hidden="true">→</span>
+    </Link>
+  </article>
 }

@@ -1,36 +1,38 @@
 ---
-title: "How to read Chinese without translating every word"
-description: "A calmer way to read a short Chinese text: follow the scene first, then look up only what unlocks it."
+title: "When to Look Up a Word While Reading Chinese"
+description: "Read one short passage and see which unknown words to infer, skip, or check in a dictionary."
 date: "2026-09-24"
 topic: "Reading"
 ---
 
-It is tempting to stop at the first unfamiliar character. Do that often enough and a story turns into a row of dictionary entries. You may know more words by the end, yet forget what the story was about.
+Look up a word when it blocks the event or the reason for it. Infer a word when the surrounding sentence gives you a good guess. Skip a detail when the story still makes sense without it. This keeps a dictionary useful without letting every unfamiliar character interrupt the paragraph.
 
-Try reading for the scene before reading for perfect accuracy.
+Here is an original short passage. Read the Chinese once before looking at the pinyin or translation.
 
-## Read one small section without touching the dictionary
+> 周六下午，小雨带着一本书去咖啡馆。走到门口，她才发现店今天关门了。她没有回家，而是去了旁边的公园，坐在长椅上读书。
+>
+> *Zhōuliù xiàwǔ, Xiǎoyǔ dàizhe yì běn shū qù kāfēiguǎn. Zǒu dào ménkǒu, tā cái fāxiàn diàn jīntiān guānmén le. Tā méiyǒu huí jiā, érshì qù le pángbiān de gōngyuán, zuò zài chángyǐ shàng dúshū.*
+>
+> On Saturday afternoon, Xiaoyu took a book to a café. At the entrance, she discovered that it was closed that day. Instead of going home, she went to a nearby park and read on a bench.
 
-Pick a paragraph or a few lines, not a whole chapter. Read to the end once. Ask: Who is here? What changed? What might happen next?
+Could you tell that her plan changed? If so, the first reading worked, even if several words were unfamiliar.
 
-Consider this short exchange:
+## Infer: 长椅
 
-> 外面下雨了。小林看了看窗外，说：“我们再等十分钟吧。”
+You may not know **长椅** (*chángyǐ*). But she is in a **公园** (*gōngyuán*, park) and **坐在** (*zuò zài*, sits on) something while she reads. A seat or bench is a reasonable guess. The exact word is not needed to understand why she went to the park, so keep reading. Check it later if you want to keep the expression.
 
-Even if **窗外** (*chuāngwài*, outside the window) is new, you can probably follow the scene. It is raining outside. Xiaolin looks somewhere and suggests waiting another ten minutes. The unknown word is not blocking the story.
+## Skip for now: 旁边
 
-## Look up words that change the meaning
+**旁边** (*pángbiān*) tells you the park is beside or near the café. If the location is not important to your question, you can leave it unresolved on the first pass. She went to a park either way. Skipping is a choice about the current reading, not a promise never to learn the word.
 
-Now read the section again. Look up a word when you cannot tell what someone did, what they want, or why the next line follows. A name, a descriptive detail, or a word you can already infer can usually wait.
+## Look up: 才发现 and 关门
 
-In the example above, **再等十分钟** (*zài děng shí fēnzhōng*) is the hinge: “wait another ten minutes.” If that phrase is unclear, checking it unlocks the decision in the scene. Checking every character in **看了看窗外** first may slow you down without changing your understanding.
+The middle sentence explains the change of plan. **才发现** (*cái fāxiàn*) means she *only then discovered* something. **关门了** (*guānmén le*) tells you the shop was closed. If you do not know either phrase, the trip to the park may seem random. These are the words worth checking now.
 
-This is a reading choice, not a rule against dictionaries. A good lookup at the right moment can make the next paragraph easier. The aim is to keep the story in your head while you use the dictionary.
+Read that sentence again after the lookup: **走到门口，她才发现店今天关门了。** She reached the entrance and only then found out the café was closed. You can now connect the first plan with the second one.
 
-## Finish with a one-sentence retell
+## Close the dictionary and retell it
 
-After the second pass, say what happened in English or simple Chinese. “It started raining, so they decided to wait ten more minutes” is enough. If you cannot retell it, reread the key sentence instead of collecting more vocabulary.
+Try one sentence: “She went to the café with a book, found it closed, and read in the park instead.” If you can say that, you understood the passage. If not, reread the sentence where her plan changes before checking more words.
 
-Save one expression that feels useful. Here, **再等十分钟吧** is something you might actually say. Reading becomes easier to return to when each session ends with a scene you understood and a line you can carry forward.
-
-For short Chinese stories with tappable definitions, a dictionary, and vocabulary review in the same place, [explore Miaozi](https://miaozi.co/en). Start with a section you can finish, then let the next line pull you along.
+A dictionary is most useful when it answers a question the story made you ask. [Miaozi's Chinese dictionary](https://miaozi.co/en/dict) lets you check words as you read; return to the paragraph once the key meaning is clear.

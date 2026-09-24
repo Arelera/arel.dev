@@ -13,7 +13,6 @@ export type PostSummary = {
   description: string
   date: string
   topic: string
-  readingMinutes: number
 }
 
 export type Post = PostSummary & { contentHtml: string }
@@ -28,7 +27,6 @@ function readPost(slug: string): { summary: PostSummary; markdown: string } {
   }
   if (Number.isNaN(Date.parse(data.date))) throw new Error(`Invalid date in ${slug}.md`)
 
-  const words = content.replace(/[#*`>\[\]()|]/g, ' ').trim().split(/\s+/).length
   return {
     summary: {
       slug,
@@ -36,7 +34,6 @@ function readPost(slug: string): { summary: PostSummary; markdown: string } {
       description: data.description,
       date: data.date,
       topic: data.topic,
-      readingMinutes: Math.max(1, Math.ceil(words / 220)),
     },
     markdown: content,
   }

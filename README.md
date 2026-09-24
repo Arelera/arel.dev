@@ -1,6 +1,6 @@
 # arel.dev
 
-A static, Chinese-learning guide site built with Next.js and hosted on GitHub Pages. It features original articles and links to Moyu Chinese and Miaozi.
+A static Chinese learning guide site built with Next.js and hosted on GitHub Pages. The home page introduces Moyu Chinese and Miaozi with screenshots stored in `public/images/`.
 
 ## Develop
 
@@ -26,7 +26,9 @@ topic: "Reading"
 Article text here.
 ```
 
-Use an ISO date in quotes. The home page, guide index, article routes, and sitemap update automatically at build time. Keep articles original and useful on their own; link to Moyu or Miaozi only where the tool fits the reader's next step.
+Use an ISO date in quotes. The home page, guide index, article routes, and sitemap update automatically at build time. Removing a Markdown file removes its route from the static export and sitemap.
+
+Each guide should answer one real reader question early, then show how to apply the answer with concrete examples. Check Chinese, pinyin, translations, product claims, and any cited sources before publishing. Keep the writing plain and original. Link to Moyu or Miaozi only where the product fits the reader's next step.
 
 ## Deploy
 
