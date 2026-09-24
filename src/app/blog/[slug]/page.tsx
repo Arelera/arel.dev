@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { formatPostDate, getAllPosts, getPost } from '@/lib/posts'
+import ScriptSwitch from '@/components/ScriptSwitch'
 
 type PageProps = { params: Promise<{ slug: string }> }
 
@@ -34,7 +35,10 @@ export default async function PostPage({ params }: PageProps) {
       <div className="shell post-shell">
         <Link className="back-link" href="/blog/">← All guides</Link>
         <header className="post-header">
-          <div className="post-meta"><strong>{post.topic}</strong> · {formatPostDate(post.date)}</div>
+          <div className="post-details">
+            <span className="post-meta">{formatPostDate(post.date)}</span>
+            <ScriptSwitch />
+          </div>
           <h1>{post.title}</h1>
           <p>{post.description}</p>
         </header>

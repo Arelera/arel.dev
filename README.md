@@ -20,13 +20,14 @@ Add a Markdown file to `content/blog/`. The filename becomes the URL slug. Every
 title: "A clear article title"
 description: "A short summary for the article list and search results."
 date: "2026-09-24"
-topic: "Reading"
 ---
 
 Article text here.
 ```
 
 Use an ISO date in quotes. The home page, guide index, article routes, and sitemap update automatically at build time. Removing a Markdown file removes its route from the static export and sitemap.
+
+For Chinese text that readers can switch between scripts, write both forms as `[[zh:简体|繁體]]`. The first form is shown by default. The choice is saved in the browser and applies across guides; English text and images do not change.
 
 Each guide should answer one real reader question early, then show how to apply the answer with concrete examples. Check Chinese, pinyin, translations, product claims, and any cited sources before publishing. Keep the writing plain and original. Link to Moyu or Miaozi only where the product fits the reader's next step.
 

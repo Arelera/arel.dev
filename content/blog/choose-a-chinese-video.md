@@ -2,7 +2,6 @@
 title: "How to Pick Chinese Videos for Listening Practice"
 description: "Use a quick comprehension, audio, and interest check to decide what to study and what to simply enjoy."
 date: "2026-09-24"
-topic: "Watching"
 ---
 
 Pick a short video you can **roughly follow without pausing**, with speech you can hear clearly and Chinese captions you can check afterward. You should also want to watch it again. If one of those pieces is missing, the clip may still be fun, but it is a weaker choice for focused listening practice.
@@ -16,7 +15,7 @@ Play 30 to 60 seconds at normal speed. Leave the dictionary closed. When it ends
 3. **Can I check it?** Are there readable Chinese captions, ideally matching what is said? English subtitles can help you follow the story, but they cannot tell you which Chinese words you heard.
 4. **Do I care what happens next?** If you would not watch another minute, you probably will not return for a second pass.
 
-Suppose a character says **你先进去，我马上就来。** (*Nǐ xiān jìnqù, wǒ mǎshàng jiù lái.*) “Go in first. I’ll be right there.” You might miss **马上** (*mǎshàng*, right away), yet understand that one person is going inside and the other will follow. That is a useful clip: the scene gives you a first guess, and the caption lets you check the phrase after listening.
+Suppose a character says **[[zh:你先进去，我马上就来。|你先進去，我馬上就來。]]** (*Nǐ xiān jìnqù, wǒ mǎshàng jiù lái.*) “Go in first. I’ll be right there.” You might miss **[[zh:马上|馬上]]** (*mǎshàng*, right away), yet understand that one person is going inside and the other will follow. That is a useful clip: the scene gives you a first guess, and the caption lets you check the phrase after listening.
 
 If you cannot tell who is talking or why they leave, try a shorter clip or a familiar topic. If you understand nearly every line, watch for pleasure. You do not need to turn an easy video into homework.
 
