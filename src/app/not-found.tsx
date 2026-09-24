@@ -1,14 +1,5 @@
-import Starfield from '@/components/Starfield'
 import Link from 'next/link'
 
 export default function NotFound() {
-  return (
-    <main className="sky sky--not-found">
-      <Starfield />
-      <div className="not-found">
-        <p>404</p>
-        <Link href="/">Back home</Link>
-      </div>
-    </main>
-  )
+  return <main className="not-found-page shell"><span className="section-kicker">404 / PAGE NOT FOUND</span><h1>Lost the thread?</h1><p>This page isn&apos;t here. The guides are a good place to begin again.</p><Link className="button button-dark" href="/blog/">Browse the guides <span aria-hidden="true">↗</span></Link></main>
 }
