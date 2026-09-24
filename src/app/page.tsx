@@ -9,21 +9,23 @@ export default function Home() {
   return (
     <main>
       <section className="hero shell">
-        <h1>Learn Chinese by watching and reading.</h1>
-        <p>Practical guides for understanding Chinese in videos and stories, with tools that help you keep going.</p>
+        <h1>Learn Chinese by watching and reading<span className="hero-period">.</span></h1>
+        <p>Hear a line you want to replay. Find a story you want to finish. Learn more from the Chinese you already want to spend time with.</p>
         <Link className="inline-link" href="/blog/">Read the guides <span aria-hidden="true">→</span></Link>
       </section>
 
       <section className="products shell" aria-labelledby="products-heading">
         <div className="section-intro">
-          <h2 id="products-heading">Tools for the next step</h2>
-          <p>Watch something you enjoy. Read a little further. Look up what matters.</p>
+          <span className="section-number">01 / THE TOOLS</span>
+          <h2 id="products-heading">Watch it. Read it.</h2>
+          <p>Two useful places to follow your curiosity.</p>
         </div>
         <div className="product-list">
           <article className="product">
             <div className="product-copy">
+              <span className="product-label">WATCH / 01</span>
               <h3>Moyu Chinese</h3>
-              <p>Short Chinese videos with interactive captions and vocabulary review. Use it when you want to hear a phrase in a real scene, then check what you missed.</p>
+              <p>Find a short Chinese video, hear a phrase in its scene, then check the caption and play it again. Moyu keeps the words you notice close to the moment you heard them.</p>
               <a className="inline-link" href="https://moyuchinese.com/en">Explore Moyu <span aria-hidden="true">↗</span></a>
             </div>
             <div className="product-image product-image-moyu">
@@ -32,8 +34,9 @@ export default function Home() {
           </article>
           <article className="product">
             <div className="product-copy">
+              <span className="product-label">READ / 02</span>
               <h3>Miaozi</h3>
-              <p>A Chinese dictionary, stories, and vocabulary tools for reading. Look up a word without losing the thread of what you were reading.</p>
+              <p>Follow a Chinese story until a word stops you. Check it in Miaozi’s dictionary, then get straight back to reading. Stories and vocabulary tools live in the same place.</p>
               <a className="inline-link" href="https://miaozi.co/en">Explore Miaozi <span aria-hidden="true">↗</span></a>
             </div>
             <div className="product-image product-image-miaozi">
@@ -45,7 +48,7 @@ export default function Home() {
 
       <section className="guides shell" aria-labelledby="guides-heading">
         <div className="section-intro guides-intro">
-          <h2 id="guides-heading">Recent guides</h2>
+          <div><span className="section-number">02 / THE GUIDES</span><h2 id="guides-heading">Recent guides</h2></div>
           <Link className="inline-link" href="/blog/">All guides <span aria-hidden="true">→</span></Link>
         </div>
         <div className="article-list">{posts.map((post) => <ArticleCard key={post.slug} post={post} />)}</div>

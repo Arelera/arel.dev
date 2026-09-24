@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const posts = getAllPosts()
   return <main className="blog-index shell">
-    <h1>Guides</h1>
+    <h1>Guides<span className="hero-period">.</span></h1>
     <p>Useful ways to choose what to watch, read with more confidence, and learn from the language you find.</p>
     <div className="article-list">{posts.map((post) => <ArticleCard key={post.slug} post={post} />)}</div>
   </main>

@@ -34,7 +34,7 @@ export default async function PostPage({ params }: PageProps) {
       <div className="shell post-shell">
         <Link className="back-link" href="/blog/">← All guides</Link>
         <header className="post-header">
-          <div className="post-meta">{post.topic} · {formatPostDate(post.date)}</div>
+          <div className="post-meta"><strong>{post.topic}</strong> · {formatPostDate(post.date)}</div>
           <h1>{post.title}</h1>
           <p>{post.description}</p>
         </header>
