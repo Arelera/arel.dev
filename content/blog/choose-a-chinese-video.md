@@ -34,4 +34,8 @@ Just watch when the clip is interesting but too fast, noisy, or far above your c
 
 If the line still disappears in the audio, slow that part down or leave it for another day. The goal is to hear more than you heard on the first pass, not to finish a vocabulary list.
 
+![A Moyu Chinese video with Chinese captions and an English translation](/images/moyu-video.webp)
+
+*Moyu places the caption beside the video so you can check a line and replay it.*
+
 [Moyu Chinese](https://moyuchinese.com/en) has short videos with interactive captions and word lookup, which makes this watch-check-replay method easy to use. The same test works with any video that has clear audio and reliable Chinese captions.

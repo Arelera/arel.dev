@@ -31,6 +31,10 @@ The middle sentence explains the change of plan. **才发现** (*cái fāxiàn*)
 
 Read that sentence again after the lookup: **走到门口，她才发现店今天关门了。** She reached the entrance and only then found out the café was closed. You can now connect the first plan with the second one.
 
+![A Miaozi dictionary entry showing a word, its meanings, and an example sentence](/images/miaozi-dictionary.webp)
+
+*A Miaozi entry for 顺便, with definitions and an example sentence.*
+
 ## Close the dictionary and retell it
 
 Try one sentence: “She went to the café with a book, found it closed, and read in the park instead.” If you can say that, you understood the passage. If not, reread the sentence where her plan changes before checking more words.
