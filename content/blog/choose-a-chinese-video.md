@@ -1,34 +1,37 @@
 ---
-title: "How to choose a Chinese video you can actually learn from"
-description: "A quick test for finding short videos that are interesting, understandable, and worth a second watch."
+title: "How to Pick Chinese Videos for Listening Practice"
+description: "Use a quick comprehension, audio, and interest check to decide what to study and what to simply enjoy."
 date: "2026-09-24"
 topic: "Watching"
 ---
 
-A video can be entertaining and still be a poor study choice. If every line is new, the clip becomes a decoding exercise. If every line is obvious, there is little to notice. The useful middle is a scene you want to follow with just enough unfamiliar language to make a second watch worthwhile.
+Pick a short video you can **roughly follow without pausing**, with speech you can hear clearly and Chinese captions you can check afterward. You should also want to watch it again. If one of those pieces is missing, the clip may still be fun, but it is a weaker choice for focused listening practice.
 
-## Give it a 90-second test
+## Try one minute before you commit
 
-Before saving a video for study, watch a short stretch once without pausing. Then ask yourself three questions:
+Play 30 to 60 seconds at normal speed. Leave the dictionary closed. When it ends, ask yourself:
 
-1. **Can I tell what is happening?** You do not need every word. You should be able to name the people, the situation, or the point of the scene.
-2. **Can I catch a few complete phrases?** Recognizing isolated characters is less helpful than hearing a phrase you could use again.
-3. **Would I watch it twice?** Interest matters. A clear video you find dull is easy to abandon.
+1. **What happened?** Can you say who is speaking and what they are trying to do? A rough answer is enough. You do not need a word-for-word translation.
+2. **What did I hear?** Can you catch a few whole words or phrases in the audio? Check whether the voices are clear enough to replay. Music, overlapping voices, and heavy effects can make a good scene hard to study.
+3. **Can I check it?** Are there readable Chinese captions, ideally matching what is said? English subtitles can help you follow the story, but they cannot tell you which Chinese words you heard.
+4. **Do I care what happens next?** If you would not watch another minute, you probably will not return for a second pass.
 
-If the answer to all three is yes, keep it. If you have no idea what happened, find a shorter or more familiar scene. If you understand almost everything, enjoy it and move on; it may not need a full study session.
+Suppose a character says **你先进去，我马上就来。** (*Nǐ xiān jìnqù, wǒ mǎshàng jiù lái.*) “Go in first. I’ll be right there.” You might miss **马上** (*mǎshàng*, right away), yet understand that one person is going inside and the other will follow. That is a useful clip: the scene gives you a first guess, and the caption lets you check the phrase after listening.
 
-## Look for a scene with a clear shape
+If you cannot tell who is talking or why they leave, try a shorter clip or a familiar topic. If you understand nearly every line, watch for pleasure. You do not need to turn an easy video into homework.
 
-Scenes with a small problem, decision, or reaction give you context. Someone orders a drink, misses a train, or changes their mind. The action helps you guess what an unfamiliar line might mean before you reach for a translation.
+## Decide whether to study or just watch
 
-For example, if a friend points at the weather and says **今天有点冷** (*Jīntiān yǒudiǎn lěng*), you can connect the words to the moment: “It’s a little cold today.” A line learned inside a scene has more to hold onto than a line in a list.
+A video is worth studying when the main event makes sense but a few lines remain unclear. Keep it short enough to replay. A cooking step, a small disagreement, or someone changing plans gives you a concrete reason to listen again.
 
-Clear audio and readable Chinese captions help too. Captions make it possible to check what you heard; they should support the scene rather than become the only thing you watch.
+Just watch when the clip is interesting but too fast, noisy, or far above your current level. Following the images and catching a few familiar words still has value. You can also come back to it later. Do not pause after every sentence simply because the video is available.
 
-## Make the second watch different
+## Give the clip a second watch
 
-On the first watch, follow the meaning. On the second, stop at one or two lines that caught your attention. Replay them, check a word if you need to, and say the phrase aloud. Then watch the same stretch again without stopping.
+1. Watch the short stretch once for the event, without stopping.
+2. Replay it with Chinese captions. Check one or two lines that matter to the scene, and look up only a word that changes your understanding.
+3. Play it once more without pausing. Listen for the phrase you checked and see whether you can now hear it in the full sentence.
 
-You do not have to extract every unknown word. Choose a line you can imagine hearing or using again. A short, completed loop is more useful than leaving with a long list you never revisit.
+If the line still disappears in the audio, slow that part down or leave it for another day. The goal is to hear more than you heard on the first pass, not to finish a vocabulary list.
 
-If you want videos set up for this kind of watch, pause, and review cycle, [explore Moyu Chinese](https://moyuchinese.com/en). The principle works anywhere: choose a scene you care about, understand the moment, and return to a line worth keeping.
+[Moyu Chinese](https://moyuchinese.com/en) has short videos with interactive captions and word lookup, which makes this watch-check-replay method easy to use. The same test works with any video that has clear audio and reliable Chinese captions.
