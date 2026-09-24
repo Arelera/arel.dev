@@ -16,31 +16,41 @@ export default function Home() {
 
       <section className="products shell" aria-labelledby="products-heading">
         <div className="section-intro">
-          <span className="section-number">01 / THE TOOLS</span>
+          <span className="section-number">THE TOOLS</span>
           <h2 id="products-heading">Watch it. Read it.</h2>
-          <p>Two useful places to follow your curiosity.</p>
+          <p>Two ways to stay with the Chinese you find interesting.</p>
         </div>
         <div className="product-list">
           <article className="product">
             <div className="product-copy">
-              <span className="product-label">WATCH / 01</span>
+              <span className="product-label">WATCH</span>
               <h3>Moyu Chinese</h3>
               <p>Find a short Chinese video, hear a phrase in its scene, then check the caption and play it again. Moyu keeps the words you notice close to the moment you heard them.</p>
               <a className="inline-link" href="https://moyuchinese.com/en">Explore Moyu <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="product-image product-image-moyu">
-              <Image src="/images/moyu-app.webp" width={750} height={1360} alt="Moyu Chinese video with Chinese captions, a translation, and vocabulary progress" sizes="(max-width: 700px) 100vw, 470px" />
+            <div className="product-stage product-stage-moyu" aria-label="Moyu Chinese app screens">
+              <div className="phone phone-video">
+                <Image src="/images/moyu-video.webp" width={750} height={1631} alt="Moyu Chinese video player with Chinese captions and a translation" sizes="(max-width: 700px) 43vw, 210px" priority />
+              </div>
+              <div className="phone phone-review">
+                <Image src="/images/moyu-review.webp" width={750} height={1631} alt="Moyu Chinese vocabulary review screen" sizes="(max-width: 700px) 39vw, 185px" />
+              </div>
             </div>
           </article>
           <article className="product">
             <div className="product-copy">
-              <span className="product-label">READ / 02</span>
+              <span className="product-label">READ</span>
               <h3>Miaozi</h3>
               <p>Follow a Chinese story until a word stops you. Check it in Miaozi’s dictionary, then get straight back to reading. Stories and vocabulary tools live in the same place.</p>
               <a className="inline-link" href="https://miaozi.co/en">Explore Miaozi <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="product-image product-image-miaozi">
-              <Image src="/images/miaozi-dictionary.webp" width={678} height={480} alt="Miaozi dictionary entry for 顺便, with pinyin and English definitions" sizes="(max-width: 700px) 100vw, 470px" />
+            <div className="product-stage product-stage-miaozi" aria-label="Miaozi reader and dictionary screens">
+              <div className="miaozi-shot miaozi-shot-reader">
+                <Image src="/images/miaozi-reader.webp" width={410} height={515} alt="Miaozi reader showing a Chinese story with its illustration and title" sizes="(max-width: 700px) 45vw, 240px" />
+              </div>
+              <div className="miaozi-shot miaozi-shot-dictionary">
+                <Image src="/images/miaozi-dictionary.webp" width={620} height={385} alt="Miaozi dictionary entry for 顺便 with definitions and an example sentence" sizes="(max-width: 700px) 45vw, 240px" />
+              </div>
             </div>
           </article>
         </div>
@@ -48,7 +58,7 @@ export default function Home() {
 
       <section className="guides shell" aria-labelledby="guides-heading">
         <div className="section-intro guides-intro">
-          <div><span className="section-number">02 / THE GUIDES</span><h2 id="guides-heading">Recent guides</h2></div>
+          <div><span className="section-number">KEEP GOING</span><h2 id="guides-heading">Recent guides</h2></div>
           <Link className="inline-link" href="/blog/">All guides <span aria-hidden="true">→</span></Link>
         </div>
         <div className="article-list">{posts.map((post) => <ArticleCard key={post.slug} post={post} />)}</div>

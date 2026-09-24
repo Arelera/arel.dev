@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Manrope } from 'next/font/google'
+import { Rubik } from 'next/font/google'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
 import './globals.css'
 
-const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope', display: 'swap' })
+const rubik = Rubik({ subsets: ['latin'], variable: '--font-rubik', display: 'swap' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://arel.dev'),
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className={manrope.variable}>
+      <body className={rubik.variable}>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <SiteHeader />
         <div id="main-content">{children}</div>
