@@ -12,7 +12,6 @@ export type PostSummary = {
   title: string
   description: string
   date: string
-  topic: string
 }
 
 export type Post = PostSummary & { contentHtml: string }
@@ -20,7 +19,7 @@ export type Post = PostSummary & { contentHtml: string }
 function readPost(slug: string): { summary: PostSummary; markdown: string } {
   const source = fs.readFileSync(path.join(postsDirectory, `${slug}.md`), 'utf8')
   const { data, content } = matter(source)
-  for (const field of ['title', 'description', 'date', 'topic']) {
+  for (const field of ['title', 'description', 'date']) {
     if (typeof data[field] !== 'string' || !data[field].trim()) {
       throw new Error(`Missing or invalid ${field} in ${slug}.md`)
     }
@@ -33,7 +32,6 @@ function readPost(slug: string): { summary: PostSummary; markdown: string } {
       title: data.title,
       description: data.description,
       date: data.date,
-      topic: data.topic,
     },
     markdown: content,
   }
@@ -48,7 +46,11 @@ export function getAllPosts(): PostSummary[] {
 
 export async function getPost(slug: string): Promise<Post> {
   const { summary, markdown } = readPost(slug)
-  const contentHtml = String(await remark().use(remarkGfm).use(html).process(markdown))
+  const rendered = String(await remark().use(remarkGfm).use(html).process(markdown))
+  const contentHtml = rendered.replace(/\[\[zh:([^|\]]+)\|([^\]]+)\]\]/g, (_, simplified: string, traditional: string) => {
+    const escape = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+    return `<span class="hanzi" lang="zh"><span class="hanzi-simplified" lang="zh-Hans">${escape(simplified)}</span><span class="hanzi-traditional" lang="zh-Hant">${escape(traditional)}</span></span>`
+  })
   return { ...summary, contentHtml }
 }
 
