@@ -26,7 +26,7 @@ button, input { font: inherit; }
 .site-header { position: relative; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--line); }
 .header-inner { height: 84px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 700; font-size: 22px; letter-spacing: -.065em; }
-.brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; background: var(--ink); color: var(--paper); font-size: 23px; line-height: 1; letter-spacing: -.08em; padding-bottom: 4px; }
+.brand-mark { display: inline-flex; align-items: baseline; justify-content: center; width: 34px; height: 34px; border-radius: 9px; background: var(--ink); color: var(--paper); font-size: 23px; line-height: 1; letter-spacing: -.08em; padding-top: 5px; white-space: nowrap; }
 .brand-mark span { color: var(--accent); }
 .brand-name span { font-weight: 400; color: #698077; }
 .site-nav { display: flex; align-items: center; gap: 38px; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
@@ -58,7 +58,7 @@ h1 em, h2 em, h3 em { font-family: var(--font-display); font-weight: 400; letter
 .pinyin, .translation { display: block; font-size: 12px; line-height: 1.5; }
 .pinyin { color: #799086; }
 .translation { margin-top: 18px; padding-top: 16px; border-top: 1px solid #e8ebe3; color: var(--ink-soft); }
-.visual-stamp { position: absolute; top: 139px; left: 46px; color: var(--accent); font-family: serif; font-size: 23px; line-height: 1.6; }
+.visual-stamp { position: absolute; top: 104px; left: 42px; color: var(--accent); font-family: serif; font-size: 18px; line-height: 1.35; }
 
 .intro-band { background: var(--ink); color: #f7f6ed; }
 .intro-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; padding-block: 72px 78px; }
