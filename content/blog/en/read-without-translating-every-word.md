@@ -9,10 +9,6 @@ Look up a word when it blocks the event or the reason for it. Infer a word when 
 Here is an original short passage. Read the Chinese once before looking at the pinyin or translation.
 
 > [[zh:周六下午，小雨带着一本书去咖啡馆。走到门口，她才发现店今天关门了。她没有回家，而是去了旁边的公园，坐在长椅上读书。|週六下午，小雨帶著一本書去咖啡館。走到門口，她才發現店今天關門了。她沒有回家，而是去了旁邊的公園，坐在長椅上讀書。]]
->
-> *Zhōuliù xiàwǔ, Xiǎoyǔ dàizhe yì běn shū qù kāfēiguǎn. Zǒu dào ménkǒu, tā cái fāxiàn diàn jīntiān guānmén le. Tā méiyǒu huí jiā, érshì qù le pángbiān de gōngyuán, zuò zài chángyǐ shàng dúshū.*
->
-> On Saturday afternoon, Xiaoyu took a book to a café. At the entrance, she discovered that it was closed that day. Instead of going home, she went to a nearby park and read on a bench.
 
 Could you tell that her plan changed? If so, the first reading worked, even if several words were unfamiliar.
 
@@ -29,6 +25,12 @@ You may not know **[[zh:长椅|長椅]]** (*chángyǐ*). But she is in a **[[zh:
 The middle sentence explains the change of plan. **[[zh:才发现|才發現]]** (*cái fāxiàn*) means she *only then discovered* something. **[[zh:关门了|關門了]]** (*guānmén le*) tells you the shop was closed. If you do not know either phrase, the trip to the park may seem random. These are the words worth checking now.
 
 Read that sentence again after the lookup: **[[zh:走到门口，她才发现店今天关门了。|走到門口，她才發現店今天關門了。]]** She reached the entrance and only then found out the café was closed. You can now connect the first plan with the second one.
+
+If you want to check the whole passage, here is the pinyin and translation:
+
+*Zhōuliù xiàwǔ, Xiǎoyǔ dàizhe yì běn shū qù kāfēiguǎn. Zǒu dào ménkǒu, tā cái fāxiàn diàn jīntiān guānmén le. Tā méiyǒu huí jiā, érshì qù le pángbiān de gōngyuán, zuò zài chángyǐ shàng dúshū.*
+
+On Saturday afternoon, Xiaoyu took a book to a café. At the entrance, she discovered that it was closed that day. Instead of going home, she went to a nearby park and read on a bench.
 
 ![A Miaozi dictionary entry showing a word, its meanings, and an example sentence](/images/miaozi-dictionary.webp)
 

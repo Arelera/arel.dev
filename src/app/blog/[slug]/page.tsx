@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: summary.title,
     description: summary.description,
     alternates: { canonical: `/blog/${slug}/` },
-    openGraph: { type: 'article', title: summary.title, description: summary.description, url: `https://arel.dev/blog/${slug}/`, publishedTime: summary.date },
+    openGraph: { type: 'article', siteName: 'arel.dev', title: summary.title, description: summary.description, url: `https://arel.dev/blog/${slug}/`, publishedTime: summary.date, modifiedTime: summary.updated ?? summary.date },
   }
 }
 
@@ -29,9 +29,20 @@ export default async function PostPage({ params }: PageProps) {
   if (!getAllPosts().some((post) => post.slug === slug)) notFound()
   const post = await getPost(slug)
   const more = getAllPosts().filter((item) => item.slug !== slug).slice(0, 2)
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.updated ?? post.date,
+    inLanguage: 'en',
+    mainEntityOfPage: `https://arel.dev/blog/${slug}/`,
+  }
 
   return (
     <main className="post-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd).replace(/</g, '\\u003c') }} />
       <div className="shell post-shell">
         <Link className="back-link" href="/blog/">← All guides</Link>
         <header className="post-header">

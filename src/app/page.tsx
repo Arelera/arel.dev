@@ -1,13 +1,25 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ArticleCard from '@/components/ArticleCard'
 import { getAllPosts } from '@/lib/posts'
 
+export const metadata: Metadata = {
+  alternates: { canonical: 'https://arel.dev/' },
+}
+
 export default function Home() {
   const posts = getAllPosts()
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'arel.dev',
+    url: 'https://arel.dev/',
+  }
 
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c') }} />
       <section className="hero shell">
         <h1>Learn Chinese through immersion<span className="hero-period">.</span></h1>
         <p>Spend time with Chinese videos and stories you want to finish, and get help with the parts you don’t understand yet.</p>
