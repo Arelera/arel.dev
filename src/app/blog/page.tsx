@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     title: 'Chinese learning guides',
     description: 'Practical guides to understanding Chinese through videos and reading.',
     url: 'https://arel.dev/blog/',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'arel 中文 — Learn Chinese through immersion' }],
   },
 }
 

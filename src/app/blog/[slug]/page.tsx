@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { formatPostDate, getAllPosts, getPost } from '@/lib/posts'
 import ScriptSwitch from '@/components/ScriptSwitch'
+import LinkArrow from '@/components/LinkArrow'
 
 type PageProps = { params: Promise<{ slug: string }> }
 
@@ -38,14 +39,16 @@ export default async function PostPage({ params }: PageProps) {
     datePublished: post.date,
     dateModified: post.updated ?? post.date,
     inLanguage: 'en',
+    url: `https://arel.dev/blog/${slug}/`,
     mainEntityOfPage: `https://arel.dev/blog/${slug}/`,
+    ...(post.image ? { image: `https://arel.dev${post.image}` } : {}),
   }
 
   return (
     <main className="post-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd).replace(/</g, '\\u003c') }} />
       <div className="shell post-shell">
-        <Link className="back-link" href="/blog/">← All guides</Link>
+        <Link className="back-link" href="/blog/"><LinkArrow direction="left" /> All guides</Link>
         <header className="post-header">
           <div className="post-details">
             <span className="post-meta">{formatPostDate(post.date)}</span>
@@ -57,7 +60,7 @@ export default async function PostPage({ params }: PageProps) {
         {post.image && <Image className="post-cover" src={post.image} width={960} height={640} alt={post.imageAlt ?? ''} sizes="(max-width: 700px) calc(100vw - 36px), 720px" loading="eager" />}
         <article className="post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
       </div>
-      {more.length > 0 && <section className="more-guides shell"><h2>More guides</h2><div className="article-list">{more.map((item) => <div className="more-guide-row" key={item.slug}><Link href={`/blog/${item.slug}/`}>{item.title} <span aria-hidden="true">→</span></Link></div>)}</div></section>}
+      {more.length > 0 && <section className="more-guides shell"><h2>More guides</h2><div className="article-list">{more.map((item) => <div className="more-guide-row" key={item.slug}><Link href={`/blog/${item.slug}/`}>{item.title} <LinkArrow /></Link></div>)}</div></section>}
     </main>
   )
 }
