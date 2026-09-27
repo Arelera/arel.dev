@@ -21,18 +21,39 @@ img { display: block; max-width: 100%; }
 .skip-link:focus { top: 12px; }
 
 .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; }
-.brand { font-size: 21px; font-weight: 700; letter-spacing: -.045em; }
-.brand span, .footer-inner a:first-child span { color: var(--spark); }
+.brand { display: inline-flex; align-items: baseline; gap: 9px; font-size: 25px; font-weight: 700; letter-spacing: -.055em; }
+.brand-chinese { color: var(--spark); font-size: 15px; font-weight: 700; letter-spacing: .04em; }
 .site-nav, .header-inner nav { font-size: 14px; font-weight: 600; }
 .header-inner nav a:hover, .footer-inner a:hover { color: var(--blue); }
 
-.hero { padding-block: 90px 82px; }
-.hero h1 { max-width: 880px; margin: 0; font-size: clamp(46px, 5.7vw, 72px); line-height: 1.11; letter-spacing: -.045em; font-weight: 700; text-wrap: balance; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr); gap: clamp(30px, 5vw, 70px); align-items: center; min-height: 555px; padding-block: 55px 72px; }
+.hero-copy { position: relative; z-index: 1; }
+.hero h1 { max-width: 640px; margin: 0; font-size: clamp(46px, 5vw, 64px); line-height: 1.12; letter-spacing: -.045em; font-weight: 700; text-wrap: balance; }
 .hero-period { color: var(--spark); }
-.hero p { max-width: 640px; margin: 28px 0 28px; color: var(--muted); font-size: 18px; line-height: 1.68; }
+.hero p { max-width: 500px; margin: 26px 0 27px; color: var(--muted); font-size: 18px; line-height: 1.68; }
 .inline-link { color: var(--blue); font-size: 15px; font-weight: 600; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
 .inline-link span { display: inline-block; margin-left: 6px; text-decoration: none; }
 .inline-link:hover { color: #1d445f; }
+
+.hero-carousel { position: relative; min-width: 0; padding-bottom: 36px; }
+.hero-carousel-stage { position: relative; height: 385px; }
+.hero-scene { position: absolute; inset: 0; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .55s ease, visibility .55s ease; }
+.hero-scene[data-active="true"] { opacity: 1; visibility: visible; }
+.hero-scene-moyu { display: flex; align-items: center; justify-content: center; gap: 20px; padding-bottom: 14px; }
+.hero-phone { flex: none; padding: 5px; overflow: hidden; background: #181a1c; border-radius: 31px; }
+.hero-phone img { width: 100%; height: auto; border-radius: 26px; }
+.hero-phone-video { width: min(42%, 186px); transform: rotate(-4deg) translateY(-7px); }
+.hero-phone-review { width: min(39%, 169px); transform: rotate(4deg) translateY(15px); }
+.hero-scene-miaozi { width: 100%; }
+.hero-miaozi-shot { position: absolute; }
+.hero-miaozi-shot img { width: 100%; height: auto; }
+.hero-miaozi-reader { width: min(78%, 365px); top: 17px; left: 3%; }
+.hero-miaozi-dictionary { width: min(68%, 308px); right: 1%; bottom: 18px; }
+.hero-carousel-controls { display: flex; justify-content: center; gap: 3px; padding-top: 7px; }
+.hero-carousel-controls button { display: grid; place-items: center; width: 34px; height: 28px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.hero-carousel-controls span { display: block; width: 8px; height: 8px; border-radius: 50%; background: #afb4b0; transition: background .2s ease, transform .2s ease; }
+.hero-carousel-controls button[aria-pressed="true"] span { background: var(--spark); transform: scale(1.28); }
+.hero-cat { position: absolute; z-index: 2; width: 92px; height: auto; right: 0; bottom: 0; pointer-events: none; }
 
 .products { padding-bottom: 112px; }
 .product { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(50px, 8vw, 122px); align-items: center; margin-top: 78px; }
@@ -65,7 +86,8 @@ img { display: block; max-width: 100%; }
 
 .site-footer { background: #eae7df; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; min-height: 108px; font-size: 14px; }
-.footer-inner a:first-child { font-weight: 700; letter-spacing: -.04em; }
+.footer-brand { font-weight: 700; letter-spacing: -.04em; }
+.footer-brand span { margin-left: 2px; color: var(--spark); font-size: 12px; letter-spacing: .02em; }
 
 .blog-index { min-height: 67vh; padding-block: 90px 125px; }
 .blog-index h1 { margin: 0 0 15px; font-size: clamp(42px, 5vw, 60px); line-height: 1.15; letter-spacing: -.045em; font-weight: 700; }
@@ -115,6 +137,9 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
 .not-found-page p { margin: 0 0 35px; color: var(--muted); font-size: 17px; }
 
 @media (min-width: 701px) and (max-width: 870px) {
+  .hero { grid-template-columns: 1fr; gap: 22px; padding-block: 70px 50px; }
+  .hero h1 { max-width: 760px; }
+  .hero-carousel { width: min(100%, 550px); margin-inline: auto; }
   .product { grid-template-columns: 1fr; gap: 30px; }
   .product:first-child .product-stage, .product:first-child .product-copy { grid-column: auto; grid-row: auto; }
   .product-copy { max-width: 600px; }
@@ -124,9 +149,17 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
 @media (max-width: 700px) {
   .shell, .post-shell { width: min(100% - 36px, 1100px); }
   .header-inner { min-height: 68px; }
-  .hero { padding-block: 70px 72px; }
+  .hero { display: block; min-height: 0; padding-block: 44px 48px; }
   .hero h1 { font-size: clamp(40px, 10vw, 54px); }
-  .hero p { margin-top: 21px; font-size: 16px; }
+  .hero p { margin-top: 21px; margin-bottom: 22px; font-size: 16px; }
+  .hero-carousel { width: min(100%, 440px); margin: 31px auto 0; padding-bottom: 25px; }
+  .hero-carousel-stage { height: clamp(265px, 77vw, 360px); }
+  .hero-scene-moyu { gap: 14px; }
+  .hero-phone { padding: 4px; border-radius: 26px; }
+  .hero-phone img { border-radius: 22px; }
+  .hero-miaozi-reader { top: 18px; }
+  .hero-miaozi-dictionary { bottom: 15px; }
+  .hero-cat { width: 82px; right: 0; }
   .products { padding-bottom: 86px; }
   .product { grid-template-columns: 1fr; gap: 27px; margin-top: 76px; }
   .product:first-child .product-stage, .product:first-child .product-copy { grid-column: auto; grid-row: auto; }
@@ -155,4 +188,4 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
   .phone { padding: 4px; border-radius: 24px; }
   .phone img { border-radius: 20px; }
 }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .hero-scene, .hero-carousel-controls span { transition: none; } }

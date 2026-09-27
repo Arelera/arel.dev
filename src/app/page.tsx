@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import ArticleCard from '@/components/ArticleCard'
+import HeroCarousel from '@/components/HeroCarousel'
 import { getAllPosts } from '@/lib/posts'
 
 export const metadata: Metadata = {
@@ -21,9 +22,12 @@ export default function Home() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c') }} />
       <section className="hero shell">
-        <h1>Learn Chinese through immersion<span className="hero-period">.</span></h1>
-        <p>Spend time with Chinese videos and stories you want to finish, and get help with the parts you don’t understand yet.</p>
-        <Link className="inline-link" href="/blog/">Read the guides <span aria-hidden="true">→</span></Link>
+        <div className="hero-copy">
+          <h1>Learn Chinese through immersion<span className="hero-period">.</span></h1>
+          <p>Spend time with Chinese videos and stories you want to finish, and get help with the parts you don’t understand yet.</p>
+          <Link className="inline-link" href="/blog/">Read the guides <span aria-hidden="true">→</span></Link>
+        </div>
+        <HeroCarousel />
       </section>
 
       <section className="products shell" aria-label="Chinese learning products">
