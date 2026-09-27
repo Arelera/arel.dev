@@ -36,7 +36,8 @@ export default function LocaleSwitcher({ locale, path, availableLocales, label }
     <div className="locale-switch-menu" role="group" aria-label={label}>
       {locales.map((target) => {
         const samePage = availableLocales.includes(target)
-        return <Link key={target} href={localizedPath(target, samePage ? path : '')} lang={target} aria-label={localeNames[target]} aria-current={target === locale ? 'page' : undefined} title={samePage ? localeNames[target] : `${localeNames[target]} home`}>
+        const fallback = path.startsWith('blog/') ? 'blog' : ''
+        return <Link key={target} href={localizedPath(target, samePage ? path : fallback)} lang={target} aria-label={localeNames[target]} aria-current={target === locale ? 'page' : undefined} title={samePage ? localeNames[target] : `${localeNames[target]} ${fallback ? 'guides' : 'home'}`}>
           <span className="locale-flag" aria-hidden="true">{localeFlags[target]}</span>
           <span>{localeNames[target]}</span>
         </Link>

@@ -2,12 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import LinkArrow from '@/components/LinkArrow'
 import { homeCopy } from '@/lib/copy'
-import { getAllPosts, getPublishedBlogLocales } from '@/lib/posts'
+import { getAllPosts } from '@/lib/posts'
 import { localizedPath, miaoziLocale, type Locale } from '@/lib/site'
 
 export default function SiteFooter({ locale }: { locale: Locale }) {
   const copy = homeCopy[locale]
-  const blogLocale = getPublishedBlogLocales().includes(locale) ? locale : 'en'
   const miaozi = miaoziLocale(locale)
 
   return <footer className="site-footer"><div className="shell footer-inner">
@@ -16,7 +15,7 @@ export default function SiteFooter({ locale }: { locale: Locale }) {
     <nav className="footer-columns" aria-label="Footer navigation">
       <div className="footer-column">
         <h2>{copy.guides}</h2>
-        <Link href={localizedPath(blogLocale, 'blog')}>{copy.readGuides}</Link>
+        <Link href={localizedPath(locale, 'blog')}>{copy.readGuides}</Link>
         {locale === 'en' && getAllPosts('en').map((post) => <Link key={post.slug} href={localizedPath('en', `blog/${post.slug}`)}>{post.title}</Link>)}
       </div>
       <div className="footer-column">

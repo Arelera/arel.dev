@@ -7,7 +7,7 @@ import HeroCarousel from '@/components/HeroCarousel'
 import LinkArrow from '@/components/LinkArrow'
 import PageFrame from '@/components/PageFrame'
 import { homeCopy } from '@/lib/copy'
-import { getAllPosts, getPublishedBlogLocales } from '@/lib/posts'
+import { getAllPosts } from '@/lib/posts'
 import { pageMetadata, safeJsonLd } from '@/lib/seo'
 import { isLocale, locales, localizedPath, miaoziLocale } from '@/lib/site'
 
@@ -30,7 +30,6 @@ export default async function Home({ params }: PageProps) {
   if (!isLocale(locale)) notFound()
   const copy = homeCopy[locale]
   const posts = getAllPosts(locale)
-  const blogLocale = getPublishedBlogLocales().includes(locale) ? locale : 'en'
   const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -46,7 +45,7 @@ export default async function Home({ params }: PageProps) {
         <div className="hero-copy">
           <h1>{copy.heroBefore}<span className="hero-highlight">{copy.heroChinese}</span>{copy.heroAfter}</h1>
           <p>{copy.heroDescription}</p>
-          <Link className="inline-link" href={localizedPath(blogLocale, 'blog')}>{copy.readGuides} <LinkArrow /></Link>
+          <Link className="inline-link" href={localizedPath(locale, 'blog')}>{copy.readGuides} <LinkArrow /></Link>
         </div>
         <HeroCarousel />
       </section>
@@ -85,7 +84,7 @@ export default async function Home({ params }: PageProps) {
         <h2 id="guides-heading">{copy.guides}</h2>
         {posts.length > 0
           ? <div className="article-list">{posts.map((post) => <ArticleCard key={post.slug} post={post} locale={locale} />)}</div>
-          : <div className="guides-fallback"><p>{copy.englishGuidesNote}</p><Link className="inline-link" href={localizedPath('en', 'blog')}>{copy.readGuides} <LinkArrow /></Link></div>}
+          : <div className="guides-fallback"><p>{copy.englishGuidesNote}</p><Link className="inline-link" href={localizedPath(locale, 'blog')}>{copy.readGuides} <LinkArrow /></Link></div>}
       </section>
     </main>
     </PageFrame>

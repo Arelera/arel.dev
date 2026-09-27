@@ -143,7 +143,7 @@ img { display: block; max-width: 100%; }
 
 .site-footer { position: relative; background: var(--footer); }
 .footer-inner { position: relative; display: grid; grid-template-columns: 170px minmax(0, 1fr); align-items: start; gap: clamp(42px, 7vw, 100px); padding-block: 66px 76px; font-size: 14px; }
-.footer-cat { position: absolute; width: 155px; height: auto; left: 20px; bottom: calc(100% - 12px); pointer-events: none; }
+.footer-cat { position: absolute; width: 155px; height: auto; right: 20px; bottom: calc(100% - 12px); pointer-events: none; }
 .footer-brand { width: max-content; }
 .footer-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 48px); }
 .footer-column { display: flex; flex-direction: column; align-items: start; gap: 13px; }
@@ -153,6 +153,7 @@ img { display: block; max-width: 100%; }
 .blog-index { min-height: 67vh; padding-block: 90px 125px; }
 .blog-index h1 { margin: 0 0 15px; font-size: clamp(42px, 5vw, 60px); line-height: 1.15; letter-spacing: -.045em; font-weight: 700; }
 .blog-index > p { max-width: 640px; margin: 0; color: var(--muted); font-size: 17px; line-height: 1.7; }
+.blog-index .blog-language-note { margin-top: 18px; font-size: 14px; }
 .blog-index .article-list { margin-top: 60px; }
 
 .post-page { min-height: 70vh; }
@@ -234,7 +235,7 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
   .article-list { grid-template-columns: 1fr; gap: 35px; margin-top: 35px; }
   .article-title { font-size: 21px; }
   .article-image { height: 190px; }
-  .footer-cat { width: 120px; left: 14px; bottom: calc(100% - 10px); }
+  .footer-cat { width: 120px; right: 14px; bottom: calc(100% - 10px); }
   .footer-inner { display: block; padding-block: 52px 62px; }
   .footer-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 33px 24px; margin-top: 35px; }
   .footer-column:first-child { grid-column: 1 / -1; }

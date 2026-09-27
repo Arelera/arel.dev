@@ -115,47 +115,87 @@ export const homeCopy: Record<Locale, HomeCopy> = {
   },
 }
 
-type BlogCopy = { title: string; intro: string; description: string; allGuides: string; moreGuides: string }
+type BlogCopy = { title: string; intro: string; description: string; englishArticlesNote: string; allGuides: string; moreGuides: string }
 
 export const blogCopy: Record<Locale, BlogCopy> = {
   en: {
     title: 'Chinese immersion guides', intro: 'Practical help for choosing Chinese videos, reading stories, and making sense of unfamiliar words.',
-    description: 'Practical guides to understanding Chinese through videos and reading.', allGuides: 'All guides', moreGuides: 'More guides',
+    description: 'Practical guides to understanding Chinese through videos and reading.', englishArticlesNote: '', allGuides: 'All guides', moreGuides: 'More guides',
   },
   es: {
     title: 'Guías para aprender chino por inmersión', intro: 'Consejos prácticos para elegir videos en chino, leer historias y entender palabras desconocidas.',
-    description: 'Guías prácticas para entender el chino mediante videos y lectura.', allGuides: 'Todas las guías', moreGuides: 'Más guías',
+    description: 'Guías prácticas para entender el chino mediante videos y lectura.', englishArticlesNote: 'Los artículos están disponibles en inglés por ahora.', allGuides: 'Todas las guías', moreGuides: 'Más guías',
   },
   de: {
     title: 'Ratgeber zum Chinesischlernen durch Immersion', intro: 'Praktische Hilfe bei der Auswahl chinesischer Videos, beim Lesen von Geschichten und beim Verstehen unbekannter Wörter.',
-    description: 'Praktische Ratgeber, um Chinesisch durch Videos und Lesen besser zu verstehen.', allGuides: 'Alle Ratgeber', moreGuides: 'Weitere Ratgeber',
+    description: 'Praktische Ratgeber, um Chinesisch durch Videos und Lesen besser zu verstehen.', englishArticlesNote: 'Die Artikel sind derzeit nur auf Englisch verfügbar.', allGuides: 'Alle Ratgeber', moreGuides: 'Weitere Ratgeber',
   },
   fr: {
     title: 'Guides pour apprendre le chinois en immersion', intro: 'Des conseils pratiques pour choisir des vidéos en chinois, lire des histoires et comprendre les mots inconnus.',
-    description: 'Des guides pratiques pour comprendre le chinois grâce aux vidéos et à la lecture.', allGuides: 'Tous les guides', moreGuides: 'Autres guides',
+    description: 'Des guides pratiques pour comprendre le chinois grâce aux vidéos et à la lecture.', englishArticlesNote: 'Les articles sont disponibles en anglais pour le moment.', allGuides: 'Tous les guides', moreGuides: 'Autres guides',
   },
   'pt-BR': {
     title: 'Guias para aprender chinês por imersão', intro: 'Ajuda prática para escolher vídeos em chinês, ler histórias e entender palavras desconhecidas.',
-    description: 'Guias práticos para entender chinês por meio de vídeos e leitura.', allGuides: 'Todos os guias', moreGuides: 'Mais guias',
+    description: 'Guias práticos para entender chinês por meio de vídeos e leitura.', englishArticlesNote: 'Os artigos estão disponíveis em inglês por enquanto.', allGuides: 'Todos os guias', moreGuides: 'Mais guias',
   },
   vi: {
     title: 'Hướng dẫn học tiếng Trung qua nội dung thực tế', intro: 'Gợi ý thiết thực để chọn video tiếng Trung, đọc truyện và hiểu những từ chưa biết.',
-    description: 'Hướng dẫn thực tế để hiểu tiếng Trung qua video và bài đọc.', allGuides: 'Tất cả hướng dẫn', moreGuides: 'Hướng dẫn khác',
+    description: 'Hướng dẫn thực tế để hiểu tiếng Trung qua video và bài đọc.', englishArticlesNote: 'Hiện tại, bài viết chỉ có bản tiếng Anh.', allGuides: 'Tất cả hướng dẫn', moreGuides: 'Hướng dẫn khác',
   },
   id: {
     title: 'Panduan belajar bahasa Mandarin lewat imersi', intro: 'Kiat praktis untuk memilih video Mandarin, membaca cerita, dan memahami kata yang belum dikenal.',
-    description: 'Panduan praktis untuk memahami bahasa Mandarin lewat video dan bacaan.', allGuides: 'Semua panduan', moreGuides: 'Panduan lainnya',
+    description: 'Panduan praktis untuk memahami bahasa Mandarin lewat video dan bacaan.', englishArticlesNote: 'Artikel saat ini hanya tersedia dalam bahasa Inggris.', allGuides: 'Semua panduan', moreGuides: 'Panduan lainnya',
   },
   ja: {
     title: '中国語イマージョン学習ガイド', intro: '中国語の動画の選び方、物語の読み方、知らない単語への向き合い方を紹介します。',
-    description: '動画と読書で中国語を理解するための実践的な学習ガイド。', allGuides: 'すべてのガイド', moreGuides: 'ほかのガイド',
+    description: '動画と読書で中国語を理解するための実践的な学習ガイド。', englishArticlesNote: '記事の本文は現在、英語のみです。', allGuides: 'すべてのガイド', moreGuides: 'ほかのガイド',
   },
   ko: {
     title: '중국어 몰입 학습 가이드', intro: '중국어 영상 고르기, 이야기 읽기, 모르는 단어 이해하기에 도움이 되는 실용적인 글입니다.',
-    description: '영상과 읽기를 통해 중국어를 이해하는 데 도움이 되는 실용적인 가이드.', allGuides: '모든 가이드', moreGuides: '다른 가이드',
+    description: '영상과 읽기를 통해 중국어를 이해하는 데 도움이 되는 실용적인 가이드.', englishArticlesNote: '현재 글의 본문은 영어로만 제공됩니다.', allGuides: '모든 가이드', moreGuides: '다른 가이드',
   },
   th: {
     title: 'คู่มือเรียนภาษาจีนแบบซึมซับ', intro: 'คำแนะนำที่ใช้ได้จริงสำหรับเลือกวิดีโอภาษาจีน อ่านเรื่องราว และทำความเข้าใจคำที่ไม่คุ้นเคย',
-    description: 'คู่มือเรียนภาษาจีนจากวิดีโอและการอ่านที่นำไปใช้ได้จริง', allGuides: 'คู่มือทั้งหมด', moreGuides: 'คู่มืออื่น ๆ',
+    description: 'คู่มือเรียนภาษาจีนจากวิดีโอและการอ่านที่นำไปใช้ได้จริง', englishArticlesNote: 'ขณะนี้เนื้อหาบทความมีเฉพาะภาษาอังกฤษ', allGuides: 'คู่มือทั้งหมด', moreGuides: 'คู่มืออื่น ๆ',
+  },
+}
+
+type GuidePreview = { title: string; description: string }
+export const guidePreviewCopy: Partial<Record<Locale, Record<string, GuidePreview>>> = {
+  es: {
+    'choose-a-chinese-video': { title: 'Cómo elegir videos en chino para practicar la comprensión oral', description: 'Comprueba cuánto entiendes, si el audio y los subtítulos son claros, y si el tema te interesa.' },
+    'read-without-translating-every-word': { title: 'Cuándo buscar una palabra al leer en chino', description: 'Sigue un pasaje breve y decide qué palabras deducir, ignorar o consultar en el diccionario.' },
+  },
+  de: {
+    'choose-a-chinese-video': { title: 'So wählst du chinesische Videos zum Hörtraining aus', description: 'Prüfe, wie viel du verstehst, ob Ton und Untertitel klar sind und ob dich das Thema interessiert.' },
+    'read-without-translating-every-word': { title: 'Wann du beim Lesen auf Chinesisch ein Wort nachschlagen solltest', description: 'An einem kurzen Text siehst du, welche Wörter du erschließen, übergehen oder nachschlagen kannst.' },
+  },
+  fr: {
+    'choose-a-chinese-video': { title: 'Comment choisir des vidéos en chinois pour travailler l’écoute', description: 'Évalue ce que tu comprends, la qualité du son et des sous-titres, et ton intérêt pour le sujet.' },
+    'read-without-translating-every-word': { title: 'Quand chercher un mot en lisant en chinois', description: 'À partir d’un court passage, vois quels mots déduire, laisser de côté ou chercher dans le dictionnaire.' },
+  },
+  'pt-BR': {
+    'choose-a-chinese-video': { title: 'Como escolher vídeos em chinês para praticar a escuta', description: 'Veja quanto você entende, se o áudio e as legendas são claros e se o assunto interessa.' },
+    'read-without-translating-every-word': { title: 'Quando consultar uma palavra ao ler em chinês', description: 'Use um trecho curto para decidir quais palavras deduzir, deixar passar ou consultar no dicionário.' },
+  },
+  vi: {
+    'choose-a-chinese-video': { title: 'Cách chọn video tiếng Trung để luyện nghe', description: 'Kiểm tra mức độ hiểu, chất lượng âm thanh và phụ đề, rồi xem chủ đề có đủ hấp dẫn không.' },
+    'read-without-translating-every-word': { title: 'Khi nào nên tra từ lúc đọc tiếng Trung', description: 'Qua một đoạn văn ngắn, hãy xem từ nào có thể đoán, bỏ qua hoặc cần tra từ điển.' },
+  },
+  id: {
+    'choose-a-chinese-video': { title: 'Cara memilih video Mandarin untuk latihan mendengarkan', description: 'Periksa seberapa banyak yang kamu pahami, kejernihan audio dan takarir, serta minatmu pada topiknya.' },
+    'read-without-translating-every-word': { title: 'Kapan perlu mencari arti kata saat membaca bahasa Mandarin', description: 'Lewat satu bacaan pendek, lihat kata mana yang bisa ditebak, dilewati, atau dicari di kamus.' },
+  },
+  ja: {
+    'choose-a-chinese-video': { title: 'リスニング練習に使う中国語動画の選び方', description: '理解できる内容か、音声と字幕は明瞭か、最後まで見たい題材かを確認します。' },
+    'read-without-translating-every-word': { title: '中国語を読むとき、単語を調べるべき場面', description: '短い文章を使い、推測できる語、読み飛ばせる語、辞書で調べる語を見分けます。' },
+  },
+  ko: {
+    'choose-a-chinese-video': { title: '듣기 연습용 중국어 영상 고르는 법', description: '얼마나 이해되는지, 음성과 자막이 명확한지, 관심 있는 주제인지 확인해 보세요.' },
+    'read-without-translating-every-word': { title: '중국어를 읽을 때 단어를 찾아봐야 하는 순간', description: '짧은 글을 통해 뜻을 짐작하거나 넘어가거나 사전에서 찾아볼 단어를 구분해 보세요.' },
+  },
+  th: {
+    'choose-a-chinese-video': { title: 'วิธีเลือกวิดีโอภาษาจีนเพื่อฝึกฟัง', description: 'ดูว่าคุณเข้าใจได้แค่ไหน เสียงและคำบรรยายชัดหรือไม่ และเนื้อหาน่าสนใจพอไหม' },
+    'read-without-translating-every-word': { title: 'ควรเปิดพจนานุกรมเมื่อไรขณะอ่านภาษาจีน', description: 'ลองอ่านบทความสั้น ๆ แล้วแยกว่าคำไหนเดาได้ ข้ามได้ หรือควรค้นความหมาย' },
   },
 }

@@ -11,9 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: absoluteUrl(localizedPath(locale)),
       alternates: { languages: languageAlternates('', locales) },
     })),
-    ...blogLocales.map((locale) => ({
+    ...locales.map((locale) => ({
       url: absoluteUrl(localizedPath(locale, 'blog')),
-      ...(blogLocales.length > 1 ? { alternates: { languages: languageAlternates('blog', blogLocales) } } : {}),
+      alternates: { languages: languageAlternates('blog', locales) },
     })),
     ...blogLocales.flatMap((locale) => getAllPosts(locale).map((post) => {
       const available = getPostLocales(post.slug)
