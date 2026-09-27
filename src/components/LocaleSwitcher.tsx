@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { Globe02Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
-import { localeNames, locales, localizedPath, type Locale } from '@/lib/site'
+import { localeFlags, localeNames, locales, localizedPath, type Locale } from '@/lib/site'
 
 export default function LocaleSwitcher({ locale, path, availableLocales, label }: { locale: Locale; path: string; availableLocales: readonly Locale[]; label: string }) {
   const detailsRef = useRef<HTMLDetailsElement>(null)
@@ -36,8 +36,9 @@ export default function LocaleSwitcher({ locale, path, availableLocales, label }
     <div className="locale-switch-menu" role="group" aria-label={label}>
       {locales.map((target) => {
         const samePage = availableLocales.includes(target)
-        return <Link key={target} href={localizedPath(target, samePage ? path : '')} lang={target} aria-current={target === locale ? 'page' : undefined} title={samePage ? localeNames[target] : `${localeNames[target]} home`}>
-          {localeNames[target]}
+        return <Link key={target} href={localizedPath(target, samePage ? path : '')} lang={target} aria-label={localeNames[target]} aria-current={target === locale ? 'page' : undefined} title={samePage ? localeNames[target] : `${localeNames[target]} home`}>
+          <span className="locale-flag" aria-hidden="true">{localeFlags[target]}</span>
+          <span>{localeNames[target]}</span>
         </Link>
       })}
     </div>

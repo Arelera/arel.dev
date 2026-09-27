@@ -16,6 +16,19 @@ export const localeNames: Record<Locale, string> = {
   th: 'ไทย',
 }
 
+export const localeFlags: Record<Locale, string> = {
+  en: '🇺🇸',
+  es: '🇪🇸',
+  de: '🇩🇪',
+  fr: '🇫🇷',
+  'pt-BR': '🇧🇷',
+  vi: '🇻🇳',
+  id: '🇮🇩',
+  ja: '🇯🇵',
+  ko: '🇰🇷',
+  th: '🇹🇭',
+}
+
 export const ogLocales: Record<Locale, string> = {
   en: 'en_US',
   es: 'es_ES',

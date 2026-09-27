@@ -79,7 +79,8 @@ img { display: block; max-width: 100%; }
 .theme-switch-menu button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 10px; background: transparent; color: var(--ink); cursor: pointer; }
 .theme-switch-menu button:hover, .theme-switch-menu button[aria-pressed="true"] { background: var(--quote); color: var(--blue); }
 .locale-switch-menu { position: absolute; z-index: 11; top: calc(100% + 4px); right: 0; width: 210px; max-height: min(60vh, 480px); overflow-y: auto; padding: 7px; border-radius: 15px; background: var(--footer); }
-.locale-switch-menu a { display: flex; align-items: center; min-height: 42px; padding: 7px 12px; border-radius: 9px; font-size: 14px; }
+.locale-switch-menu a { display: flex; align-items: center; gap: 10px; min-height: 42px; padding: 7px 12px; border-radius: 9px; font-size: 14px; }
+.locale-flag { flex: none; width: 21px; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 18px; line-height: 1; }
 .locale-switch-menu a:hover, .locale-switch-menu a[aria-current="page"] { background: var(--quote); color: var(--blue); }
 
 .hero { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr); gap: clamp(30px, 5vw, 70px); align-items: center; min-height: 555px; padding-block: 55px 72px; }
