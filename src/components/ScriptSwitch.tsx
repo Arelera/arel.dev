@@ -24,8 +24,8 @@ export default function ScriptSwitch() {
 
   return (
     <div className="script-switch" role="group" aria-label="Chinese character script">
-      <button type="button" aria-label="Simplified Chinese" aria-pressed={script === 'simplified'} onClick={() => choose('simplified')}>简体</button>
-      <button type="button" aria-label="Traditional Chinese" aria-pressed={script === 'traditional'} onClick={() => choose('traditional')}>繁體</button>
+      <button type="button" aria-label="Show simplified Chinese characters" title="Show Chinese characters in simplified form" aria-pressed={script === 'simplified'} onClick={() => choose('simplified')}>Simplified <span lang="zh-Hans">简体</span></button>
+      <button type="button" aria-label="Show traditional Chinese characters" title="Show Chinese characters in traditional form" aria-pressed={script === 'traditional'} onClick={() => choose('traditional')}>Traditional <span lang="zh-Hant">繁體</span></button>
     </div>
   )
 }

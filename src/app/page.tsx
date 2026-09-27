@@ -53,13 +53,8 @@ export default function Home() {
               <p>Miaozi pairs original Chinese stories with a dictionary, so you can check a word and keep reading without losing your place.</p>
               <a className="inline-link" href="https://miaozi.co/en">Explore Miaozi <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="product-stage product-stage-miaozi" aria-label="Miaozi stories with word lookups open">
-              <div className="miaozi-shot miaozi-shot-reader">
-                <Image src="/images/miaozi-story-menu.webp" width={900} height={473} alt="Miaozi story about a menu with the word 菜单 open in the reader" sizes="(max-width: 700px) 76vw, 410px" />
-              </div>
-              <div className="miaozi-shot miaozi-shot-dictionary">
-                <Image src="/images/miaozi-story-office.webp" width={900} height={473} alt="Miaozi office story with 加班 open beside the text" sizes="(max-width: 700px) 76vw, 410px" />
-              </div>
+            <div className="product-stage product-stage-miaozi">
+              <Image className="miaozi-shot" src="/images/miaozi-story-menu.webp" width={900} height={473} alt="Miaozi story about a menu with the word 菜单 open in the reader" sizes="(max-width: 700px) calc(100vw - 36px), 500px" />
             </div>
           </article>
         </div>

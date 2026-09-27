@@ -21,6 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" data-scroll-behavior="smooth" data-hanzi-script="simplified" suppressHydrationWarning>
       <head>
         <Script id="restore-hanzi-script" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: "try{var script=localStorage.getItem('arel-hanzi-script');if(script==='traditional')document.documentElement.dataset.hanziScript='traditional'}catch(_){}" }} />
+        <Script id="restore-color-theme" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: "try{var theme=localStorage.getItem('arel-color-theme');if(theme==='light'||theme==='dark')document.documentElement.dataset.theme=theme}catch(_){}" }} />
       </head>
       <body className={quicksand.variable}>
         <a className="skip-link" href="#main-content">Skip to content</a>
