@@ -49,7 +49,7 @@ export default function Home() {
           </article>
           <article className="product">
             <div className="product-copy">
-              <h2><Image className="product-icon" src="/images/brands/miaozi-icon.webp" width={96} height={96} alt="" />Miaozi</h2>
+              <h2><Image className="product-icon miaozi-product-icon" src="/images/brands/miaozi-header-mascot.svg" width={96} height={96} alt="" />Miaozi</h2>
               <p>Miaozi pairs original Chinese stories with a dictionary, so you can check a word and keep reading without losing your place.</p>
               <a className="inline-link" href="https://miaozi.co/en">Explore Miaozi <span aria-hidden="true">↗</span></a>
             </div>
