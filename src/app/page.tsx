@@ -40,7 +40,7 @@ export default function Home() {
             </div>
             <div className="product-stage product-stage-moyu" aria-label="Moyu Chinese app screens">
               <div className="phone phone-video">
-                <Image src="/images/moyu-spongebob.webp" width={750} height={1631} alt="Moyu Chinese video player showing SpongeBob with interactive Chinese captions" sizes="(max-width: 700px) 43vw, 210px" priority />
+                <Image src="/images/moyu-spongebob.webp" width={750} height={1631} alt="Moyu Chinese video player showing SpongeBob with interactive Chinese captions" sizes="(max-width: 700px) 43vw, 210px" />
               </div>
               <div className="phone phone-review">
                 <Image src="/images/moyu-review.webp" width={750} height={1631} alt="Moyu Chinese vocabulary review screen" sizes="(max-width: 700px) 39vw, 185px" />
@@ -53,12 +53,12 @@ export default function Home() {
               <p>Miaozi pairs original Chinese stories with a dictionary, so you can check a word and keep reading without losing your place.</p>
               <a className="inline-link" href="https://miaozi.co/en">Explore Miaozi <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="product-stage product-stage-miaozi" aria-label="Miaozi reader and dictionary screens">
+            <div className="product-stage product-stage-miaozi" aria-label="Miaozi stories with word lookups open">
               <div className="miaozi-shot miaozi-shot-reader">
-                <Image src="/images/miaozi-reader.webp" width={704} height={540} alt="Miaozi reader showing a Chinese story with its illustration and title" sizes="(max-width: 700px) 64vw, 300px" />
+                <Image src="/images/miaozi-story-menu.webp" width={900} height={473} alt="Miaozi story about a menu with the word 菜单 open in the reader" sizes="(max-width: 700px) 76vw, 410px" />
               </div>
               <div className="miaozi-shot miaozi-shot-dictionary">
-                <Image src="/images/miaozi-dictionary-detail.webp" width={790} height={500} alt="Miaozi dictionary entry for 顺便 with definitions and an example sentence" sizes="(max-width: 700px) 64vw, 300px" />
+                <Image src="/images/miaozi-story-office.webp" width={900} height={473} alt="Miaozi office story with 加班 open beside the text" sizes="(max-width: 700px) 76vw, 410px" />
               </div>
             </div>
           </article>

@@ -70,7 +70,7 @@ export async function getPost(slug: string, locale: Locale = defaultLocale): Pro
     return `<span class="hanzi" lang="zh"><span class="hanzi-simplified" lang="zh-Hans">${escape(simplified)}</span><span class="hanzi-traditional" lang="zh-Hant">${escape(traditional)}</span></span>`
   })
   const imageDimensions: Record<string, [number, number]> = {
-    '/images/moyu-video.webp': [750, 1631],
+    '/images/moyu-caption-lookup.webp': [750, 1631],
     '/images/miaozi-reader-lookup.webp': [900, 385],
   }
   const contentHtml = withHanzi.replace(/<img src="([^"]+)" alt="([^"]*)">/g, (tag, src: string) => {

@@ -21,9 +21,11 @@ img { display: block; max-width: 100%; }
 .skip-link:focus { top: 12px; }
 
 .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; }
-.brand { display: inline-flex; align-items: center; gap: 6px; font-size: 25px; font-weight: 700; letter-spacing: -.055em; }
-.brand-mark { width: 39px; height: 39px; margin-right: 1px; object-fit: contain; }
-.brand-chinese { color: var(--spark); font-size: 15px; font-weight: 700; letter-spacing: .04em; }
+.brand { display: inline-flex; align-items: center; gap: 7px; font-size: 26px; font-weight: 700; letter-spacing: -.06em; }
+.brand-mark { width: 45px; height: 45px; object-fit: contain; }
+.brand-type { display: flex; flex-direction: column; gap: 3px; }
+.brand-name { line-height: .9; }
+.brand-chinese { color: var(--spark); font-size: 11px; font-weight: 700; letter-spacing: .22em; line-height: 1; }
 .site-nav, .header-inner nav { font-size: 14px; font-weight: 600; }
 .header-inner nav a:hover, .footer-inner a:hover { color: var(--blue); }
 
@@ -45,18 +47,13 @@ img { display: block; max-width: 100%; }
 .hero-phone img { width: 100%; height: auto; border-radius: 26px; }
 .hero-phone-video { width: min(42%, 186px); transform: rotate(-4deg) translateY(-7px); }
 .hero-phone-review { width: min(39%, 169px); transform: rotate(4deg) translateY(15px); }
-.hero-scene-moyu-listening { display: grid; place-items: center; }
-.hero-phone-listening { width: min(45%, 186px); transform: rotate(3deg); }
-.hero-miaozi-shot { position: absolute; overflow: hidden; border-radius: 17px; }
+.hero-scene-miaozi { display: grid; place-items: center; }
+.hero-miaozi-shot { width: min(100%, 470px); overflow: hidden; border-radius: 17px; }
 .hero-miaozi-shot img { width: 100%; height: auto; }
-.hero-miaozi-story { width: min(69%, 315px); top: 13px; left: 0; }
-.hero-miaozi-lookup { width: min(91%, 414px); right: 0; bottom: 16px; }
-.hero-scene-miaozi-dictionary, .hero-scene-miaozi-library { display: grid; place-items: center; }
-.hero-scene-miaozi-dictionary > img, .hero-scene-miaozi-library > img { width: min(100%, 430px); height: auto; border-radius: 17px; }
-.hero-carousel-controls { display: flex; justify-content: center; gap: 3px; padding-top: 7px; }
-.hero-carousel-controls button { display: grid; place-items: center; width: 34px; height: 28px; padding: 0; border: 0; background: transparent; cursor: pointer; }
-.hero-carousel-controls span { display: block; width: 8px; height: 8px; border-radius: 50%; background: #afb4b0; transition: background .2s ease, transform .2s ease; }
-.hero-carousel-controls button[aria-pressed="true"] span { background: var(--spark); transform: scale(1.28); }
+.hero-carousel-controls { display: flex; justify-content: center; gap: 0; padding-top: 4px; }
+.hero-carousel-controls button { display: grid; place-items: center; width: 24px; height: 26px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.hero-carousel-controls span { display: block; width: 6px; height: 6px; border-radius: 50%; background: #afb4b0; transition: background .2s ease, transform .2s ease; }
+.hero-carousel-controls button[aria-pressed="true"] span { background: var(--spark); transform: scale(1.16); }
 .hero-cat { position: absolute; z-index: 2; width: 100px; height: auto; right: -10px; bottom: -6px; pointer-events: none; }
 
 .products { padding-bottom: 112px; }
@@ -74,10 +71,10 @@ img { display: block; max-width: 100%; }
 .phone-video { width: 185px; transform: rotate(-4deg) translateY(-4px); }
 .phone-review { width: 168px; transform: rotate(4deg) translateY(16px); }
 .product-stage-miaozi { position: relative; display: block; }
-.miaozi-shot { position: absolute; width: min(68%, 340px); overflow: hidden; border-radius: 17px; }
+.miaozi-shot { position: absolute; overflow: hidden; border-radius: 17px; }
 .miaozi-shot img { width: 100%; height: auto; }
-.miaozi-shot-reader { top: 0; left: 0; }
-.miaozi-shot-dictionary { right: 0; bottom: 0; z-index: 1; }
+.miaozi-shot-reader { width: min(95%, 470px); top: 0; left: 0; }
+.miaozi-shot-dictionary { width: min(90%, 440px); right: 0; bottom: 0; z-index: 1; }
 
 .guides { padding-bottom: 120px; }
 .guides h2 { margin: 0; font-size: 31px; line-height: 1.22; font-weight: 700; letter-spacing: -.04em; }
@@ -90,10 +87,11 @@ img { display: block; max-width: 100%; }
 .article-description { max-width: 430px; color: var(--muted); font-size: 14px; line-height: 1.65; }
 
 .site-footer { position: relative; background: #eae7df; }
-.footer-inner { position: relative; display: flex; justify-content: space-between; align-items: center; min-height: 108px; font-size: 14px; }
+.footer-inner { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 30px; min-height: 150px; padding-block: 30px; font-size: 14px; }
 .footer-cat { position: absolute; width: 160px; height: auto; right: 28px; bottom: calc(100% - 12px); pointer-events: none; }
-.footer-brand { font-weight: 700; letter-spacing: -.04em; }
-.footer-brand span { margin-left: 2px; color: var(--spark); font-size: 12px; letter-spacing: .02em; }
+.footer-brand { flex: none; }
+.footer-links { display: flex; align-items: center; flex-wrap: wrap; gap: 16px clamp(20px, 3vw, 42px); font-weight: 600; }
+.footer-links span { margin-left: 2px; }
 
 .blog-index { min-height: 67vh; padding-block: 90px 125px; }
 .blog-index h1 { margin: 0 0 15px; font-size: clamp(42px, 5vw, 60px); line-height: 1.15; letter-spacing: -.045em; font-weight: 700; }
@@ -129,7 +127,7 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
 .post-content blockquote { margin: 32px 0; padding: 22px 25px 1px; border-radius: 18px; background: #eeebe3; }
 .post-content blockquote p:last-child { margin-bottom: 20px; }
 .post-content img { width: auto; height: auto; max-height: 490px; margin: 33px auto 10px; border-radius: 18px; }
-.post-content img[src*="moyu-video"] { border-radius: 30px; }
+.post-content img[src*="moyu-caption-lookup"] { border-radius: 30px; }
 .post-content p:has(> img) + p > em { display: block; color: var(--muted); font-size: 13px; text-align: center; font-style: normal; }
 .post-content strong { font-weight: 650; }
 .post-content code { font-size: .9em; }
@@ -164,9 +162,6 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
   .hero-scene-moyu { gap: 14px; }
   .hero-phone { padding: 4px; border-radius: 26px; }
   .hero-phone img { border-radius: 22px; }
-  .hero-miaozi-story { top: 10px; }
-  .hero-miaozi-lookup { bottom: 12px; }
-  .hero-scene-miaozi-dictionary > img, .hero-scene-miaozi-library > img { width: min(100%, 355px); }
   .hero-cat { width: 84px; right: -5px; }
   .products { padding-bottom: 86px; }
   .product { grid-template-columns: 1fr; gap: 27px; margin-top: 76px; }
@@ -179,12 +174,16 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
   .phone-video { width: min(37vw, 174px); }
   .phone-review { width: min(35vw, 160px); }
   .product-stage-miaozi { height: clamp(315px, 90vw, 420px); }
+  .miaozi-shot-reader { width: min(94%, 470px); }
+  .miaozi-shot-dictionary { width: min(90%, 440px); }
   .guides { padding-bottom: 91px; }
   .guides h2 { font-size: 27px; }
   .article-list { grid-template-columns: 1fr; gap: 35px; margin-top: 35px; }
   .article-title { font-size: 21px; }
   .article-image { height: 190px; }
   .footer-cat { width: 120px; right: 14px; bottom: calc(100% - 10px); }
+  .footer-inner { display: block; padding-block: 29px 30px; }
+  .footer-links { margin-top: 25px; gap: 12px 22px; }
   .blog-index { padding-block: 65px 90px; }
   .post-shell { padding-top: 32px; padding-bottom: 75px; }
   .post-header { padding-top: 42px; }

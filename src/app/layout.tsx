@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://arel.dev'),
   title: { default: 'arel.dev — Learn Chinese through immersion', template: '%s | arel.dev' },
   description: 'Practical guides and tools for understanding Chinese in videos and stories.',
-  icons: { icon: '/icon.svg' },
+  icons: { icon: '/icon.png' },
   openGraph: { type: 'website', siteName: 'arel.dev', title: 'arel.dev — Learn Chinese through immersion', description: 'Practical guides and tools for understanding Chinese in videos and stories.', url: 'https://arel.dev/' },
   robots: { index: true, follow: true },
 }
