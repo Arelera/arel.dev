@@ -4,11 +4,9 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import remarkGfm from 'remark-gfm'
 import html from 'remark-html'
+import { defaultLocale, locales, type Locale } from '@/lib/site'
 
 const postsDirectory = path.join(process.cwd(), 'content', 'blog')
-export const publishedLocales = ['en'] as const
-export type Locale = (typeof publishedLocales)[number]
-export const defaultLocale: Locale = 'en'
 
 export type PostSummary = {
   slug: string
@@ -56,10 +54,20 @@ function readPost(slug: string, locale: Locale): { summary: PostSummary; markdow
 }
 
 export function getAllPosts(locale: Locale = defaultLocale): PostSummary[] {
-  return fs.readdirSync(path.join(postsDirectory, locale))
+  const directory = path.join(postsDirectory, locale)
+  if (!fs.existsSync(directory)) return []
+  return fs.readdirSync(directory)
     .filter((file) => file.endsWith('.md'))
     .map((file) => readPost(file.slice(0, -3), locale).summary)
     .sort((a, b) => b.date.localeCompare(a.date))
+}
+
+export function getPublishedBlogLocales(): Locale[] {
+  return locales.filter((locale) => getAllPosts(locale).length > 0)
+}
+
+export function getPostLocales(slug: string): Locale[] {
+  return locales.filter((locale) => getAllPosts(locale).some((post) => post.slug === slug))
 }
 
 export async function getPost(slug: string, locale: Locale = defaultLocale): Promise<Post> {

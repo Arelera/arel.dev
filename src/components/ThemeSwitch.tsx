@@ -3,15 +3,28 @@
 import { useEffect, useRef, useSyncExternalStore } from 'react'
 import { ComputerIcon, Moon02Icon, Sun03Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
+import type { Locale } from '@/lib/site'
 
 type Theme = 'system' | 'light' | 'dark'
 const storageKey = 'arel-color-theme'
 const changeEvent = 'arel-theme-change'
 const themes = [
-  { value: 'system', label: 'Use system theme', icon: ComputerIcon },
-  { value: 'light', label: 'Use light theme', icon: Sun03Icon },
-  { value: 'dark', label: 'Use dark theme', icon: Moon02Icon },
+  { value: 'system', icon: ComputerIcon },
+  { value: 'light', icon: Sun03Icon },
+  { value: 'dark', icon: Moon02Icon },
 ] as const
+const labels: Record<Locale, { theme: string; system: string; light: string; dark: string }> = {
+  en: { theme: 'Color theme', system: 'Use system theme', light: 'Use light theme', dark: 'Use dark theme' },
+  es: { theme: 'Tema de color', system: 'Usar tema del sistema', light: 'Usar tema claro', dark: 'Usar tema oscuro' },
+  de: { theme: 'Farbschema', system: 'Systemdesign verwenden', light: 'Helles Design verwenden', dark: 'Dunkles Design verwenden' },
+  fr: { theme: 'Thème', system: 'Utiliser le thème du système', light: 'Utiliser le thème clair', dark: 'Utiliser le thème sombre' },
+  'pt-BR': { theme: 'Tema de cores', system: 'Usar tema do sistema', light: 'Usar tema claro', dark: 'Usar tema escuro' },
+  vi: { theme: 'Giao diện', system: 'Dùng giao diện hệ thống', light: 'Dùng giao diện sáng', dark: 'Dùng giao diện tối' },
+  id: { theme: 'Tema warna', system: 'Gunakan tema sistem', light: 'Gunakan tema terang', dark: 'Gunakan tema gelap' },
+  ja: { theme: 'カラーテーマ', system: 'システム設定を使用', light: 'ライトテーマを使用', dark: 'ダークテーマを使用' },
+  ko: { theme: '색상 테마', system: '시스템 테마 사용', light: '라이트 테마 사용', dark: '다크 테마 사용' },
+  th: { theme: 'ธีมสี', system: 'ใช้ธีมตามระบบ', light: 'ใช้ธีมสว่าง', dark: 'ใช้ธีมมืด' },
+}
 
 function currentTheme(): Theme {
   const theme = document.documentElement.dataset.theme
@@ -51,9 +64,10 @@ function subscribe(callback: () => void) {
   }
 }
 
-export default function ThemeSwitch() {
-  const theme = useSyncExternalStore(subscribe, currentTheme, () => 'system')
+export default function ThemeSwitch({ locale }: { locale: Locale }) {
+  const theme = useSyncExternalStore<Theme>(subscribe, currentTheme, () => 'system')
   const detailsRef = useRef<HTMLDetailsElement>(null)
+  const copy = labels[locale]
 
   useEffect(() => {
     function closeOnOutside(event: PointerEvent) {
@@ -83,12 +97,12 @@ export default function ThemeSwitch() {
 
   return (
     <details className="theme-switch" ref={detailsRef}>
-      <summary aria-label={`Color theme: ${theme}. Choose color theme`} title="Choose color theme">
+      <summary aria-label={`${copy.theme}: ${copy[theme]}`} title={copy.theme}>
         <HugeiconsIcon icon={themes.find((item) => item.value === theme)!.icon} size={21} strokeWidth={1.8} aria-hidden="true" />
       </summary>
-      <div className="theme-switch-menu" role="group" aria-label="Color theme">
-        {themes.map(({ value, label, icon }) => (
-          <button key={value} type="button" aria-label={label} title={label} aria-pressed={theme === value} onClick={() => choose(value)}>
+      <div className="theme-switch-menu" role="group" aria-label={copy.theme}>
+        {themes.map(({ value, icon }) => (
+          <button key={value} type="button" aria-label={copy[value]} title={copy[value]} aria-pressed={theme === value} onClick={() => choose(value)}>
             <HugeiconsIcon icon={icon} size={20} strokeWidth={1.8} aria-hidden="true" />
           </button>
         ))}

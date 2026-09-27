@@ -1,6 +1,6 @@
 # arel.dev
 
-A static Chinese learning guide site built with Next.js and hosted on GitHub Pages. The home page introduces Moyu Chinese and Miaozi with local screenshots and product icons. The arel mascot and article illustrations are stored in `public/images/` too.
+A static Chinese learning guide site built with Next.js and hosted on GitHub Pages. Its localized home pages introduce Moyu Chinese and Miaozi. Screenshots, product icons, the arel mascot, and guide illustrations are stored in `public/images/`.
 
 ## Develop
 
@@ -13,7 +13,7 @@ pnpm dev
 
 ## Publish a guide
 
-Add a Markdown file to `content/blog/en/`. The filename becomes the URL slug. Every article needs this frontmatter:
+Add a Markdown file to `content/blog/en/`. The filename becomes the URL slug under `/en/blog/`. Every article needs this frontmatter:
 
 ```md
 ---
@@ -37,9 +37,13 @@ For Chinese text that readers can switch between scripts, write both forms as `[
 
 Each guide should answer one real reader question early, then show how to apply the answer with concrete examples. Check Chinese, pinyin, translations, product claims, and any cited sources before publishing. Keep the writing plain and original. Link to Moyu or Miaozi only where the product fits the reader's next step.
 
-## Languages
+## Languages and search URLs
 
-English remains at the current root URLs. The blog content is grouped by locale so future complete translations can live in `content/blog/<locale>/` and use `/<locale>/` page routes. Add a locale to `publishedLocales` and create its static routes only when the homepage, guide index, navigation, and at least one full guide are translated and reviewed. Each published page needs its own language in `<html lang>`, a self canonical, and reciprocal `hreflang` links to existing translations of that page. Do not list draft or untranslated URLs in the sitemap.
+Home pages use locale paths: `/en/`, `/es/`, `/de/`, `/fr/`, `/pt-BR/`, `/vi/`, `/id/`, `/ja/`, `/ko/`, and `/th/`. The locale list lives in `src/lib/site.ts` and matches Moyu Chinese. Home and navigation copy lives in `src/lib/copy.ts` and should be reviewed by fluent speakers before major editorial changes.
+
+Guides are English only for now, at `/en/blog/` and `/en/blog/<slug>/`. Other home pages link to those English guides. To publish a translated guide later, add a complete Markdown file with the same slug under `content/blog/<locale>/`. A locale's guide index is generated when it has at least one guide. Translators should review the guide title, description, image alt text, Chinese examples, and any links. `src/lib/copy.ts` already contains guide-index interface copy for the supported locales.
+
+Canonical URLs, language alternates, and the sitemap are generated from the pages that exist. Home pages include reciprocal `hreflang` links for all ten locales; guide pages get them only after translations of the same page are published. Untranslated guide paths stay absent from the export and sitemap. `/`, `/blog/`, and the two old guide URLs use immediate HTML redirects to their `/en/` versions. GitHub Pages serves static files, so these redirects cannot use HTTP 301 status codes.
 
 ## Deploy
 

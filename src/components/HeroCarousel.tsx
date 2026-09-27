@@ -4,11 +4,11 @@ import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 const slides = [
-  { name: 'Moyu video and review', className: 'hero-scene-moyu' },
-  { name: 'Miaozi cat story word lookup', className: 'hero-scene-miaozi' },
-  { name: 'Moyu video and saved words', className: 'hero-scene-moyu' },
-  { name: 'Miaozi bubble tea story word lookup', className: 'hero-scene-miaozi' },
-  { name: 'Moyu dictionary and word lookup', className: 'hero-scene-moyu' },
+  { product: 'Moyu Chinese', className: 'hero-scene-moyu' },
+  { product: 'Miaozi', className: 'hero-scene-miaozi' },
+  { product: 'Moyu Chinese', className: 'hero-scene-moyu' },
+  { product: 'Miaozi', className: 'hero-scene-miaozi' },
+  { product: 'Moyu Chinese', className: 'hero-scene-moyu' },
 ] as const
 
 export default function HeroCarousel() {
@@ -46,8 +46,7 @@ export default function HeroCarousel() {
       ref={rootRef}
       className="hero-carousel"
       role="region"
-      aria-roledescription="carousel"
-      aria-label="Screens from Moyu Chinese and Miaozi"
+      aria-label="Moyu Chinese and Miaozi"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocusCapture={() => setIsPaused(true)}
@@ -56,7 +55,7 @@ export default function HeroCarousel() {
       }}
     >
       <div className="hero-carousel-stage">
-        <div className={`hero-scene ${slides[0].className}`} role="group" aria-roledescription="slide" aria-label={slides[0].name} aria-hidden={active !== 0} data-active={active === 0}>
+        <div className={`hero-scene ${slides[0].className}`} role="group" aria-label="Moyu Chinese 1/5" aria-hidden={active !== 0} data-active={active === 0}>
           <div className="hero-phone hero-phone-video">
             <Image src="/images/moyu-shinchan.webp" width={750} height={1631} alt="" sizes="(max-width: 700px) 39vw, 190px" priority />
           </div>
@@ -64,12 +63,12 @@ export default function HeroCarousel() {
             <Image src="/images/moyu-review-card.webp" width={750} height={1631} alt="" sizes="(max-width: 700px) 35vw, 175px" />
           </div>
         </div>
-        <div className={`hero-scene ${slides[1].className}`} role="group" aria-roledescription="slide" aria-label={slides[1].name} aria-hidden={active !== 1} data-active={active === 1}>
+        <div className={`hero-scene ${slides[1].className}`} role="group" aria-label="Miaozi 2/5" aria-hidden={active !== 1} data-active={active === 1}>
           <div className="hero-miaozi-shot">
             <Image src="/images/miaozi-story-cat.webp" width={900} height={625} alt="" sizes="(max-width: 700px) 90vw, 470px" loading="eager" />
           </div>
         </div>
-        <div className={`hero-scene ${slides[2].className}`} role="group" aria-roledescription="slide" aria-label={slides[2].name} aria-hidden={active !== 2} data-active={active === 2}>
+        <div className={`hero-scene ${slides[2].className}`} role="group" aria-label="Moyu Chinese 3/5" aria-hidden={active !== 2} data-active={active === 2}>
           <div className="hero-phone hero-phone-video">
             <Image src="/images/moyu-south-park.webp" width={750} height={1631} alt="" sizes="(max-width: 700px) 39vw, 190px" loading="eager" />
           </div>
@@ -77,12 +76,12 @@ export default function HeroCarousel() {
             <Image src="/images/moyu-library.webp" width={750} height={1631} alt="" sizes="(max-width: 700px) 35vw, 175px" loading="eager" />
           </div>
         </div>
-        <div className={`hero-scene ${slides[3].className}`} role="group" aria-roledescription="slide" aria-label={slides[3].name} aria-hidden={active !== 3} data-active={active === 3}>
+        <div className={`hero-scene ${slides[3].className}`} role="group" aria-label="Miaozi 4/5" aria-hidden={active !== 3} data-active={active === 3}>
           <div className="hero-miaozi-shot">
             <Image src="/images/miaozi-story-bubble-tea.webp" width={900} height={625} alt="" sizes="(max-width: 700px) 90vw, 470px" loading="eager" />
           </div>
         </div>
-        <div className={`hero-scene ${slides[4].className}`} role="group" aria-roledescription="slide" aria-label={slides[4].name} aria-hidden={active !== 4} data-active={active === 4}>
+        <div className={`hero-scene ${slides[4].className}`} role="group" aria-label="Moyu Chinese 5/5" aria-hidden={active !== 4} data-active={active === 4}>
           <div className="hero-phone hero-phone-video">
             <Image src="/images/moyu-dictionary-search.webp" width={750} height={1631} alt="" sizes="(max-width: 700px) 39vw, 190px" loading="eager" />
           </div>
@@ -91,12 +90,12 @@ export default function HeroCarousel() {
           </div>
         </div>
       </div>
-      <div className="hero-carousel-controls" aria-label="Choose a product screenshot">
+      <div className="hero-carousel-controls" aria-label="Moyu Chinese and Miaozi">
         {slides.map((slide, index) => (
           <button
-            key={slide.name}
+            key={index}
             type="button"
-            aria-label={`Show ${slide.name}`}
+            aria-label={`${slide.product} ${index + 1}/${slides.length}`}
             aria-pressed={active === index}
             onClick={() => setActive(index)}
           >

@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   agentRules: false,
   images: { unoptimized: true },
+  experimental: { globalNotFound: true },
 }
 
 export default nextConfig
