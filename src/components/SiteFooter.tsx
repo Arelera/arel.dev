@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function SiteFooter() {
   return <footer className="site-footer"><div className="shell footer-inner">
     <Image className="footer-cat" src="/images/mascot/cat-lounging-v1.webp" width={520} height={260} alt="" aria-hidden="true" />
-    <Link className="brand footer-brand" href="/" aria-label="arel home, Chinese immersion guides"><Image className="brand-mark" src="/images/mascot/arel-cat-mark-v1.webp" width={256} height={256} alt="" /><span className="brand-type"><span className="brand-name">arel</span><span className="brand-chinese" lang="zh">中文</span></span></Link>
+    <Link className="brand footer-brand" href="/" aria-label="arel 中文 home"><Image className="brand-mark" src="/images/mascot/arel-cat-mark-v1.webp" width={256} height={256} alt="" /><Image className="brand-wordmark" src="/images/brands/arel-wordmark-v1.png" width={400} height={300} alt="arel 中文" /></Link>
     <nav className="footer-links" aria-label="Footer navigation">
       <Link href="/blog/">Guides</Link>
       <a href="https://moyuchinese.com/en">Moyu Chinese <span aria-hidden="true">↗</span></a>

@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { DynaPuff, Quicksand } from 'next/font/google'
+import { Quicksand } from 'next/font/google'
 import Script from 'next/script'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
 import './globals.css'
 
 const quicksand = Quicksand({ subsets: ['latin'], variable: '--font-quicksand', display: 'swap' })
-const dynapuff = DynaPuff({ subsets: ['latin'], variable: '--font-dynapuff', display: 'swap' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://arel.dev'),
@@ -23,7 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <Script id="restore-hanzi-script" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: "try{var script=localStorage.getItem('arel-hanzi-script');if(script==='traditional')document.documentElement.dataset.hanziScript='traditional'}catch(_){}" }} />
       </head>
-      <body className={`${quicksand.variable} ${dynapuff.variable}`}>
+      <body className={quicksand.variable}>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <SiteHeader />
         <div id="main-content">{children}</div>

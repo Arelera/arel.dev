@@ -21,11 +21,9 @@ img { display: block; max-width: 100%; }
 .skip-link:focus { top: 12px; }
 
 .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; }
-.brand { display: inline-flex; align-items: center; gap: 5px; }
-.brand-mark { width: 49px; height: 49px; object-fit: contain; }
-.brand-type { display: flex; flex-direction: column; align-items: center; gap: 1px; }
-.brand-name { font-family: var(--font-dynapuff), sans-serif; font-size: 31px; font-weight: 700; letter-spacing: -.075em; line-height: .92; }
-.brand-chinese { color: var(--spark); font-size: 14px; font-weight: 700; letter-spacing: .17em; line-height: 1.1; padding-left: .17em; }
+.brand { display: inline-flex; align-items: center; gap: 2px; }
+.brand-mark { width: 56px; height: 56px; object-fit: contain; }
+.brand-wordmark { width: 75px; height: 56px; object-fit: contain; }
 .site-nav, .header-inner nav { font-size: 14px; font-weight: 600; }
 .header-inner nav a:hover, .footer-inner a:hover { color: var(--blue); }
 
