@@ -16,6 +16,8 @@ export type PostSummary = {
   description: string
   date: string
   updated?: string
+  image?: string
+  imageAlt?: string
 }
 
 export type Post = PostSummary & { contentHtml: string }
@@ -32,6 +34,12 @@ function readPost(slug: string, locale: Locale): { summary: PostSummary; markdow
   if (data.updated !== undefined && (typeof data.updated !== 'string' || Number.isNaN(Date.parse(data.updated)))) {
     throw new Error(`Invalid updated in ${slug}.md`)
   }
+  if (data.image !== undefined && (typeof data.image !== 'string' || !/^\/images\/guides\/[a-z0-9-]+\.webp$/.test(data.image))) {
+    throw new Error(`Invalid image in ${slug}.md`)
+  }
+  if (data.image !== undefined && (typeof data.imageAlt !== 'string' || !data.imageAlt.trim())) {
+    throw new Error(`Missing imageAlt in ${slug}.md`)
+  }
 
   return {
     summary: {
@@ -40,6 +48,8 @@ function readPost(slug: string, locale: Locale): { summary: PostSummary; markdow
       description: data.description,
       date: data.date,
       updated: data.updated,
+      image: data.image,
+      imageAlt: data.imageAlt,
     },
     markdown: content,
   }
@@ -61,7 +71,7 @@ export async function getPost(slug: string, locale: Locale = defaultLocale): Pro
   })
   const imageDimensions: Record<string, [number, number]> = {
     '/images/moyu-video.webp': [750, 1631],
-    '/images/miaozi-dictionary.webp': [620, 385],
+    '/images/miaozi-reader-lookup.webp': [900, 385],
   }
   const contentHtml = withHanzi.replace(/<img src="([^"]+)" alt="([^"]*)">/g, (tag, src: string) => {
     const dimensions = imageDimensions[src]

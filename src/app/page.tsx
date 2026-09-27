@@ -34,7 +34,7 @@ export default function Home() {
         <div className="product-list">
           <article className="product">
             <div className="product-copy">
-              <h2>Moyu Chinese</h2>
+              <h2><Image className="product-icon" src="/images/brands/moyu-icon.webp" width={96} height={96} alt="" />Moyu Chinese</h2>
               <p>Moyu makes short Chinese videos easier to learn from, with captions you can revisit and words you can save without leaving the scene.</p>
               <a className="inline-link" href="https://moyuchinese.com/en">Explore Moyu <span aria-hidden="true">↗</span></a>
             </div>
@@ -49,7 +49,7 @@ export default function Home() {
           </article>
           <article className="product">
             <div className="product-copy">
-              <h2>Miaozi</h2>
+              <h2><Image className="product-icon" src="/images/brands/miaozi-icon.webp" width={96} height={96} alt="" />Miaozi</h2>
               <p>Miaozi pairs original Chinese stories with a dictionary, so you can check a word and keep reading without losing your place.</p>
               <a className="inline-link" href="https://miaozi.co/en">Explore Miaozi <span aria-hidden="true">↗</span></a>
             </div>
@@ -58,7 +58,7 @@ export default function Home() {
                 <Image src="/images/miaozi-reader.webp" width={704} height={540} alt="Miaozi reader showing a Chinese story with its illustration and title" sizes="(max-width: 700px) 64vw, 300px" />
               </div>
               <div className="miaozi-shot miaozi-shot-dictionary">
-                <Image src="/images/miaozi-dictionary.webp" width={620} height={385} alt="Miaozi dictionary entry for 顺便 with definitions and an example sentence" sizes="(max-width: 700px) 64vw, 300px" />
+                <Image src="/images/miaozi-dictionary-detail.webp" width={790} height={500} alt="Miaozi dictionary entry for 顺便 with definitions and an example sentence" sizes="(max-width: 700px) 64vw, 300px" />
               </div>
             </div>
           </article>

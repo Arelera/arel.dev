@@ -2,6 +2,8 @@
 title: "How to Pick Chinese Videos for Listening Practice"
 description: "Use a quick comprehension, audio, and interest check to decide what to study and what to simply enjoy."
 date: "2026-09-24"
+image: "/images/guides/chinese-video-listening-v1.webp"
+imageAlt: "The arel cat listening to a video with a caption line"
 ---
 
 Pick a short video you can **roughly follow without pausing**, with speech you can hear clearly and Chinese captions you can check afterward. You should also want to watch it again. If one of those pieces is missing, the clip may still be fun, but it is a weaker choice for focused listening practice.

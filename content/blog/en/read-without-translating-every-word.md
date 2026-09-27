@@ -2,6 +2,8 @@
 title: "When to Look Up a Word While Reading Chinese"
 description: "Read one short passage and see which unknown words to infer, skip, or check in a dictionary."
 date: "2026-09-24"
+image: "/images/guides/reading-word-lookup-v1.webp"
+imageAlt: "The arel cat reading an open book with one line marked"
 ---
 
 Look up a word when it blocks the event or the reason for it. Infer a word when the surrounding sentence gives you a good guess. Skip a detail when the story still makes sense without it. This keeps a dictionary useful without letting every unfamiliar character interrupt the paragraph.
@@ -32,9 +34,9 @@ If you want to check the whole passage, here is the pinyin and translation:
 
 On Saturday afternoon, Xiaoyu took a book to a café. At the entrance, she discovered that it was closed that day. Instead of going home, she went to a nearby park and read on a bench.
 
-![A Miaozi dictionary entry showing a word, its meanings, and an example sentence](/images/miaozi-dictionary.webp)
+![A Miaozi story with a word lookup open beside the Chinese text](/images/miaozi-reader-lookup.webp)
 
-*A Miaozi entry for [[zh:顺便|順便]], with definitions and an example sentence.*
+*Miaozi lets you check a word beside the story and continue reading.*
 
 ## Close the dictionary and retell it
 

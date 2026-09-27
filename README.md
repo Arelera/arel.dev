@@ -1,6 +1,6 @@
 # arel.dev
 
-A static Chinese learning guide site built with Next.js and hosted on GitHub Pages. The home page introduces Moyu Chinese and Miaozi with screenshots stored in `public/images/`.
+A static Chinese learning guide site built with Next.js and hosted on GitHub Pages. The home page introduces Moyu Chinese and Miaozi with local screenshots and product icons. The arel mascot and article illustrations are stored in `public/images/` too.
 
 ## Develop
 
@@ -20,12 +20,16 @@ Add a Markdown file to `content/blog/en/`. The filename becomes the URL slug. Ev
 title: "A clear article title"
 description: "A short summary for the article list and search results."
 date: "2026-09-24"
+image: "/images/guides/example-guide.webp"
+imageAlt: "A description of the guide illustration"
 ---
 
 Article text here.
 ```
 
 Use an ISO date in quotes. The home page, guide index, article routes, and sitemap update automatically at build time. Removing a Markdown file removes its route from the static export and sitemap.
+
+The `image` and `imageAlt` fields are optional. When supplied, use a local 3:2 WebP file in `public/images/guides/`; it appears in the guide list, article header, and social preview metadata.
 
 If a guide changes substantially, add an `updated` date in the same ISO format. The sitemap then uses that date as its last modification date.
 

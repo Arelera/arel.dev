@@ -21,7 +21,8 @@ img { display: block; max-width: 100%; }
 .skip-link:focus { top: 12px; }
 
 .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; }
-.brand { display: inline-flex; align-items: baseline; gap: 9px; font-size: 25px; font-weight: 700; letter-spacing: -.055em; }
+.brand { display: inline-flex; align-items: center; gap: 6px; font-size: 25px; font-weight: 700; letter-spacing: -.055em; }
+.brand-mark { width: 39px; height: 39px; margin-right: 1px; object-fit: contain; }
 .brand-chinese { color: var(--spark); font-size: 15px; font-weight: 700; letter-spacing: .04em; }
 .site-nav, .header-inner nav { font-size: 14px; font-weight: 600; }
 .header-inner nav a:hover, .footer-inner a:hover { color: var(--blue); }
@@ -44,16 +45,19 @@ img { display: block; max-width: 100%; }
 .hero-phone img { width: 100%; height: auto; border-radius: 26px; }
 .hero-phone-video { width: min(42%, 186px); transform: rotate(-4deg) translateY(-7px); }
 .hero-phone-review { width: min(39%, 169px); transform: rotate(4deg) translateY(15px); }
-.hero-scene-miaozi { width: 100%; }
-.hero-miaozi-shot { position: absolute; }
+.hero-scene-moyu-listening { display: grid; place-items: center; }
+.hero-phone-listening { width: min(45%, 186px); transform: rotate(3deg); }
+.hero-miaozi-shot { position: absolute; overflow: hidden; border-radius: 17px; }
 .hero-miaozi-shot img { width: 100%; height: auto; }
-.hero-miaozi-reader { width: min(78%, 365px); top: 17px; left: 3%; }
-.hero-miaozi-dictionary { width: min(68%, 308px); right: 1%; bottom: 18px; }
+.hero-miaozi-story { width: min(69%, 315px); top: 13px; left: 0; }
+.hero-miaozi-lookup { width: min(91%, 414px); right: 0; bottom: 16px; }
+.hero-scene-miaozi-dictionary, .hero-scene-miaozi-library { display: grid; place-items: center; }
+.hero-scene-miaozi-dictionary > img, .hero-scene-miaozi-library > img { width: min(100%, 430px); height: auto; border-radius: 17px; }
 .hero-carousel-controls { display: flex; justify-content: center; gap: 3px; padding-top: 7px; }
 .hero-carousel-controls button { display: grid; place-items: center; width: 34px; height: 28px; padding: 0; border: 0; background: transparent; cursor: pointer; }
 .hero-carousel-controls span { display: block; width: 8px; height: 8px; border-radius: 50%; background: #afb4b0; transition: background .2s ease, transform .2s ease; }
 .hero-carousel-controls button[aria-pressed="true"] span { background: var(--spark); transform: scale(1.28); }
-.hero-cat { position: absolute; z-index: 2; width: 92px; height: auto; right: 0; bottom: 0; pointer-events: none; }
+.hero-cat { position: absolute; z-index: 2; width: 100px; height: auto; right: -10px; bottom: -6px; pointer-events: none; }
 
 .products { padding-bottom: 112px; }
 .product { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(50px, 8vw, 122px); align-items: center; margin-top: 78px; }
@@ -61,7 +65,8 @@ img { display: block; max-width: 100%; }
 .product:first-child .product-stage { grid-column: 1; grid-row: 1; }
 .product:first-child .product-copy { grid-column: 2; grid-row: 1; }
 .product-copy { max-width: 405px; }
-.product h2 { margin: 0 0 18px; font-size: clamp(35px, 3.5vw, 44px); line-height: 1.15; font-weight: 700; letter-spacing: -.04em; }
+.product h2 { display: flex; align-items: center; gap: 13px; margin: 0 0 18px; font-size: clamp(35px, 3.5vw, 44px); line-height: 1.15; font-weight: 700; letter-spacing: -.04em; }
+.product-icon { width: 42px; height: 42px; flex: none; border-radius: 11px; }
 .product p { margin: 0 0 25px; color: var(--muted); font-size: 16px; line-height: 1.72; }
 .product-stage { height: 420px; min-width: 0; display: flex; align-items: center; justify-content: center; gap: 19px; }
 .phone { flex: none; padding: 5px; overflow: hidden; background: #181a1c; border-radius: 31px; }
@@ -69,7 +74,7 @@ img { display: block; max-width: 100%; }
 .phone-video { width: 185px; transform: rotate(-4deg) translateY(-4px); }
 .phone-review { width: 168px; transform: rotate(4deg) translateY(16px); }
 .product-stage-miaozi { position: relative; display: block; }
-.miaozi-shot { position: absolute; width: min(68%, 340px); }
+.miaozi-shot { position: absolute; width: min(68%, 340px); overflow: hidden; border-radius: 17px; }
 .miaozi-shot img { width: 100%; height: auto; }
 .miaozi-shot-reader { top: 0; left: 0; }
 .miaozi-shot-dictionary { right: 0; bottom: 0; z-index: 1; }
@@ -77,15 +82,16 @@ img { display: block; max-width: 100%; }
 .guides { padding-bottom: 120px; }
 .guides h2 { margin: 0; font-size: 31px; line-height: 1.22; font-weight: 700; letter-spacing: -.04em; }
 .article-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 54px; margin-top: 47px; }
-.article-row a { position: relative; display: flex; flex-direction: column; gap: 12px; padding-right: 22px; }
+.article-row a { display: flex; flex-direction: column; gap: 12px; }
+.article-image { width: 100%; height: 220px; margin-bottom: 9px; object-fit: cover; object-position: center; }
 .article-row a:hover .article-title, .more-guide-row a:hover { color: var(--blue); }
 .article-meta { color: var(--muted); font-size: 12px; font-weight: 600; }
 .article-title { max-width: 420px; font-size: 23px; line-height: 1.3; font-weight: 700; letter-spacing: -.025em; }
 .article-description { max-width: 430px; color: var(--muted); font-size: 14px; line-height: 1.65; }
-.article-arrow { position: absolute; top: 27px; right: 0; font-size: 21px; }
 
-.site-footer { background: #eae7df; }
-.footer-inner { display: flex; justify-content: space-between; align-items: center; min-height: 108px; font-size: 14px; }
+.site-footer { position: relative; background: #eae7df; }
+.footer-inner { position: relative; display: flex; justify-content: space-between; align-items: center; min-height: 108px; font-size: 14px; }
+.footer-cat { position: absolute; width: 160px; height: auto; right: 28px; bottom: calc(100% - 12px); pointer-events: none; }
 .footer-brand { font-weight: 700; letter-spacing: -.04em; }
 .footer-brand span { margin-left: 2px; color: var(--spark); font-size: 12px; letter-spacing: .02em; }
 
@@ -110,6 +116,7 @@ html[data-hanzi-script="traditional"] .hanzi-simplified { display: none; }
 html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
 .post-header h1 { margin: 18px 0 17px; font-size: clamp(38px, 5vw, 53px); line-height: 1.16; letter-spacing: -.04em; font-weight: 700; }
 .post-header > p { margin: 0; color: var(--muted); font-size: 17px; line-height: 1.65; }
+.post-cover { display: block; width: 100%; height: 350px; margin: 26px 0 0; object-fit: cover; object-position: center; }
 .post-content { margin-top: 43px; font-size: 16px; line-height: 1.85; }
 .post-content h2 { margin: 49px 0 14px; font-size: 25px; line-height: 1.35; letter-spacing: -.035em; font-weight: 600; }
 .post-content h3 { margin: 33px 0 12px; font-size: 20px; }
@@ -157,14 +164,16 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
   .hero-scene-moyu { gap: 14px; }
   .hero-phone { padding: 4px; border-radius: 26px; }
   .hero-phone img { border-radius: 22px; }
-  .hero-miaozi-reader { top: 18px; }
-  .hero-miaozi-dictionary { bottom: 15px; }
-  .hero-cat { width: 82px; right: 0; }
+  .hero-miaozi-story { top: 10px; }
+  .hero-miaozi-lookup { bottom: 12px; }
+  .hero-scene-miaozi-dictionary > img, .hero-scene-miaozi-library > img { width: min(100%, 355px); }
+  .hero-cat { width: 84px; right: -5px; }
   .products { padding-bottom: 86px; }
   .product { grid-template-columns: 1fr; gap: 27px; margin-top: 76px; }
   .product:first-child .product-stage, .product:first-child .product-copy { grid-column: auto; grid-row: auto; }
   .product-copy { max-width: none; }
   .product h2 { font-size: 35px; }
+  .product-icon { width: 38px; height: 38px; }
   .product p { font-size: 15px; }
   .product-stage { order: 1; height: clamp(315px, 75vw, 390px); }
   .phone-video { width: min(37vw, 174px); }
@@ -174,11 +183,14 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
   .guides h2 { font-size: 27px; }
   .article-list { grid-template-columns: 1fr; gap: 35px; margin-top: 35px; }
   .article-title { font-size: 21px; }
+  .article-image { height: 190px; }
+  .footer-cat { width: 120px; right: 14px; bottom: calc(100% - 10px); }
   .blog-index { padding-block: 65px 90px; }
   .post-shell { padding-top: 32px; padding-bottom: 75px; }
   .post-header { padding-top: 42px; }
   .post-header h1 { font-size: clamp(36px, 9vw, 46px); }
   .post-header > p { font-size: 16px; }
+  .post-cover { height: 260px; }
   .post-content { font-size: 16px; }
   .post-content h2 { font-size: 22px; }
   .more-guides { padding-bottom: 85px; }

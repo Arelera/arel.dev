@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { formatPostDate, getAllPosts, getPost } from '@/lib/posts'
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: summary.title,
     description: summary.description,
     alternates: { canonical: `/blog/${slug}/` },
-    openGraph: { type: 'article', siteName: 'arel.dev', title: summary.title, description: summary.description, url: `https://arel.dev/blog/${slug}/`, publishedTime: summary.date, modifiedTime: summary.updated ?? summary.date },
+    openGraph: { type: 'article', siteName: 'arel.dev', title: summary.title, description: summary.description, url: `https://arel.dev/blog/${slug}/`, publishedTime: summary.date, modifiedTime: summary.updated ?? summary.date, images: summary.image ? [{ url: summary.image, width: 960, height: 640, alt: summary.imageAlt }] : undefined },
   }
 }
 
@@ -53,6 +54,7 @@ export default async function PostPage({ params }: PageProps) {
           <h1>{post.title}</h1>
           <p>{post.description}</p>
         </header>
+        {post.image && <Image className="post-cover" src={post.image} width={960} height={640} alt={post.imageAlt ?? ''} sizes="(max-width: 700px) calc(100vw - 36px), 720px" loading="eager" />}
         <article className="post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
       </div>
       {more.length > 0 && <section className="more-guides shell"><h2>More guides</h2><div className="article-list">{more.map((item) => <div className="more-guide-row" key={item.slug}><Link href={`/blog/${item.slug}/`}>{item.title} <span aria-hidden="true">→</span></Link></div>)}</div></section>}
