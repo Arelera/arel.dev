@@ -43,7 +43,7 @@ Home pages use locale paths: `/en/`, `/es/`, `/de/`, `/fr/`, `/pt-BR/`, `/vi/`, 
 
 Guides are English only for now, at `/en/blog/` and `/en/blog/<slug>/`. Other home pages link to those English guides. To publish a translated guide later, add a complete Markdown file with the same slug under `content/blog/<locale>/`. A locale's guide index is generated when it has at least one guide. Translators should review the guide title, description, image alt text, Chinese examples, and any links. `src/lib/copy.ts` already contains guide-index interface copy for the supported locales.
 
-Canonical URLs, language alternates, and the sitemap are generated from the pages that exist. Home pages include reciprocal `hreflang` links for all ten locales; guide pages get them only after translations of the same page are published. Untranslated guide paths stay absent from the export and sitemap. `/`, `/blog/`, and the two old guide URLs use immediate HTML redirects to their `/en/` versions. GitHub Pages serves static files, so these redirects cannot use HTTP 301 status codes.
+Canonical URLs, language alternates, and the sitemap are generated from the pages that exist. Home pages include reciprocal `hreflang` links for all ten locales; guide pages get them only after translations of the same page are published. Untranslated guide paths stay absent from the export and sitemap. `/`, `/blog/`, and the two old guide URLs use immediate HTML redirects to their `/en/` versions. The build replaces their Next.js pages with tiny, text-free redirect documents whose refresh tags appear first in the HTML head. GitHub Pages serves static files, so these redirects cannot use HTTP 301 status codes.
 
 ## Deploy
 

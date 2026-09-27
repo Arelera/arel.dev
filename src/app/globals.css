@@ -195,9 +195,6 @@ html[data-hanzi-script="traditional"] .hanzi-traditional { display: inline; }
 .not-found-page { display: flex; flex-direction: column; align-items: start; justify-content: center; min-height: 65vh; padding-block: 90px; }
 .not-found-page h1 { margin: 20px 0 5px; font-size: 54px; letter-spacing: -.05em; }
 .not-found-page p { margin: 0 0 35px; color: var(--muted); font-size: 17px; }
-.legacy-redirect { min-height: 60vh; padding-block: 80px; }
-.legacy-redirect a { color: var(--blue); text-decoration: underline; }
-
 @media (min-width: 701px) and (max-width: 870px) {
   .hero { grid-template-columns: 1fr; gap: 22px; padding-block: 70px 50px; }
   .hero h1 { max-width: 760px; }
