@@ -13,6 +13,11 @@ pnpm dev
 
 ## Publish a guide
 
+Choose a topic from [the content roadmap](./CONTENT_ROADMAP.md) and follow
+[the Arel authoring guide](./BLOG_AUTHORING_GUIDE.md) for research, writing,
+Chinese checks, and review. The roadmap tracks published guides, the next
+brief, and ideas that still need research; it does not impose a posting quota.
+
 Add a Markdown file to `content/blog/en/`. The filename becomes the URL slug under `/en/blog/`. Every article needs this frontmatter:
 
 ```md
