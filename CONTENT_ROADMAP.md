@@ -14,32 +14,21 @@ promising but needs a stronger angle or evidence; Parked = avoid for now.
 | --- | --- | --- |
 | [How to Pick Chinese Videos for Listening Practice](https://arel.dev/en/blog/choose-a-chinese-video/) | Is this clip useful for focused listening? | Moyu |
 | [When to Look Up a Word While Reading Chinese](https://arel.dev/en/blog/read-without-translating-every-word/) | Which unknown words actually block this passage? | Miaozi |
+| [Is This Chinese Story Too Hard?](https://arel.dev/en/blog/chinese-story-too-hard/) — October 7, 2026 | Does this story suit everyday reading or closer study? Two original versions of one scene show the difference. | Miaozi |
+
+The October 7 guide uses two original breakfast-shop passages and a
+fresh-paragraph check. Its examples illustrate reading difficulty without
+claiming an HSK level. Both scripts, pinyin, and translations were checked
+in editorial review; no independent native-speaker review is claimed. The
+reading-versus-study distinction is supported by the
+[Extensive Reading Foundation's guide](https://erfoundation.org/guide/ERF_Guide.pdf).
 
 ## Queued
 
-### Is This Chinese Story Too Hard for Me?
-
-- **Question people search:** how to tell whether a Chinese story or graded
-  reader is at the right level.
-- **Answer to develop:** try a short stretch, then check whether you can follow
-  what happened without rebuilding every sentence through translation. The
-  story's level label is a starting point, not the whole decision.
-- **What makes it ours:** use two original, short Chinese passages at different
-  levels and show what a reader can understand before and after selective help.
-  Show what changes when the text is too hard, rather than declaring a magic
-  percentage of known words. This is a proposed angle, not a researched rule.
-- **Keep it distinct:** our existing lookup guide starts *after* a reader has
-  chosen a passage. Miaozi already has a [where-to-read guide](https://miaozi.co/en/blog/where-to-read-chinese-stories-online),
-  and other sites cover graded-reader selection. This article must demonstrate
-  the decision with original examples or it should stay unpublished.
-- **Natural next step:** link the existing lookup guide and, if it helps the
-  reader act on the advice, [Miaozi's story library](https://miaozi.co/en/read).
-- **Before drafting:** validate the query and search results again; pick a
-  beginner and a more demanding passage; verify both scripts, pinyin,
-  translations, and difficulty with a knowledgeable reviewer.
-
-The title is a working title. We choose the final title after the article has
-a clear answer; no formulaic “ultimate guide” or keyword-stuffed headline.
+No further article is queued yet. The next candidate to research is
+**Which Chinese lines from a video are worth saving?**, which connects more
+directly to Moyu. Check its distinct contribution before committing to a draft.
+Choose the final title after the article has a clear answer.
 
 ## Research
 
@@ -61,8 +50,9 @@ a clear answer; no formulaic “ultimate guide” or keyword-stuffed headline.
 
 ## How to choose the next article
 
-1. Check Search Console for indexing problems and emerging queries. Four quiet
-   days are not evidence that the content failed; [Google says crawling can
+1. When Search Console data is available, check for indexing problems and
+   emerging queries. An initially quiet site is not evidence that the content
+   failed; [Google says crawling can
    take days to weeks](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).
 2. Check the full Arel, Moyu, and Miaozi article lists, then search the main
    query and close variants. Record what current results answer and what they
