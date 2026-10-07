@@ -5,6 +5,7 @@ import { remark } from 'remark'
 import remarkGfm from 'remark-gfm'
 import html from 'remark-html'
 import { defaultLocale, locales, type Locale } from '@/lib/site'
+import { articleUiCopy } from '@/lib/copy'
 
 const postsDirectory = path.join(process.cwd(), 'content', 'blog')
 
@@ -16,9 +17,10 @@ export type PostSummary = {
   updated?: string
   image?: string
   imageAlt?: string
+  cta?: { product: 'moyu' | 'miaozi'; title: string; description: string; label: string }
 }
 
-export type Post = PostSummary & { contentHtml: string }
+export type Post = PostSummary & { contentHtml: string; headings: { id: string; titleHtml: string }[] }
 
 function readPost(slug: string, locale: Locale): { summary: PostSummary; markdown: string } {
   const source = fs.readFileSync(path.join(postsDirectory, locale, `${slug}.md`), 'utf8')
@@ -38,6 +40,10 @@ function readPost(slug: string, locale: Locale): { summary: PostSummary; markdow
   if (data.image !== undefined && (typeof data.imageAlt !== 'string' || !data.imageAlt.trim())) {
     throw new Error(`Missing imageAlt in ${slug}.md`)
   }
+  if (data.cta !== undefined && (
+    !data.cta || !['moyu', 'miaozi'].includes(data.cta.product) ||
+    ['title', 'description', 'label'].some((key) => typeof data.cta[key] !== 'string' || !data.cta[key].trim())
+  )) throw new Error(`Invalid cta in ${slug}.md`)
 
   return {
     summary: {
@@ -48,6 +54,7 @@ function readPost(slug: string, locale: Locale): { summary: PostSummary; markdow
       updated: data.updated,
       image: data.image,
       imageAlt: data.imageAlt,
+      cta: data.cta,
     },
     markdown: content,
   }
@@ -73,10 +80,33 @@ export function getPostLocales(slug: string): Locale[] {
 export async function getPost(slug: string, locale: Locale = defaultLocale): Promise<Post> {
   const { summary, markdown } = readPost(slug, locale)
   const rendered = String(await remark().use(remarkGfm).use(html).process(markdown))
-  const withHanzi = rendered.replace(/\[\[zh:([^|\]]+)\|([^\]]+)\]\]/g, (_, simplified: string, traditional: string) => {
+  const renderHanzi = (source: string) => source.replace(/\[\[zh:([^|\]]+)\|([^\]]+)\]\]/g, (_, simplified: string, traditional: string) => {
     const escape = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
     return `<span class="hanzi" lang="zh"><span class="hanzi-simplified" lang="zh-Hans">${escape(simplified)}</span><span class="hanzi-traditional" lang="zh-Hant">${escape(traditional)}</span></span>`
   })
+  const headings: Post['headings'] = []
+  const usedIds = new Map<string, number>()
+  const withHeadings = rendered.replace(/<h([23])>([\s\S]*?)<\/h\1>/g, (_, level: string, titleHtml: string) => {
+    const plainTitle = titleHtml.replace(/\[\[zh:([^|\]]+)\|[^\]]+\]\]/g, '$1').replace(/<[^>]+>/g, '').replace(/&[^;]+;/g, ' ')
+    const base = `section-${plainTitle.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '') || 'heading'}`
+    const count = (usedIds.get(base) ?? 0) + 1
+    usedIds.set(base, count)
+    const id = count === 1 ? base : `${base}-${count}`
+    if (level === '2') headings.push({ id, titleHtml: renderHanzi(titleHtml) })
+    return `<h${level} id="${id}" tabindex="-1">${titleHtml}</h${level}>`
+  })
+  const withCallouts = withHeadings.replace(/<blockquote>\s*<p>\[!(EXAMPLE|CHECK|NOTE|WORDS)\]([\s\S]*?)<\/p>([\s\S]*?)<\/blockquote>/g, (_, kind: string, first: string, rest: string) => {
+    const firstParagraph = first.trim() ? `<p>${first.trim()}</p>` : ''
+    if (kind === 'EXAMPLE') {
+      const body = firstParagraph + rest
+      const split = body.match(/^\s*(<p>[\s\S]*?<\/p>)([\s\S]*)$/)
+      const explanation = split?.[2].trim()
+      return `<blockquote class="article-example">${split?.[1] ?? body}${explanation ? `<details class="example-details"><summary>${articleUiCopy[locale].exampleDetails}</summary>${explanation}</details>` : ''}</blockquote>`
+    }
+    const tag = kind === 'WORDS' ? 'div' : 'aside'
+    return `<${tag} class="article-${kind.toLowerCase()}">${firstParagraph}${rest}</${tag}>`
+  })
+  const withHanzi = renderHanzi(withCallouts).replace('<p>', '<p class="post-lead">')
   const imageDimensions: Record<string, [number, number]> = {
     '/images/moyu-caption-lookup.webp': [750, 1631],
     '/images/miaozi-reader-lookup.webp': [900, 385],
@@ -85,7 +115,7 @@ export async function getPost(slug: string, locale: Locale = defaultLocale): Pro
     const dimensions = imageDimensions[src]
     return dimensions ? tag.replace('>', ` width="${dimensions[0]}" height="${dimensions[1]}" loading="lazy" decoding="async">`) : tag
   })
-  return { ...summary, contentHtml }
+  return { ...summary, contentHtml, headings }
 }
 
 export function formatPostDate(date: string, locale: Locale = defaultLocale): string {

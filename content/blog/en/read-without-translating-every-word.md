@@ -4,13 +4,23 @@ description: "Learn when to look up an unfamiliar Chinese word and when to keep 
 date: "2026-09-24"
 image: "/images/guides/reading-word-lookup-v1.webp"
 imageAlt: "The arel cat reading an open book with one line marked"
+cta:
+  product: "miaozi"
+  title: "Read with a dictionary beside the story"
+  description: "Miaozi keeps word lookup close to the Chinese text, so you can check a meaning and return to the same sentence."
+  label: "Read a story in Miaozi"
 ---
 
 When reading Chinese, look up an unfamiliar word if it prevents you from understanding what happens or why. If the sentence gives you a reasonable guess, or the story still makes sense without that detail, keep reading and check the word later. You can understand a paragraph without resolving every unknown word on the first pass.
 
 Here is an original short passage. Read the Chinese once before looking at the pinyin or translation.
 
+> [!EXAMPLE]
 > [[zh:周六下午，小雨带着一本书去咖啡馆。走到门口，她才发现店今天关门了。她没有回家，而是去了旁边的公园，坐在长椅上读书。|週六下午，小雨帶著一本書去咖啡館。走到門口，她才發現店今天關門了。她沒有回家，而是去了旁邊的公園，坐在長椅上讀書。]]
+>
+> *Zhōuliù xiàwǔ, Xiǎoyǔ dàizhe yì běn shū qù kāfēiguǎn. Zǒu dào ménkǒu, tā cái fāxiàn diàn jīntiān guānmén le. Tā méiyǒu huí jiā, érshì qù le pángbiān de gōngyuán, zuò zài chángyǐ shàng dúshū.*
+>
+> On Saturday afternoon, Xiaoyu took a book to a café. At the entrance, she discovered that it was closed that day. Instead of going home, she went to a nearby park and read on a bench.
 
 Could you tell that her plan changed? If so, the first reading worked, even if several words were unfamiliar.
 
@@ -28,18 +38,11 @@ The middle sentence explains the change of plan. **[[zh:才发现|才發現]]** 
 
 Read that sentence again after the lookup: **[[zh:走到门口，她才发现店今天关门了。|走到門口，她才發現店今天關門了。]]** She reached the entrance and only then found out the café was closed. You can now connect the first plan with the second one.
 
-If you want to check the whole passage, here is the pinyin and translation:
-
-*Zhōuliù xiàwǔ, Xiǎoyǔ dàizhe yì běn shū qù kāfēiguǎn. Zǒu dào ménkǒu, tā cái fāxiàn diàn jīntiān guānmén le. Tā méiyǒu huí jiā, érshì qù le pángbiān de gōngyuán, zuò zài chángyǐ shàng dúshū.*
-
-On Saturday afternoon, Xiaoyu took a book to a café. At the entrance, she discovered that it was closed that day. Instead of going home, she went to a nearby park and read on a bench.
-
 ![A Miaozi story with a word lookup open beside the Chinese text](/images/miaozi-reader-lookup.webp)
 
 *Miaozi lets you check a word beside the story and continue reading.*
 
 ## Close the dictionary and retell it
 
-Try one sentence: “She went to the café with a book, found it closed, and read in the park instead.” If you can say that, you understood the passage. If not, reread the sentence where her plan changes before checking more words.
-
-A dictionary is most useful when it answers a question the story made you ask. [Miaozi's Chinese dictionary](https://miaozi.co/en/dict) lets you check words as you read; return to the paragraph once the key meaning is clear.
+> [!CHECK]
+> Try one sentence: “She went to the café with a book, found it closed, and read in the park instead.” If you can say that, you understood the passage. If not, reread the sentence where her plan changes before checking more words.

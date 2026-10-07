@@ -161,6 +161,19 @@ export const blogCopy: Record<Locale, BlogCopy> = {
 }
 
 type GuidePreview = { title: string; description: string }
+export const articleUiCopy: Record<Locale, { contents: string; exampleDetails: string }> = {
+  en: { contents: 'Contents', exampleDetails: 'Pronunciation and meaning' },
+  es: { contents: 'Contenido', exampleDetails: 'Pronunciación y significado' },
+  de: { contents: 'Inhalt', exampleDetails: 'Aussprache und Bedeutung' },
+  fr: { contents: 'Sommaire', exampleDetails: 'Prononciation et sens' },
+  'pt-BR': { contents: 'Conteúdo', exampleDetails: 'Pronúncia e significado' },
+  vi: { contents: 'Nội dung', exampleDetails: 'Cách đọc và nghĩa' },
+  id: { contents: 'Isi', exampleDetails: 'Pelafalan dan arti' },
+  ja: { contents: '目次', exampleDetails: '発音と意味' },
+  ko: { contents: '목차', exampleDetails: '발음과 뜻' },
+  th: { contents: 'สารบัญ', exampleDetails: 'การออกเสียงและความหมาย' },
+}
+
 export const guidePreviewCopy: Partial<Record<Locale, Record<string, GuidePreview>>> = {
   es: {
     'chinese-story-too-hard': { title: 'Cómo elegir historias en chino para tu nivel de lectura', description: 'Elige historias que puedas seguir consultando palabras solo de vez en cuando. Prueba un párrafo para comprobar el vocabulario y las frases.' },

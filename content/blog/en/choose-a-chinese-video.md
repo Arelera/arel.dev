@@ -4,6 +4,11 @@ description: "Choose Chinese videos for listening practice by checking what you 
 date: "2026-09-24"
 image: "/images/guides/chinese-video-listening-v1.webp"
 imageAlt: "The arel cat listening to a video with a caption line"
+cta:
+  product: "moyu"
+  title: "Watch Chinese videos with captions you can tap"
+  description: "Choose a clip in Moyu, check a word in the captions, and replay the line without leaving the video."
+  label: "Explore Moyu Chinese"
 ---
 
 For Chinese listening practice, choose a short video whose main event you can **follow at normal speed**, even if you miss some words. Look for clear speech, Chinese captions you can check, and a topic you would willingly watch again. Try the first 30 to 60 seconds before choosing a clip to study.
@@ -17,7 +22,16 @@ Play 30 to 60 seconds at normal speed. Leave the dictionary closed. When it ends
 3. **Can I check it?** Are there readable Chinese captions, ideally matching what is said? English subtitles can help you follow the story, but they cannot tell you which Chinese words you heard.
 4. **Do I care what happens next?** If you would not watch another minute, you probably will not return for a second pass.
 
-Suppose a character says **[[zh:你先进去，我马上就来。|你先進去，我馬上就來。]]** (*Nǐ xiān jìnqù, wǒ mǎshàng jiù lái.*) “Go in first. I’ll be right there.” You might miss **[[zh:马上|馬上]]** (*mǎshàng*, right away), yet understand that one person is going inside and the other will follow. That is a useful clip: the scene gives you a first guess, and the caption lets you check the phrase after listening.
+Suppose a character says:
+
+> [!EXAMPLE]
+> [[zh:你先进去，我马上就来。|你先進去，我馬上就來。]]
+>
+> *Nǐ xiān jìnqù, wǒ mǎshàng jiù lái.*
+>
+> “Go in first. I’ll be right there.”
+
+You might miss **[[zh:马上|馬上]]** (*mǎshàng*, right away), yet understand that one person is going inside and the other will follow. The scene gives you a first guess, and the caption lets you check the phrase after listening.
 
 If you cannot tell who is talking or why they leave, try a shorter clip or a familiar topic. If you understand nearly every line, watch for pleasure. You do not need to turn an easy video into homework.
 
@@ -33,10 +47,11 @@ Just watch when the clip is interesting but too fast, noisy, or far above your c
 2. Replay it with Chinese captions. Check one or two lines that matter to the scene, and look up only a word that changes your understanding.
 3. Play it once more without pausing. Listen for the phrase you checked and see whether you can now hear it in the full sentence.
 
-If the line still disappears in the audio, slow that part down or leave it for another day. The goal is to hear more than you heard on the first pass, not to finish a vocabulary list.
+> [!NOTE]
+> If the line still disappears in the audio, slow that part down or leave it for another day. You can return when the words or the speaker feel more familiar.
 
 ![A Moyu Chinese video with a Chinese word lookup open beside the scene](/images/moyu-caption-lookup.webp)
 
 *Moyu lets you check a word in the scene before you replay the line.*
 
-[Moyu Chinese](https://moyuchinese.com/en) has short videos with interactive captions and word lookup, which makes this watch-check-replay method easy to use. The same test works with any video that has clear audio and reliable Chinese captions.
+The same test works with any video that has clear audio and reliable Chinese captions.

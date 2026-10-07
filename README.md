@@ -42,6 +42,12 @@ For Chinese text that readers can switch between scripts, write both forms as `[
 
 Each guide should answer one real reader question early, then show how to apply the answer with concrete examples. Check Chinese, pinyin, translations, product claims, and any cited sources before publishing. Keep the writing plain and original. Link to Moyu or Miaozi only where the product fits the reader's next step.
 
+Articles generate a contents list from their headings and support example,
+check, note, and vocabulary blocks. An optional `cta` frontmatter object adds
+a product invitation after the article. See [the authoring guide](./BLOG_AUTHORING_GUIDE.md)
+for the supported syntax. The site's established audience and design preferences
+are recorded in [PRODUCT.md](./PRODUCT.md).
+
 ## Languages and search URLs
 
 Home pages use locale paths: `/en/`, `/es/`, `/de/`, `/fr/`, `/pt-BR/`, `/vi/`, `/id/`, `/ja/`, `/ko/`, and `/th/`. The locale list lives in `src/lib/site.ts` and matches Moyu Chinese. Home and navigation copy lives in `src/lib/copy.ts` and should be reviewed by fluent speakers before major editorial changes.

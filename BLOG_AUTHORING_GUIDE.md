@@ -71,11 +71,61 @@ only when that route exists. Articles remain English until a complete,
 reviewed translation is added under `content/blog/<locale>/<slug>.md`; do not
 publish an English fallback as a localized article.
 
+## Make the page easy to read
+
+Use short paragraphs when the idea changes, specific headings, and space
+between explanations and examples. Keep the prose conversational; do not
+turn every paragraph into a panel or force every guide into the same outline.
+The page generates a compact contents list from `##` headings automatically.
+
+These optional blockquote markers give material different visual roles:
+
+```md
+> [!EXAMPLE]
+> [[zh:你先进去，我马上就来。|你先進去，我馬上就來。]]
+>
+> *Nǐ xiān jìnqù, wǒ mǎshàng jiù lái.*
+>
+> Go in first. I’ll be right there.
+
+> [!CHECK]
+> A practical check or decision the reader can apply.
+
+> [!NOTE]
+> A useful qualification or caution.
+
+> [!WORDS]
+>
+> - **[[zh:马上|馬上]]** (*mǎshàng*) means “right away.”
+```
+
+For `[!EXAMPLE]`, the first paragraph is the visible Chinese passage. Any
+following paragraphs appear under a native “Pronunciation and meaning”
+disclosure. Both scripts and the full explanation remain in the static HTML.
+Ordinary blockquotes still work. Use numbered lists for a sequence, rather
+than making readers find the steps inside prose.
+
+Add an optional end CTA in frontmatter when a product fits the guide:
+
+```yaml
+cta:
+  product: "moyu" # moyu or miaozi
+  title: "Watch Chinese videos with captions you can tap"
+  description: "Choose a clip in Moyu, check a word in the captions, and replay the line without leaving the video."
+  label: "Explore Moyu Chinese"
+```
+
+The page renders this once after the article. Moyu links to its locale home
+page; Miaozi links to its locale story library. Translate CTA copy with the
+article. Avoid repeating the same pitch in the final paragraph. Related guides
+use the site's existing image cards automatically.
+
 ## Review and release
 
 Check title/description/opening clarity together, then the opening answer,
 originality, sources, Chinese accuracy, links,
-image rights and alt text, mobile layout, dark mode, and script switching.
+image rights and alt text, mobile layout, dark mode, script switching,
+contents links, example disclosures, and the end CTA destination.
 Run `pnpm lint`, `pnpm exec tsc --noEmit`, and `pnpm build`. Confirm the new
 route and sitemap entry appear in `out/`, then verify the live page after
 deployment. Measure useful visits and product referrals; do not assume that

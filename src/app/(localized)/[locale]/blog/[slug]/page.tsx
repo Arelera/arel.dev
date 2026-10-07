@@ -6,7 +6,9 @@ import { formatPostDate, getAllPosts, getPost, getPostLocales, getPublishedBlogL
 import ScriptSwitch from '@/components/ScriptSwitch'
 import LinkArrow from '@/components/LinkArrow'
 import PageFrame from '@/components/PageFrame'
-import { blogCopy } from '@/lib/copy'
+import ArticleCard from '@/components/ArticleCard'
+import ArticleCTA from '@/components/ArticleCTA'
+import { articleUiCopy, blogCopy } from '@/lib/copy'
 import { pageMetadata, safeJsonLd } from '@/lib/seo'
 import { absoluteUrl, isLocale, localizedPath } from '@/lib/site'
 
@@ -69,9 +71,16 @@ export default async function PostPage({ params }: PageProps) {
           <p>{post.description}</p>
         </header>
         {post.image && <Image className="post-cover" src={post.image} width={960} height={640} alt={post.imageAlt ?? ''} sizes="(max-width: 700px) calc(100vw - 36px), 720px" loading="eager" />}
+        {post.headings.length > 1 && <nav className="post-contents" aria-label={articleUiCopy[locale].contents}>
+          <details open>
+            <summary>{articleUiCopy[locale].contents}</summary>
+            <ol>{post.headings.map((heading) => <li key={heading.id}><a href={`#${heading.id}`} dangerouslySetInnerHTML={{ __html: heading.titleHtml }} /></li>)}</ol>
+          </details>
+        </nav>}
         <article className="post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+        {post.cta && <ArticleCTA cta={post.cta} locale={locale} />}
       </div>
-      {more.length > 0 && <section className="more-guides shell"><h2>{copy.moreGuides}</h2><div className="article-list">{more.map((item) => <div className="more-guide-row" key={item.slug}><Link href={localizedPath(locale, `blog/${item.slug}`)}>{item.title} <LinkArrow /></Link></div>)}</div></section>}
+      {more.length > 0 && <section className="more-guides shell"><h2>{copy.moreGuides}</h2><div className="article-list">{more.map((item) => <ArticleCard key={item.slug} post={item} locale={locale} />)}</div></section>}
     </main>
     </PageFrame>
   )
