@@ -5,10 +5,9 @@ date: "2026-10-07"
 image: "/images/guides/chinese-story-level-v1.webp"
 imageAlt: "The arel cat choosing between a thin book and a much larger open book"
 cta:
-  product: "miaozi"
-  title: "Find a Chinese story to read in Miaozi"
-  description: "Choose a topic and difficulty level, then read with audio and word lookup available when you need them."
-  label: "Browse the stories"
+  title: "Hear familiar words in Chinese videos"
+  description: "Try Moyu for Chinese videos with tappable captions. Check a familiar word in a new context and replay the line to hear it again."
+  label: "Explore Moyu Chinese"
 ---
 
 To choose a Chinese story at your reading level, read a paragraph with the translation hidden. You should be able to follow who is doing what and why, with only occasional word lookups. If you need to translate most sentences before the events make sense, choose an easier story for regular reading.
@@ -28,7 +27,7 @@ Read the Chinese before checking the pronunciation or translation.
 
 Can you say **what he wanted, what he bought, and who he ate with?** Those questions check whether the sentences have formed a scene in your mind.
 
-You might know everything except **[[zh:包子|包子]]** (*bāo zi*, a filled steamed bun). Looking up that food leaves the rest of the scene intact: he wanted one thing, bought something else, and shared it. A story written this way could be comfortable for you even with an unfamiliar item here and there.
+You might know everything except **[[audio:包子|包子]]** (*bāo zi*, a filled steamed bun). Looking up that food leaves the rest of the scene intact: he wanted one thing, bought something else, and shared it. A story written this way could be comfortable for you even with an unfamiliar item here and there.
 
 But if **[[zh:买|買]]** (*mǎi*, buy), **[[zh:没有|沒有]]** (*méi yǒu*, not have), and **[[zh:带回家|帶回家]]** (*dài huí jiā*, take home) are all unclear, the same paragraph asks much more of you. You have to work out each event before the story can move forward. For regular reading, try a simpler passage or one using vocabulary you have already met.
 
@@ -47,11 +46,11 @@ The extra difficulty is in the relationships between events:
 
 > [!WORDS]
 >
-> - **[[zh:本想|本想]]** (*běn xiǎng*) introduces what he originally intended to do.
-> - **[[zh:没想到|沒想到]]** (*méi xiǎng dào*) introduces an unexpected turn.
+> - **[[audio:本想|本想]]** (*běn xiǎng*) introduces what he originally intended to do.
+> - **[[audio:没想到|沒想到]]** (*méi xiǎng dào*) introduces an unexpected turn.
 > - **[[zh:刚到……就……|剛到……就……]]** (*gāng dào… jiù…*) connects his arrival with what happened immediately afterward.
-> - **[[zh:已经卖完了|已經賣完了]]** (*yǐ jīng mài wán le*) says the bread had already sold out.
-> - **[[zh:只好改买|只好改買]]** (*zhǐ hǎo gǎi mǎi*) says he had to change what he bought.
+> - **[[audio:已经卖完了|已經賣完了]]** (*yǐ jīng mài wán le*) says the bread had already sold out.
+> - **[[audio:只好改买|只好改買]]** (*zhǐ hǎo gǎi mǎi*) says he had to change what he bought.
 
 You could recognize many characters here and still lose the sentence. For example, knowing **[[zh:卖|賣]]** (*mài*, sell) and **[[zh:完|完]]** (*wán*, finish) separately does not necessarily mean you understand **[[zh:卖完了|賣完了]]** as “sold out.”
 

@@ -17,7 +17,7 @@ export type PostSummary = {
   updated?: string
   image?: string
   imageAlt?: string
-  cta?: { product: 'moyu' | 'miaozi'; title: string; description: string; label: string }
+  cta?: { title: string; description: string; label: string }
 }
 
 export type Post = PostSummary & { contentHtml: string; headings: { id: string; titleHtml: string }[] }
@@ -41,7 +41,7 @@ function readPost(slug: string, locale: Locale): { summary: PostSummary; markdow
     throw new Error(`Missing imageAlt in ${slug}.md`)
   }
   if (data.cta !== undefined && (
-    !data.cta || !['moyu', 'miaozi'].includes(data.cta.product) ||
+    !data.cta ||
     ['title', 'description', 'label'].some((key) => typeof data.cta[key] !== 'string' || !data.cta[key].trim())
   )) throw new Error(`Invalid cta in ${slug}.md`)
 
@@ -80,14 +80,15 @@ export function getPostLocales(slug: string): Locale[] {
 export async function getPost(slug: string, locale: Locale = defaultLocale): Promise<Post> {
   const { summary, markdown } = readPost(slug, locale)
   const rendered = String(await remark().use(remarkGfm).use(html).process(markdown))
-  const renderHanzi = (source: string) => source.replace(/\[\[zh:([^|\]]+)\|([^\]]+)\]\]/g, (_, simplified: string, traditional: string) => {
+  const renderHanzi = (source: string, allowAudio = false) => source.replace(/\[\[(zh|audio):([^|\]]+)\|([^\]]+)\]\]/g, (_, kind: string, simplified: string, traditional: string) => {
     const escape = (value: string) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
-    return `<span class="hanzi" lang="zh"><span class="hanzi-simplified" lang="zh-Hans">${escape(simplified)}</span><span class="hanzi-traditional" lang="zh-Hant">${escape(traditional)}</span></span>`
+    const hanzi = `<span class="hanzi" lang="zh"><span class="hanzi-simplified" lang="zh-Hans">${escape(simplified)}</span><span class="hanzi-traditional" lang="zh-Hant">${escape(traditional)}</span></span>`
+    return kind === 'audio' && allowAudio ? `<span class="spoken-hanzi">${hanzi}<span class="hanzi-audio-slot"></span></span>` : hanzi
   })
   const headings: Post['headings'] = []
   const usedIds = new Map<string, number>()
   const withHeadings = rendered.replace(/<h([23])>([\s\S]*?)<\/h\1>/g, (_, level: string, titleHtml: string) => {
-    const plainTitle = titleHtml.replace(/\[\[zh:([^|\]]+)\|[^\]]+\]\]/g, '$1').replace(/<[^>]+>/g, '').replace(/&[^;]+;/g, ' ')
+    const plainTitle = titleHtml.replace(/\[\[(?:zh|audio):([^|\]]+)\|[^\]]+\]\]/g, '$1').replace(/<[^>]+>/g, '').replace(/&[^;]+;/g, ' ')
     const base = `section-${plainTitle.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '') || 'heading'}`
     const count = (usedIds.get(base) ?? 0) + 1
     usedIds.set(base, count)
@@ -101,12 +102,13 @@ export async function getPost(slug: string, locale: Locale = defaultLocale): Pro
       const body = firstParagraph + rest
       const split = body.match(/^\s*(<p>[\s\S]*?<\/p>)([\s\S]*)$/)
       const explanation = split?.[2].trim()
-      return `<blockquote class="article-example">${split?.[1] ?? body}${explanation ? `<details class="example-details"><summary>${articleUiCopy[locale].exampleDetails}</summary>${explanation}</details>` : ''}</blockquote>`
+      const passage = `<div class="example-passage">${split?.[1] ?? body}<span class="hanzi-audio-slot"></span></div>`
+      return `<blockquote class="article-example">${passage}${explanation ? `<details class="example-details"><summary>${articleUiCopy[locale].exampleDetails}</summary>${explanation}</details>` : ''}</blockquote>`
     }
     const tag = kind === 'WORDS' ? 'div' : 'aside'
     return `<${tag} class="article-${kind.toLowerCase()}">${firstParagraph}${rest}</${tag}>`
   })
-  const withHanzi = renderHanzi(withCallouts).replace('<p>', '<p class="post-lead">')
+  const withHanzi = renderHanzi(withCallouts, true).replace('<p>', '<p class="post-lead">')
   const imageDimensions: Record<string, [number, number]> = {
     '/images/moyu-caption-lookup.webp': [750, 1631],
     '/images/miaozi-reader-lookup.webp': [900, 385],

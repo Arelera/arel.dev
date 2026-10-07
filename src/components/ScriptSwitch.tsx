@@ -1,20 +1,10 @@
 'use client'
 
 import { useSyncExternalStore } from 'react'
-
-type HanziScript = 'simplified' | 'traditional'
-
-function currentScript(): HanziScript {
-  return document.documentElement.dataset.hanziScript === 'traditional' ? 'traditional' : 'simplified'
-}
-
-function subscribe(callback: () => void) {
-  window.addEventListener('arel-script-change', callback)
-  return () => window.removeEventListener('arel-script-change', callback)
-}
+import { currentHanziScript, subscribeToHanziScript, type HanziScript } from '@/lib/chinese-speech'
 
 export default function ScriptSwitch() {
-  const script = useSyncExternalStore(subscribe, currentScript, () => 'simplified')
+  const script = useSyncExternalStore<HanziScript>(subscribeToHanziScript, currentHanziScript, () => 'simplified')
 
   function choose(value: HanziScript) {
     document.documentElement.dataset.hanziScript = value

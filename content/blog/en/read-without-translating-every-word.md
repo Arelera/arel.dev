@@ -5,10 +5,9 @@ date: "2026-09-24"
 image: "/images/guides/reading-word-lookup-v1.webp"
 imageAlt: "The arel cat reading an open book with one line marked"
 cta:
-  product: "miaozi"
-  title: "Read with a dictionary beside the story"
-  description: "Miaozi keeps word lookup close to the Chinese text, so you can check a meaning and return to the same sentence."
-  label: "Read a story in Miaozi"
+  title: "Check words while you watch Chinese videos"
+  description: "Moyu puts word lookup beside the captions. Check a meaning, return to the scene, and hear how the word fits the conversation."
+  label: "Explore Moyu Chinese"
 ---
 
 When reading Chinese, look up an unfamiliar word if it prevents you from understanding what happens or why. If the sentence gives you a reasonable guess, or the story still makes sense without that detail, keep reading and check the word later. You can understand a paragraph without resolving every unknown word on the first pass.
@@ -26,17 +25,17 @@ Could you tell that her plan changed? If so, the first reading worked, even if s
 
 ## Infer: [[zh:长椅|長椅]]
 
-You may not know **[[zh:长椅|長椅]]** (*chángyǐ*). But she is in a **[[zh:公园|公園]]** (*gōngyuán*, park) and **[[zh:坐在|坐在]]** (*zuò zài*, sits on) something while she reads. A seat or bench is a reasonable guess. The exact word is not needed to understand why she went to the park, so keep reading. Check it later if you want to keep the expression.
+You may not know **[[audio:长椅|長椅]]** (*chángyǐ*). But she is in a **[[zh:公园|公園]]** (*gōngyuán*, park) and **[[zh:坐在|坐在]]** (*zuò zài*, sits on) something while she reads. A seat or bench is a reasonable guess. The exact word is not needed to understand why she went to the park, so keep reading. Check it later if you want to keep the expression.
 
 ## Skip for now: [[zh:旁边|旁邊]]
 
-**[[zh:旁边|旁邊]]** (*pángbiān*) tells you the park is beside or near the café. If the location is not important to your question, you can leave it unresolved on the first pass. She went to a park either way. Skipping is a choice about the current reading, not a promise never to learn the word.
+**[[audio:旁边|旁邊]]** (*pángbiān*) tells you the park is beside or near the café. If the location is not important to your question, you can leave it unresolved on the first pass. She went to a park either way. Skipping is a choice about the current reading, not a promise never to learn the word.
 
 ## Look up: [[zh:才发现|才發現]] and [[zh:关门|關門]]
 
-The middle sentence explains the change of plan. **[[zh:才发现|才發現]]** (*cái fāxiàn*) means she *only then discovered* something. **[[zh:关门了|關門了]]** (*guānmén le*) tells you the shop was closed. If you do not know either phrase, the trip to the park may seem random. These are the words worth checking now.
+The middle sentence explains the change of plan. **[[audio:才发现|才發現]]** (*cái fāxiàn*) means she *only then discovered* something. **[[audio:关门了|關門了]]** (*guānmén le*) tells you the shop was closed. If you do not know either phrase, the trip to the park may seem random. These are the words worth checking now.
 
-Read that sentence again after the lookup: **[[zh:走到门口，她才发现店今天关门了。|走到門口，她才發現店今天關門了。]]** She reached the entrance and only then found out the café was closed. You can now connect the first plan with the second one.
+Read that sentence again after the lookup: **[[audio:走到门口，她才发现店今天关门了。|走到門口，她才發現店今天關門了。]]** She reached the entrance and only then found out the café was closed. You can now connect the first plan with the second one.
 
 ![A Miaozi story with a word lookup open beside the Chinese text](/images/miaozi-reader-lookup.webp)
 

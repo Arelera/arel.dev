@@ -102,22 +102,30 @@ These optional blockquote markers give material different visual roles:
 For `[!EXAMPLE]`, the first paragraph is the visible Chinese passage. Any
 following paragraphs appear under a native “Pronunciation and meaning”
 disclosure. Both scripts and the full explanation remain in the static HTML.
+Each example has one browser audio control for its Chinese passage. Use
+`[[audio:马上|馬上]]` instead of `[[zh:马上|馬上]]` for selected vocabulary
+or another sentence that benefits from audio. Keep ordinary Chinese mentions
+as `[[zh:…|…]]`; do not put an audio button beside every repeated word.
+The selected script requests mainland or Taiwan Mandarin. Audio controls
+appear when the browser offers a Mandarin voice, and regional availability
+depends on the device. No audio is requested before a reader presses play.
+
 Ordinary blockquotes still work. Use numbered lists for a sequence, rather
 than making readers find the steps inside prose.
 
-Add an optional end CTA in frontmatter when a product fits the guide:
+Add an optional Moyu end CTA in frontmatter, connecting the guide to video
+practice without claiming that Moyu offers story reading:
 
 ```yaml
 cta:
-  product: "moyu" # moyu or miaozi
   title: "Watch Chinese videos with captions you can tap"
   description: "Choose a clip in Moyu, check a word in the captions, and replay the line without leaving the video."
   label: "Explore Moyu Chinese"
 ```
 
-The page renders this once after the article. Moyu links to its locale home
-page; Miaozi links to its locale story library. Translate CTA copy with the
-article. Avoid repeating the same pitch in the final paragraph. Related guides
+The page renders this once after the article. All article CTAs link to Moyu’s
+locale home page and use its original mascot artwork. Translate CTA copy
+with the article. Avoid repeating the same pitch in the final paragraph. Related guides
 use the site's existing image cards automatically.
 
 ## Review and release
@@ -125,8 +133,9 @@ use the site's existing image cards automatically.
 Check title/description/opening clarity together, then the opening answer,
 originality, sources, Chinese accuracy, links,
 image rights and alt text, mobile layout, dark mode, script switching,
-contents links, example disclosures, and the end CTA destination.
-Run `pnpm lint`, `pnpm exec tsc --noEmit`, and `pnpm build`. Confirm the new
+contents links, example disclosures, audio playback and stopping,
+and the end CTA destination.
+Run `pnpm test`, `pnpm lint`, `pnpm typecheck`, and `pnpm build`. Confirm the new
 route and sitemap entry appear in `out/`, then verify the live page after
 deployment. Measure useful visits and product referrals; do not assume that
 an indexed page earns traffic immediately.

@@ -44,7 +44,9 @@ Each guide should answer one real reader question early, then show how to apply 
 
 Articles generate a contents list from their headings and support example,
 check, note, and vocabulary blocks. An optional `cta` frontmatter object adds
-a product invitation after the article. See [the authoring guide](./BLOG_AUTHORING_GUIDE.md)
+a Moyu invitation after the article. Chinese examples and selected vocabulary
+offer browser audio, with mainland or Taiwan Mandarin chosen from the reader's
+available voices. See [the authoring guide](./BLOG_AUTHORING_GUIDE.md)
 for the supported syntax. The site's established audience and design preferences
 are recorded in [PRODUCT.md](./PRODUCT.md).
 

@@ -1,5 +1,6 @@
 {
   "name": "arel.dev",
+  "type": "module",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@11.25.0",
@@ -7,7 +8,8 @@
     "dev": "next dev",
     "build": "next build && node scripts/emit-legacy-redirects.mjs",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs"
   },
   "dependencies": {
     "@hugeicons/core-free-icons": "^4.3.5",

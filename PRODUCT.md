@@ -15,7 +15,8 @@ Chinese and read in bright daylight or a dim room.
 
 Publish useful, original Chinese-learning guides and introduce Moyu Chinese
 and Miaozi where they help the reader take the next step. Moyu is the main
-business priority. The site has no personal identity or resume content.
+business priority, and article CTAs always point to Moyu. The site has no
+personal identity or resume content.
 
 ## Brand personality
 

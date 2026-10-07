@@ -8,6 +8,7 @@ import LinkArrow from '@/components/LinkArrow'
 import PageFrame from '@/components/PageFrame'
 import ArticleCard from '@/components/ArticleCard'
 import ArticleCTA from '@/components/ArticleCTA'
+import ArticleAudio from '@/components/ArticleAudio'
 import { articleUiCopy, blogCopy } from '@/lib/copy'
 import { pageMetadata, safeJsonLd } from '@/lib/seo'
 import { absoluteUrl, isLocale, localizedPath } from '@/lib/site'
@@ -60,7 +61,7 @@ export default async function PostPage({ params }: PageProps) {
     <PageFrame locale={locale} path={`blog/${slug}`} availableLocales={getPostLocales(slug)}>
     <main className="post-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(articleJsonLd) }} />
-      <div className="shell post-shell">
+      <div className={`shell post-shell${post.cta ? ' post-shell-with-cta' : ''}`}>
         <Link className="back-link" href={localizedPath(locale, 'blog')}><LinkArrow direction="left" /> {copy.allGuides}</Link>
         <header className="post-header">
           <div className="post-details">
@@ -78,8 +79,9 @@ export default async function PostPage({ params }: PageProps) {
           </details>
         </nav>}
         <article className="post-content" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-        {post.cta && <ArticleCTA cta={post.cta} locale={locale} />}
+        <ArticleAudio key={`${locale}-${slug}`} />
       </div>
+      {post.cta && <div className="shell article-cta-shell"><ArticleCTA cta={post.cta} locale={locale} /></div>}
       {more.length > 0 && <section className="more-guides shell"><h2>{copy.moreGuides}</h2><div className="article-list">{more.map((item) => <ArticleCard key={item.slug} post={item} locale={locale} />)}</div></section>}
     </main>
     </PageFrame>

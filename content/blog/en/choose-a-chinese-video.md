@@ -5,7 +5,6 @@ date: "2026-09-24"
 image: "/images/guides/chinese-video-listening-v1.webp"
 imageAlt: "The arel cat listening to a video with a caption line"
 cta:
-  product: "moyu"
   title: "Watch Chinese videos with captions you can tap"
   description: "Choose a clip in Moyu, check a word in the captions, and replay the line without leaving the video."
   label: "Explore Moyu Chinese"
@@ -31,7 +30,7 @@ Suppose a character says:
 >
 > “Go in first. I’ll be right there.”
 
-You might miss **[[zh:马上|馬上]]** (*mǎshàng*, right away), yet understand that one person is going inside and the other will follow. The scene gives you a first guess, and the caption lets you check the phrase after listening.
+You might miss **[[audio:马上|馬上]]** (*mǎshàng*, right away), yet understand that one person is going inside and the other will follow. The scene gives you a first guess, and the caption lets you check the phrase after listening.
 
 If you cannot tell who is talking or why they leave, try a shorter clip or a familiar topic. If you understand nearly every line, watch for pleasure. You do not need to turn an easy video into homework.
 
