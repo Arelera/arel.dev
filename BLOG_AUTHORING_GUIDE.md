@@ -27,6 +27,12 @@ site. Moyu's MDX fields, components, and release rules do not apply here.
 - Write naturally and directly. Avoid generic “ultimate guide” titles,
   motivational filler, slogan fragments, and headings that exist only to
   repeat keywords. Read the draft aloud for awkward or AI-sounding phrasing.
+- Read only the title, description, and first paragraph as a reader arriving
+  from search. They must identify the specific question, scope, and useful
+  answer without the image or later examples. Avoid “this story,” “it,” or
+  similar references when the reader has not been told which thing they mean.
+  State the task plainly: “How to choose Chinese stories at your reading
+  level” tells the reader what the article helps them do.
 - Check simplified and traditional forms, tone-marked pinyin, natural
   translation, and explanation together. Mark regional, informal, or
   context-dependent usage where it matters. Get knowledgeable review for
@@ -67,7 +73,8 @@ publish an English fallback as a localized article.
 
 ## Review and release
 
-Check the opening answer, originality, sources, Chinese accuracy, links,
+Check title/description/opening clarity together, then the opening answer,
+originality, sources, Chinese accuracy, links,
 image rights and alt text, mobile layout, dark mode, and script switching.
 Run `pnpm lint`, `pnpm exec tsc --noEmit`, and `pnpm build`. Confirm the new
 route and sitemap entry appear in `out/`, then verify the live page after

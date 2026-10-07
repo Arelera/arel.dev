@@ -163,47 +163,47 @@ export const blogCopy: Record<Locale, BlogCopy> = {
 type GuidePreview = { title: string; description: string }
 export const guidePreviewCopy: Partial<Record<Locale, Record<string, GuidePreview>>> = {
   es: {
-    'chinese-story-too-hard': { title: '¿Esta historia en chino es demasiado difícil?', description: 'Compara dos versiones de una escena breve y decide si la historia se presta a una lectura cotidiana o necesita más estudio.' },
+    'chinese-story-too-hard': { title: 'Cómo elegir historias en chino para tu nivel de lectura', description: 'Elige historias que puedas seguir consultando palabras solo de vez en cuando. Prueba un párrafo para comprobar el vocabulario y las frases.' },
     'choose-a-chinese-video': { title: 'Cómo elegir videos en chino para practicar la comprensión oral', description: 'Comprueba cuánto entiendes, si el audio y los subtítulos son claros, y si el tema te interesa.' },
     'read-without-translating-every-word': { title: 'Cuándo buscar una palabra al leer en chino', description: 'Sigue un pasaje breve y decide qué palabras deducir, ignorar o consultar en el diccionario.' },
   },
   de: {
-    'chinese-story-too-hard': { title: 'Ist diese chinesische Geschichte zu schwierig?', description: 'Vergleiche zwei Fassungen einer kurzen Szene und entscheide, ob du die Geschichte flüssig lesen kannst oder genauer durcharbeiten solltest.' },
+    'chinese-story-too-hard': { title: 'So findest du chinesische Geschichten für dein Leseniveau', description: 'Wähle Geschichten, denen du mit gelegentlichem Nachschlagen folgen kannst. Prüfe Wortschatz und Satzbau an einem Absatz.' },
     'choose-a-chinese-video': { title: 'So wählst du chinesische Videos zum Hörtraining aus', description: 'Prüfe, wie viel du verstehst, ob Ton und Untertitel klar sind und ob dich das Thema interessiert.' },
     'read-without-translating-every-word': { title: 'Wann du beim Lesen auf Chinesisch ein Wort nachschlagen solltest', description: 'An einem kurzen Text siehst du, welche Wörter du erschließen, übergehen oder nachschlagen kannst.' },
   },
   fr: {
-    'chinese-story-too-hard': { title: 'Cette histoire en chinois est-elle trop difficile ?', description: 'Compare deux versions d’une courte scène pour savoir si l’histoire convient à une lecture régulière ou demande une étude plus attentive.' },
+    'chinese-story-too-hard': { title: 'Comment choisir des histoires en chinois adaptées à ton niveau de lecture', description: 'Choisis des histoires que tu comprends en cherchant seulement quelques mots. Essaie un paragraphe pour évaluer le vocabulaire et les phrases.' },
     'choose-a-chinese-video': { title: 'Comment choisir des vidéos en chinois pour travailler l’écoute', description: 'Évalue ce que tu comprends, la qualité du son et des sous-titres, et ton intérêt pour le sujet.' },
     'read-without-translating-every-word': { title: 'Quand chercher un mot en lisant en chinois', description: 'À partir d’un court passage, vois quels mots déduire, laisser de côté ou chercher dans le dictionnaire.' },
   },
   'pt-BR': {
-    'chinese-story-too-hard': { title: 'Esta história em chinês está difícil demais?', description: 'Compare duas versões de uma cena curta e veja se a história serve para leitura cotidiana ou exige um estudo mais cuidadoso.' },
+    'chinese-story-too-hard': { title: 'Como escolher histórias em chinês para o seu nível de leitura', description: 'Escolha histórias que você consiga acompanhar consultando poucas palavras. Leia um parágrafo para avaliar o vocabulário e as frases.' },
     'choose-a-chinese-video': { title: 'Como escolher vídeos em chinês para praticar a escuta', description: 'Veja quanto você entende, se o áudio e as legendas são claros e se o assunto interessa.' },
     'read-without-translating-every-word': { title: 'Quando consultar uma palavra ao ler em chinês', description: 'Use um trecho curto para decidir quais palavras deduzir, deixar passar ou consultar no dicionário.' },
   },
   vi: {
-    'chinese-story-too-hard': { title: 'Truyện tiếng Trung này có quá khó không?', description: 'So sánh hai cách kể một tình huống ngắn để chọn truyện phù hợp cho việc đọc hằng ngày hoặc học kỹ hơn.' },
+    'chinese-story-too-hard': { title: 'Cách chọn truyện tiếng Trung phù hợp với trình độ đọc', description: 'Chọn truyện bạn hiểu được mạch nội dung và chỉ thỉnh thoảng cần tra từ. Đọc thử một đoạn để kiểm tra từ vựng và cấu trúc câu.' },
     'choose-a-chinese-video': { title: 'Cách chọn video tiếng Trung để luyện nghe', description: 'Kiểm tra mức độ hiểu, chất lượng âm thanh và phụ đề, rồi xem chủ đề có đủ hấp dẫn không.' },
     'read-without-translating-every-word': { title: 'Khi nào nên tra từ lúc đọc tiếng Trung', description: 'Qua một đoạn văn ngắn, hãy xem từ nào có thể đoán, bỏ qua hoặc cần tra từ điển.' },
   },
   id: {
-    'chinese-story-too-hard': { title: 'Apakah cerita Mandarin ini terlalu sulit?', description: 'Bandingkan dua versi adegan pendek untuk menentukan apakah ceritanya cocok untuk bacaan sehari-hari atau perlu dipelajari lebih mendalam.' },
+    'chinese-story-too-hard': { title: 'Cara memilih cerita Mandarin sesuai kemampuan membaca', description: 'Pilih cerita yang bisa kamu ikuti dengan sesekali membuka kamus. Coba satu paragraf untuk menilai kosakata dan struktur kalimatnya.' },
     'choose-a-chinese-video': { title: 'Cara memilih video Mandarin untuk latihan mendengarkan', description: 'Periksa seberapa banyak yang kamu pahami, kejernihan audio dan takarir, serta minatmu pada topiknya.' },
     'read-without-translating-every-word': { title: 'Kapan perlu mencari arti kata saat membaca bahasa Mandarin', description: 'Lewat satu bacaan pendek, lihat kata mana yang bisa ditebak, dilewati, atau dicari di kamus.' },
   },
   ja: {
-    'chinese-story-too-hard': { title: 'この中国語の物語、難しすぎる？', description: '同じ短い場面を二つの書き方で読み比べ、日常の読書に向いているか、じっくり学ぶ文章にするかを考えます。' },
+    'chinese-story-too-hard': { title: '読解レベルに合った中国語の物語の選び方', description: '時々単語を調べれば内容を追える物語を選びましょう。一段落を試しに読み、語彙と文の難しさを確かめます。' },
     'choose-a-chinese-video': { title: 'リスニング練習に使う中国語動画の選び方', description: '理解できる内容か、音声と字幕は明瞭か、最後まで見たい題材かを確認します。' },
     'read-without-translating-every-word': { title: '中国語を読むとき、単語を調べるべき場面', description: '短い文章を使い、推測できる語、読み飛ばせる語、辞書で調べる語を見分けます。' },
   },
   ko: {
-    'chinese-story-too-hard': { title: '이 중국어 이야기는 너무 어려울까?', description: '같은 짧은 장면을 두 가지 문장으로 읽어 보고, 평소 읽기에 적합한지 자세히 공부해야 할 글인지 판단해 보세요.' },
+    'chinese-story-too-hard': { title: '읽기 수준에 맞는 중국어 이야기 고르는 법', description: '가끔 단어를 찾아보면서 내용을 따라갈 수 있는 이야기를 고르세요. 한 문단을 읽어 보고 어휘와 문장의 난이도를 확인하세요.' },
     'choose-a-chinese-video': { title: '듣기 연습용 중국어 영상 고르는 법', description: '얼마나 이해되는지, 음성과 자막이 명확한지, 관심 있는 주제인지 확인해 보세요.' },
     'read-without-translating-every-word': { title: '중국어를 읽을 때 단어를 찾아봐야 하는 순간', description: '짧은 글을 통해 뜻을 짐작하거나 넘어가거나 사전에서 찾아볼 단어를 구분해 보세요.' },
   },
   th: {
-    'chinese-story-too-hard': { title: 'เรื่องภาษาจีนนี้ยากเกินไปไหม?', description: 'เปรียบเทียบฉากสั้น ๆ ที่เขียนสองแบบ เพื่อดูว่าเรื่องนี้เหมาะกับการอ่านทั่วไปหรือต้องค่อย ๆ ศึกษาอย่างละเอียด' },
+    'chinese-story-too-hard': { title: 'วิธีเลือกเรื่องภาษาจีนให้เหมาะกับระดับการอ่านของคุณ', description: 'เลือกเรื่องที่อ่านเข้าใจได้โดยเปิดพจนานุกรมเป็นครั้งคราว ลองอ่านหนึ่งย่อหน้าเพื่อดูความยากของคำศัพท์และประโยค' },
     'choose-a-chinese-video': { title: 'วิธีเลือกวิดีโอภาษาจีนเพื่อฝึกฟัง', description: 'ดูว่าคุณเข้าใจได้แค่ไหน เสียงและคำบรรยายชัดหรือไม่ และเนื้อหาน่าสนใจพอไหม' },
     'read-without-translating-every-word': { title: 'ควรเปิดพจนานุกรมเมื่อไรขณะอ่านภาษาจีน', description: 'ลองอ่านบทความสั้น ๆ แล้วแยกว่าคำไหนเดาได้ ข้ามได้ หรือควรค้นความหมาย' },
   },

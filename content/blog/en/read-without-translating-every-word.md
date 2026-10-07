@@ -1,12 +1,12 @@
 ---
 title: "When to Look Up a Word While Reading Chinese"
-description: "Read one short passage and see which unknown words to infer, skip, or check in a dictionary."
+description: "Learn when to look up an unfamiliar Chinese word and when to keep reading, using a short passage with examples of each decision."
 date: "2026-09-24"
 image: "/images/guides/reading-word-lookup-v1.webp"
 imageAlt: "The arel cat reading an open book with one line marked"
 ---
 
-Look up a word when it blocks the event or the reason for it. Infer a word when the surrounding sentence gives you a good guess. Skip a detail when the story still makes sense without it. This keeps a dictionary useful without letting every unfamiliar character interrupt the paragraph.
+When reading Chinese, look up an unfamiliar word if it prevents you from understanding what happens or why. If the sentence gives you a reasonable guess, or the story still makes sense without that detail, keep reading and check the word later. You can understand a paragraph without resolving every unknown word on the first pass.
 
 Here is an original short passage. Read the Chinese once before looking at the pinyin or translation.
 

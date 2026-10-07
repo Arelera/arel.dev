@@ -14,7 +14,7 @@ promising but needs a stronger angle or evidence; Parked = avoid for now.
 | --- | --- | --- |
 | [How to Pick Chinese Videos for Listening Practice](https://arel.dev/en/blog/choose-a-chinese-video/) | Is this clip useful for focused listening? | Moyu |
 | [When to Look Up a Word While Reading Chinese](https://arel.dev/en/blog/read-without-translating-every-word/) | Which unknown words actually block this passage? | Miaozi |
-| [Is This Chinese Story Too Hard?](https://arel.dev/en/blog/chinese-story-too-hard/) — October 7, 2026 | Does this story suit everyday reading or closer study? Two original versions of one scene show the difference. | Miaozi |
+| [How to Choose Chinese Stories at Your Reading Level](https://arel.dev/en/blog/chinese-story-too-hard/) — October 7, 2026 | How do I choose Chinese stories at my reading level? Two original passages show how vocabulary and sentence patterns affect the choice. | Miaozi |
 
 The October 7 guide uses two original breakfast-shop passages and a
 fresh-paragraph check. Its examples illustrate reading difficulty without

@@ -1,16 +1,16 @@
 ---
-title: "Is This Chinese Story Too Hard?"
-description: "Compare two versions of a short Chinese scene and decide whether a story suits everyday reading or needs closer study."
+title: "How to Choose Chinese Stories at Your Reading Level"
+description: "Choose Chinese stories you can follow with occasional word lookups. Test a paragraph to check vocabulary and sentence difficulty."
 date: "2026-10-07"
 image: "/images/guides/chinese-story-level-v1.webp"
 imageAlt: "The arel cat choosing between a thin book and a much larger open book"
 ---
 
-Try a paragraph before committing to a Chinese story. If you can follow what happens, with occasional help for a word, it may suit everyday reading. If you need a translation to connect nearly every sentence, choose something easier for that purpose. You can still study a short part of the harder story when it interests you.
+To choose a Chinese story at your reading level, read a paragraph with the translation hidden. You should be able to follow who is doing what and why, with only occasional word lookups. If you need to translate most sentences before the events make sense, choose an easier story for regular reading.
 
-A label such as “beginner” or “HSK 3” helps you find a starting point. What matters next is what happens when you read the actual text. Here are two original versions of the same scene to show what to check.
+A label such as “beginner” or “HSK 3” can narrow your search, but sample the text before deciding. Check both the vocabulary and the sentence patterns: recognizing the characters does not always mean you can follow the story. The two original passages below tell the same small story in simpler and more complex Chinese, showing what to look for when choosing your own reading material.
 
-## Start with this short scene
+## Check whether you can follow the events
 
 Read the Chinese before checking the pronunciation or translation.
 
@@ -26,7 +26,7 @@ You might know everything except **[[zh:包子|包子]]** (*bāo zi*, a filled s
 
 But if **[[zh:买|買]]** (*mǎi*, buy), **[[zh:没有|沒有]]** (*méi yǒu*, not have), and **[[zh:带回家|帶回家]]** (*dài huí jiā*, take home) are all unclear, the same paragraph asks much more of you. You have to work out each event before the story can move forward. For regular reading, try a simpler passage or one using vocabulary you have already met.
 
-## The same scene with more packed into each sentence
+## Check sentence patterns as well as words
 
 Now read this version. You already know the plot, so notice which phrases you understand from the Chinese and which you are filling in from memory.
 
@@ -48,7 +48,7 @@ You could recognize many characters here and still lose the sentence. For exampl
 
 If these expressions are mostly familiar, the second version might suit you well. If several need explaining, keep it as a short study passage and choose something closer to the first version for longer reading. Neither passage is an exam-level test; they illustrate how the same event can place different demands on a reader.
 
-## Test another paragraph before choosing
+## Try a fresh paragraph without the translation
 
 Understanding a paragraph after reading its translation is useful, but it does not tell you how the next page will feel. Try a fresh paragraph from the story with the translation hidden.
 
@@ -61,7 +61,7 @@ Understanding a paragraph after reading its translation is useful, but it does n
 
 There is no universal number of unknown characters that settles this. A name may be unfamiliar but easy to track; a short connecting phrase can change the meaning of a whole sentence. The [Extensive Reading Foundation's guide](https://erfoundation.org/guide/ERF_Guide.pdf) recommends easy material for sustained reading and distinguishes that from detailed study. The paragraph check above is a practical way to make that choice for yourself.
 
-## Choose something you want to continue
+## Choose by topic as well as difficulty
 
 Difficulty is only part of the decision. An easy story you do not care about can still be a poor choice. Try a familiar setting, a topic you enjoy, or a short story with a clear situation before moving to a longer book.
 
