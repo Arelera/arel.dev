@@ -25,10 +25,42 @@ reading-versus-study distinction is supported by the
 
 ## Queued
 
-No further article is queued yet. The next candidate to research is
-**Which Chinese lines from a video are worth saving?**, which connects more
-directly to Moyu. Check its distinct contribution before committing to a draft.
-Choose the final title after the article has a clear answer.
+### How to Sentence Mine From Chinese Videos
+
+**Queued for brief development on October 14, 2026.** The user corrected the
+earlier title about which lines to save: use the established activity name,
+“sentence mining,” and answer the full how-to intent. Sentence selection is
+one part of the article, rather than its main promise.
+
+- **Primary topic:** Chinese sentence mining from video. Query variants to
+  check include “how to sentence mine Chinese,” “Chinese sentence mining,”
+  and “sentence mining Chinese videos.” These are research candidates, not
+  measured search-volume figures.
+- **Reader:** someone watching Chinese videos who wants to turn an encountered
+  sentence into useful review material.
+- **Opening answer:** watch for context, choose a line you can understand
+  after a brief check, verify what was actually said, save the sentence with
+  its meaning and original audio or scene reference, then review it by
+  listening and checking the useful expression again.
+- **Coverage:** a complete worked example from choosing the line through
+  saving and reviewing it; what to keep with it; when to skip a line; and how
+  to avoid collecting sentences without returning to them. Explain sentence
+  mining briefly for newcomers. Do not turn the article into an app roundup.
+- **Original contribution:** follow one permitted real clip through the
+  workflow, with useful-versus-unhelpful choices explained beside it. Use a
+  real Moyu screenshot where it demonstrates the action. Clearly label any
+  additional constructed teaching examples.
+- **Overlap boundary:** Moyu's C-drama guide already discusses choosing useful
+  lines within a broader watching routine. This guide needs to demonstrate
+  the complete sentence-mining workflow. Arel's listening guide helps choose
+  a clip; this one starts after that choice.
+- **Before drafting:** check the current Moyu save/review flow, secure a clip
+  we can reproduce or quote, check its actual speech against its captions,
+  and verify the Chinese explanation. Do not promise Anki export, downloadable
+  clip audio, or other unverified features. The method should be usable even
+  if the reader does not click the Moyu CTA.
+- **Proposed route:** `/en/blog/sentence-mining-chinese-videos/`. No page has
+  been published, so the title and slug can still change during review.
 
 ## Research
 
@@ -37,7 +69,6 @@ Choose the final title after the article has a clear answer.
 | Should I leave pinyin on while reading Chinese? | Readers need a way to use pinyin for pronunciation without letting it replace character reading. Could show the same original passage with support on, then off. | Existing [pinyin advice](https://www.hsk.guide/blog/reading-chinese-without-pinyin) already covers the general answer. Find a genuinely different demonstration and confirm what Miaozi's reader currently supports. |
 | Should I listen to a Chinese story before or after reading it? | Miaozi stories have audio and text, so a concrete story walkthrough could help someone choose an order based on whether they want listening or reading practice. | Test a real story and explain the tradeoffs without claiming one sequence works best for everyone. Check current search results and avoid repeating a generic reading routine. |
 | Why don't Chinese captions always match the speech? | A real clip could show where written captions compress or tidy what was said, and how a learner should use them. This connects naturally to Moyu. | Secure a clip we can quote or reproduce, check its audio and captions, and verify the linguistic explanation. Avoid overlap with our video-selection guide and [Moyu's reading-versus-listening article](https://moyuchinese.com/en/blog/why-can-i-read-chinese-but-not-understand-spoken-chinese). |
-| Which Chinese lines from a video are worth saving? | Could give a practical choice between saving a reusable phrase, a scene-specific line, or nothing. This connects to Moyu's save-and-review features. | Check the live app workflow, find an original or permitted example, and confirm this is a distinct reader question rather than a second version of our listening guide. |
 
 ## Parked
 
@@ -89,3 +120,16 @@ Results and product features should be rechecked before drafting.
 - [Google's people-first content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
   favors original, useful answers. We have not measured search volume or
   validated a ranking opportunity for any idea in this file.
+
+### Research update: 2026-10-14
+
+Searches for “how to sentence mine Chinese videos” and Chinese sentence
+selection returned material using the established term “sentence mining,”
+including [Chinese Boost's explanation](https://www.chineseboost.com/blog/sentence-mining/).
+This supports the terminology choice; it does not establish search volume,
+keyword difficulty, or a ranking gap.
+
+[Moyu's live C-drama guide](https://moyuchinese.com/en/blog/learn-chinese-with-c-dramas)
+already has a section on saving lines. The queued brief therefore covers
+the complete mining process with a worked demonstration. The former
+selection-only headline can inform a subsection of that guide.

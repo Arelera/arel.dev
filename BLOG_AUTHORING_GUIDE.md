@@ -27,6 +27,11 @@ site. Moyu's MDX fields, components, and release rules do not apply here.
 - Write naturally and directly. Avoid generic “ultimate guide” titles,
   motivational filler, slogan fragments, and headings that exist only to
   repeat keywords. Read the draft aloud for awkward or AI-sounding phrasing.
+- Build the title around the activity or problem readers actually name in
+  search. Check current results and query variants before inventing a softer
+  editorial question. For a sentence-mining tutorial, name “sentence mining”
+  and cover the complete process; choosing which lines to save is a section
+  within that process. Clear wording alone does not establish search demand.
 - Read only the title, description, and first paragraph as a reader arriving
   from search. They must identify the specific question, scope, and useful
   answer without the image or later examples. Avoid “this story,” “it,” or
