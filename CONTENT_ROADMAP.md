@@ -36,20 +36,26 @@ one part of the article, rather than its main promise.
   check include “how to sentence mine Chinese,” “Chinese sentence mining,”
   and “sentence mining Chinese videos.” These are research candidates, not
   measured search-volume figures.
-- **Reader:** someone watching Chinese videos who wants to turn an encountered
-  sentence into useful review material.
-- **Opening answer:** watch for context, choose a line you can understand
-  after a brief check, verify what was actually said, save the sentence with
-  its meaning and original audio or scene reference, then review it by
-  listening and checking the useful expression again.
+- **Reader:** someone watching Chinese videos who wants to save sentences
+  and study them later.
+- **Opening answer:** watch a short part of the video so you know what's
+  happening. Pick a sentence you understand after a quick lookup, check the
+  caption against what the speaker says, and save its meaning with the audio
+  or a link to that part of the video. When you review it, listen again and
+  check whether you understand the sentence.
 - **Coverage:** a complete worked example from choosing the line through
   saving and reviewing it; what to keep with it; when to skip a line; and how
   to avoid collecting sentences without returning to them. Explain sentence
   mining briefly for newcomers. Do not turn the article into an app roundup.
-- **Original contribution:** follow one permitted real clip through the
-  workflow, with useful-versus-unhelpful choices explained beside it. Use a
-  real Moyu screenshot where it demonstrates the action. Clearly label any
-  additional constructed teaching examples.
+- **Original contribution:** use one real clip we have permission to show.
+  Explain which sentence we'd save and why, show what we'd keep with it, and
+  demonstrate a later review. Use a real Moyu screenshot to show the save or
+  review action. Label any extra made-up examples as teaching examples.
+- **Voice and headings:** follow the relaxed tone in the authoring guide.
+  Possible sections include “Picking a sentence to save,” “What to keep with
+  the sentence,” and “Reviewing a saved sentence.” Choose final headings
+  after the example is ready. Avoid “Which lines are worth saving?” and
+  other vague editorial questions.
 - **Overlap boundary:** Moyu's C-drama guide already discusses choosing useful
   lines within a broader watching routine. This guide needs to demonstrate
   the complete sentence-mining workflow. Arel's listening guide helps choose
@@ -131,5 +137,5 @@ keyword difficulty, or a ranking gap.
 
 [Moyu's live C-drama guide](https://moyuchinese.com/en/blog/learn-chinese-with-c-dramas)
 already has a section on saving lines. The queued brief therefore covers
-the complete mining process with a worked demonstration. The former
-selection-only headline can inform a subsection of that guide.
+the complete mining process with a worked demonstration. Sentence selection
+belongs in a section with a plain heading such as “Picking a sentence to save.”

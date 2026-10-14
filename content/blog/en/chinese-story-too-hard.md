@@ -1,20 +1,23 @@
 ---
 title: "How to Choose Chinese Stories at Your Reading Level"
-description: "Choose Chinese stories you can follow with occasional word lookups. Test a paragraph to check vocabulary and sentence difficulty."
+description: "Try one paragraph to find Chinese stories at your reading level. Two versions of a short story show how words and sentence patterns affect difficulty."
 date: "2026-10-07"
+updated: "2026-10-14"
 image: "/images/guides/chinese-story-level-v1.webp"
 imageAlt: "The arel cat choosing between a thin book and a much larger open book"
 cta:
-  title: "Hear familiar words in Chinese videos"
-  description: "Try Moyu for Chinese videos with tappable captions. Check a familiar word in a new context and replay the line to hear it again."
+  title: "Practice listening with Moyu"
+  description: "Watch Chinese videos in Moyu, tap a word in the captions to check it, and replay the line to hear how the speaker says it."
   label: "Explore Moyu Chinese"
 ---
 
-To choose a Chinese story at your reading level, read a paragraph with the translation hidden. You should be able to follow who is doing what and why, with only occasional word lookups. If you need to translate most sentences before the events make sense, choose an easier story for regular reading.
+To find a Chinese story at your reading level, try one paragraph with the translation hidden. Can you follow what happens, looking up a word now and then? If you need to translate most sentences to understand the story, try an easier one for your regular reading.
 
-A label such as “beginner” or “HSK 3” can narrow your search, but sample the text before deciding. Check both the vocabulary and the sentence patterns: recognizing the characters does not always mean you can follow the story. The two original passages below tell the same small story in simpler and more complex Chinese, showing what to look for when choosing your own reading material.
+Labels like “beginner” or “HSK 3” help you find stories to try, but read a bit before choosing one. You might recognize the characters and still struggle with how the sentence is put together.
 
-## Check whether you can follow the events
+We’ve written two versions of a short story below. They describe the same trip to a shop, but the second uses more complicated sentences. Try both and compare how much you understand.
+
+## Read a paragraph without the translation
 
 Read the Chinese before checking the pronunciation or translation.
 
@@ -25,15 +28,15 @@ Read the Chinese before checking the pronunciation or translation.
 >
 > “A Ming went to buy bread. The shop had no bread left. He bought two steamed buns and took them home to eat with his younger sister.”
 
-Can you say **what he wanted, what he bought, and who he ate with?** Those questions check whether the sentences have formed a scene in your mind.
+Can you say **what he wanted, what he bought, and who he ate with?** If you can answer those questions, you followed what happened.
 
-You might know everything except **[[audio:包子|包子]]** (*bāo zi*, a filled steamed bun). Looking up that food leaves the rest of the scene intact: he wanted one thing, bought something else, and shared it. A story written this way could be comfortable for you even with an unfamiliar item here and there.
+You might know everything except **[[audio:包子|包子]]** (*bāo zi*, a filled steamed bun). You can look up that word and still follow what he did: he wanted bread, bought something else, and shared it with his sister. A story with a few unknown words like this could be a good fit for you.
 
-But if **[[zh:买|買]]** (*mǎi*, buy), **[[zh:没有|沒有]]** (*méi yǒu*, not have), and **[[zh:带回家|帶回家]]** (*dài huí jiā*, take home) are all unclear, the same paragraph asks much more of you. You have to work out each event before the story can move forward. For regular reading, try a simpler passage or one using vocabulary you have already met.
+But if you don’t know **[[zh:买|買]]** (*mǎi*, buy), **[[zh:没有|沒有]]** (*méi yǒu*, not have), or **[[zh:带回家|帶回家]]** (*dài huí jiā*, take home), you may need several lookups just to understand what he did. For regular reading, try a story with more words you already know.
 
-## Check sentence patterns as well as words
+## Read the more complicated version
 
-Now read this version. You already know the plot, so notice which phrases you understand from the Chinese and which you are filling in from memory.
+Now read the second version. You already know what happens, so check whether you understand the Chinese itself or are guessing from the first version.
 
 > [!EXAMPLE]
 > [[zh:阿明本想买面包当早餐，没想到刚到店里就听说已经卖完了。他只好改买两个包子，回家后分了一个给妹妹。|阿明本想買麵包當早餐，沒想到剛到店裡就聽說已經賣完了。他只好改買兩個包子，回家後分了一個給妹妹。]]
@@ -42,41 +45,43 @@ Now read this version. You already know the plot, so notice which phrases you un
 >
 > “A Ming had planned to buy bread for breakfast, but as soon as he got to the shop, he learned it had already sold out. He had to buy two steamed buns instead, and gave one to his younger sister when he got home.”
 
-The extra difficulty is in the relationships between events:
+These phrases explain when things happened and why he changed his plans:
 
 > [!WORDS]
 >
-> - **[[audio:本想|本想]]** (*běn xiǎng*) introduces what he originally intended to do.
-> - **[[audio:没想到|沒想到]]** (*méi xiǎng dào*) introduces an unexpected turn.
-> - **[[zh:刚到……就……|剛到……就……]]** (*gāng dào… jiù…*) connects his arrival with what happened immediately afterward.
+> - **[[audio:本想|本想]]** (*běn xiǎng*) means he had originally planned to do something.
+> - **[[audio:没想到|沒想到]]** (*méi xiǎng dào*) means he hadn’t expected what happened.
+> - **[[zh:刚到……就……|剛到……就……]]** (*gāng dào… jiù…*) says something happened as soon as he arrived.
 > - **[[audio:已经卖完了|已經賣完了]]** (*yǐ jīng mài wán le*) says the bread had already sold out.
 > - **[[audio:只好改买|只好改買]]** (*zhǐ hǎo gǎi mǎi*) says he had to change what he bought.
 
-You could recognize many characters here and still lose the sentence. For example, knowing **[[zh:卖|賣]]** (*mài*, sell) and **[[zh:完|完]]** (*wán*, finish) separately does not necessarily mean you understand **[[zh:卖完了|賣完了]]** as “sold out.”
+You might recognize the individual characters and still struggle with the sentence. For example, knowing **[[zh:卖|賣]]** (*mài*, sell) and **[[zh:完|完]]** (*wán*, finish) separately doesn’t necessarily mean you understand **[[zh:卖完了|賣完了]]** as “sold out.”
 
-If these expressions are mostly familiar, the second version might suit you well. If several need explaining, keep it as a short study passage and choose something closer to the first version for longer reading. Neither passage is an exam-level test; they illustrate how the same event can place different demands on a reader.
+If you know most of these phrases, the second version might be comfortable to read. If you need explanations for several of them, you could study this short paragraph and pick a simpler story when you want to read for longer.
 
-## Try a fresh paragraph without the translation
+These examples don’t tell you your HSK level. They show why two passages about the same thing can feel very different to read.
 
-Understanding a paragraph after reading its translation is useful, but it does not tell you how the next page will feel. Try a fresh paragraph from the story with the translation hidden.
+## Try another paragraph on your own
 
-1. Read it once, allowing yourself to reread a sentence.
-2. Say what happened or what the paragraph explained. You can summarize in English; this is a reading check, not a speaking test.
-3. Look up a word that blocks the meaning, then return to the sentence.
-4. Continue into the next paragraph. Check whether that small amount of help lets you follow the story again.
+Once you’ve read a translation, you know what the paragraph means. To see whether you can follow the rest of the story, try a paragraph you haven’t read yet, with the translation hidden.
+
+1. Read it once. Go back over a sentence if you need to.
+2. Say what happened or what the paragraph was about. English is fine; you’re checking whether you understood the Chinese.
+3. Look up a word if it’s stopping you from understanding the sentence, then read that sentence again.
+4. Read the next paragraph. Can you keep following the story without stopping at every sentence?
 
 > [!CHECK]
-> ### What should you do with this story?
+> ### Keep reading, study a paragraph, or try an easier story
 >
-> - **Keep reading** if the main events stay clear and lookups are occasional interruptions.
-> - **Study a short stretch** if a few useful words or patterns need attention and you want to understand them.
-> - **Try an easier story** if each sentence needs several explanations and you keep forgetting the previous event while decoding the next one.
+> - **Keep reading** if you can follow what happens and only need to look up a word now and then.
+> - **Study a paragraph** if there are a few words or sentence patterns you want to learn.
+> - **Try an easier story** if you need several explanations for each sentence, or spend so long on one sentence that you forget what happened before it.
 
 > [!NOTE]
-> A count of unknown characters cannot tell you everything about difficulty. A name may be unfamiliar but easy to track; a short connecting phrase can change the meaning of a whole sentence. The [Extensive Reading Foundation's guide](https://erfoundation.org/guide/ERF_Guide.pdf) recommends easy material for sustained reading and distinguishes that from detailed study.
+> Counting unknown characters won’t tell you everything. You can follow a character with an unfamiliar name, but missing a phrase like “as soon as” can make a whole sentence confusing. The [Extensive Reading Foundation's guide](https://erfoundation.org/guide/ERF_Guide.pdf) recommends easy material when you want to read for longer, and treats detailed study as a separate activity.
 
-## Choose by topic as well as difficulty
+## Pick a story you want to read
 
-Difficulty is only part of the decision. An easy story you do not care about can still be a poor choice. Try a familiar setting, a topic you enjoy, or a short story with a clear situation before moving to a longer book.
+An easy story can still be boring. Try a topic you like or a setting you know, and read a few paragraphs to see if you want to continue. You can start with a short story before trying a longer book.
 
-If the story fits but you are unsure which words deserve a lookup, our [guide to looking up words while reading Chinese](/en/blog/read-without-translating-every-word/) works through that decision in one passage.
+If you’re not sure when to stop and look up a word, our [guide to looking up words while reading Chinese](/en/blog/read-without-translating-every-word/) shows examples of words you can guess, skip, or check in a dictionary.

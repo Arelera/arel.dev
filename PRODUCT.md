@@ -20,8 +20,11 @@ personal identity or resume content.
 
 ## Brand personality
 
-Friendly, curious, plainspoken. The hand-drawn cat gives the site personality;
-the writing sounds like a helpful person explaining a specific example.
+Friendly, curious, plainspoken, and a little casual. The hand-drawn cat gives
+the site personality. Write like a helpful person talking to one learner:
+use contractions, familiar words, and specific examples. Avoid polished
+editorial questions, slogans, forced slang, and a textbook tone. The same
+voice applies to article headings, metadata, product copy, and CTAs.
 
 ## Design principles
 

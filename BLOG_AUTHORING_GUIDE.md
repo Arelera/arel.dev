@@ -49,6 +49,46 @@ site. Moyu's MDX fields, components, and release rules do not apply here.
   step. The article should still answer the question if the reader never
   clicks. No personal names, resume details, or affiliation boilerplate.
 
+## Voice: relaxed, specific, and easy to follow
+
+Write as if you're explaining something to one learner sitting beside you.
+Use a slightly casual tone, with enough detail that they can try what you're
+describing. Apply this to titles, descriptions, headings, captions, callouts,
+product copy, CTAs, and planning briefs as well as article paragraphs.
+
+- Use ordinary words and natural contractions: “you'll,” “can't,” and
+  “here's” are fine. Keep technical terms readers use, such as “sentence
+  mining,” and explain them when needed.
+- Name the thing or action. “Can you hear the phrase after replaying it?”
+  tells the reader what to check. “Did it click?” leaves them guessing.
+- Use headings that fit the actual section. “Watch the first minute” is a
+  plain instruction. Don't make every heading a question or dress up a small
+  task as a big decision.
+- Replace vague editorial questions such as “Which lines are worth saving?”
+  with wording that names the task, such as “Picking sentences to save.”
+  Then explain the choice with specific examples in the section.
+- Describe what happens instead of adding metaphors: “You still can't catch
+  the line” instead of “The line disappears in the audio”; “You can look up
+  包子 and still follow what he did” instead of “The scene stays intact.”
+- Avoid slogans, inspirational endings, corporate wording, and repeated
+  fragments like “Watch. Read. Learn.” Also avoid empty contrast formulas
+  and unnecessary lead-ins such as “It's important to remember that.”
+- Don't force slang, jokes, or a chatty opener into each paragraph. Don't
+  imitate the user's texting style or invent a personal learning story.
+- Vary sentence length naturally. A short sentence can give an instruction;
+  the next one can explain why. Don't break one thought into a string of
+  tiny sentences just to sound punchy.
+- Judge the whole sentence. A normal word like “useful” isn't a problem by
+  itself; unexplained claims about usefulness are. Rewrite the vague part
+  rather than mechanically swapping words for synonyms.
+- Localized copy should sound natural in that language. Use its normal level
+  of politeness and contractions; don't translate English slang literally.
+
+Read each section aloud before publishing. If a sentence sounds like an
+article template or a sales pitch, name the actual example, action, or reason
+and try it again. Keep the clear search topic and accurate explanation while
+making the wording easier to say.
+
 ## Arel Markdown contract
 
 English source articles live at `content/blog/en/<slug>.md`; the filename is
@@ -136,7 +176,7 @@ use the site's existing image cards automatically.
 ## Review and release
 
 Check title/description/opening clarity together, then the opening answer,
-originality, sources, Chinese accuracy, links,
+the voice of every heading and paragraph, originality, sources, Chinese accuracy, links,
 image rights and alt text, mobile layout, dark mode, script switching,
 contents links, example disclosures, audio playback and stopping,
 and the end CTA destination.
