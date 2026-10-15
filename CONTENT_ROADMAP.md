@@ -15,6 +15,7 @@ promising but needs a stronger angle or evidence; Parked = avoid for now.
 | [How to Pick Chinese Videos for Listening Practice](https://arel.dev/en/blog/choose-a-chinese-video/) | Is this clip useful for focused listening? | Moyu |
 | [When to Look Up a Word While Reading Chinese](https://arel.dev/en/blog/read-without-translating-every-word/) | Which unknown words actually block this passage? | Miaozi |
 | [How to Choose Chinese Stories at Your Reading Level](https://arel.dev/en/blog/chinese-story-too-hard/) — October 7, 2026 | How do I choose Chinese stories at my reading level? Two original passages show how vocabulary and sentence patterns affect the choice. | Miaozi |
+| [How to Sentence Mine From Chinese Videos](https://arel.dev/en/blog/sentence-mining-chinese-videos/) — October 15, 2026 | How do I choose a sentence from a video, save enough context, and review it later? | Moyu |
 
 The October 7 guide uses two original breakfast-shop passages and a
 fresh-paragraph check. Its examples illustrate reading difficulty without
@@ -25,48 +26,8 @@ reading-versus-study distinction is supported by the
 
 ## Queued
 
-### How to Sentence Mine From Chinese Videos
-
-**Queued for brief development on October 14, 2026.** The user corrected the
-earlier title about which lines to save: use the established activity name,
-“sentence mining,” and answer the full how-to intent. Sentence selection is
-one part of the article, rather than its main promise.
-
-- **Primary topic:** Chinese sentence mining from video. Query variants to
-  check include “how to sentence mine Chinese,” “Chinese sentence mining,”
-  and “sentence mining Chinese videos.” These are research candidates, not
-  measured search-volume figures.
-- **Reader:** someone watching Chinese videos who wants to save sentences
-  and study them later.
-- **Opening answer:** watch a short part of the video so you know what's
-  happening. Pick a sentence you understand after a quick lookup, check the
-  caption against what the speaker says, and save its meaning with the audio
-  or a link to that part of the video. When you review it, listen again and
-  check whether you understand the sentence.
-- **Coverage:** a complete worked example from choosing the line through
-  saving and reviewing it; what to keep with it; when to skip a line; and how
-  to avoid collecting sentences without returning to them. Explain sentence
-  mining briefly for newcomers. Do not turn the article into an app roundup.
-- **Original contribution:** use one real clip we have permission to show.
-  Explain which sentence we'd save and why, show what we'd keep with it, and
-  demonstrate a later review. Use a real Moyu screenshot to show the save or
-  review action. Label any extra made-up examples as teaching examples.
-- **Voice and headings:** follow the relaxed tone in the authoring guide.
-  Possible sections include “Picking a sentence to save,” “What to keep with
-  the sentence,” and “Reviewing a saved sentence.” Choose final headings
-  after the example is ready. Avoid “Which lines are worth saving?” and
-  other vague editorial questions.
-- **Overlap boundary:** Moyu's C-drama guide already discusses choosing useful
-  lines within a broader watching routine. This guide needs to demonstrate
-  the complete sentence-mining workflow. Arel's listening guide helps choose
-  a clip; this one starts after that choice.
-- **Before drafting:** check the current Moyu save/review flow, secure a clip
-  we can reproduce or quote, check its actual speech against its captions,
-  and verify the Chinese explanation. Do not promise Anki export, downloadable
-  clip audio, or other unverified features. The method should be usable even
-  if the reader does not click the Moyu CTA.
-- **Proposed route:** `/en/blog/sentence-mining-chinese-videos/`. No page has
-  been published, so the title and slug can still change during review.
+No further article is queued. Choose the next topic from Research after
+checking its sources and overlap with the four published guides.
 
 ## Research
 
@@ -139,3 +100,28 @@ keyword difficulty, or a ranking gap.
 already has a section on saving lines. The queued brief therefore covers
 the complete mining process with a worked demonstration. Sentence selection
 belongs in a section with a plain heading such as “Picking a sentence to save.”
+
+### Publication notes: 2026-10-15
+
+Published **How to Sentence Mine From Chinese Videos**. The guide follows an
+original restaurant conversation through sentence selection, a sample review
+note, and a later listening check. The dialogue is explicitly labelled as
+constructed, and its audio is identified as synthetic. This replaces the
+brief's real-clip demonstration: no third-party speech or video is presented
+as material we recorded or checked. The Moyu screenshot is an authentic word
+review card and is clearly labelled as a different example.
+
+The draft was checked against [Refold's sentence-mining explanation](https://refold.la/roadmap/library/sentence-mining)
+and [Chinese Boost's guide](https://www.chineseboost.com/blog/sentence-mining/).
+The meaning and reading of 點菜 were checked in the
+[Ministry of Education's concise dictionary](https://dict.concised.moe.edu.tw/dictView.jsp?ID=8844&la=0&powerMode=0).
+Moyu's sentence saving and video-example review were checked against its
+public site and current local Flutter source (`line_detail_sheet.dart` and
+`review_screen.dart`). No independent native-speaker review or live app test
+is claimed. No search-volume or ranking forecasts were used.
+
+The article includes both Chinese scripts, browser audio, one real product
+screenshot, a locally optimized cat cover, and the shared Moyu CTA. Existing
+guides link to it where saving a sentence is the next step. Translated listing
+previews point to the English article; no English fallback locale routes are
+published. The selected search term remains “sentence mining.”

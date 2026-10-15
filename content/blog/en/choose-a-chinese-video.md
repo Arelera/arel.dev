@@ -2,7 +2,7 @@
 title: "How to Pick Chinese Videos for Listening Practice"
 description: "Find Chinese videos for listening practice by trying the first minute, checking the audio and captions, and choosing something you want to watch again."
 date: "2026-09-24"
-updated: "2026-10-14"
+updated: "2026-10-15"
 image: "/images/guides/chinese-video-listening-v1.webp"
 imageAlt: "The arel cat listening to a video with a caption line"
 cta:
@@ -53,3 +53,5 @@ You can also enjoy a video that’s too fast or difficult to study right now. Fo
 ![A Moyu Chinese video with a Chinese word lookup open beside the scene](/images/moyu-caption-lookup.webp)
 
 *In Moyu, you can tap a caption to look up a word, then replay the line.*
+
+If you want to save a sentence from the clip and study it later, our [guide to sentence mining from Chinese videos](/en/blog/sentence-mining-chinese-videos/) shows how to choose it, keep the context, and review it.

@@ -176,46 +176,55 @@ export const articleUiCopy: Record<Locale, { contents: string; exampleDetails: s
 
 export const guidePreviewCopy: Partial<Record<Locale, Record<string, GuidePreview>>> = {
   es: {
+    'sentence-mining-chinese-videos': { title: 'Cómo hacer sentence mining con videos en chino', description: 'Aprende a elegir una frase de un video, comprobarla, guardar su significado y audio, y repasarla después.' },
     'chinese-story-too-hard': { title: 'Cómo elegir historias en chino para tu nivel de lectura', description: 'Elige historias que puedas seguir consultando palabras solo de vez en cuando. Prueba un párrafo para comprobar el vocabulario y las frases.' },
     'choose-a-chinese-video': { title: 'Cómo elegir videos en chino para practicar la comprensión oral', description: 'Comprueba cuánto entiendes, si el audio y los subtítulos son claros, y si el tema te interesa.' },
     'read-without-translating-every-word': { title: 'Cuándo buscar una palabra al leer en chino', description: 'Sigue un pasaje breve y decide qué palabras deducir, ignorar o consultar en el diccionario.' },
   },
   de: {
+    'sentence-mining-chinese-videos': { title: 'Sentence Mining mit chinesischen Videos', description: 'Wähle einen Satz aus einem Video, prüfe seine Bedeutung, speichere Ton und Kontext und wiederhole ihn später.' },
     'chinese-story-too-hard': { title: 'So findest du chinesische Geschichten für dein Leseniveau', description: 'Wähle Geschichten, denen du mit gelegentlichem Nachschlagen folgen kannst. Prüfe Wortschatz und Satzbau an einem Absatz.' },
     'choose-a-chinese-video': { title: 'So wählst du chinesische Videos zum Hörtraining aus', description: 'Prüfe, wie viel du verstehst, ob Ton und Untertitel klar sind und ob dich das Thema interessiert.' },
     'read-without-translating-every-word': { title: 'Wann du beim Lesen auf Chinesisch ein Wort nachschlagen solltest', description: 'An einem kurzen Text siehst du, welche Wörter du erschließen, übergehen oder nachschlagen kannst.' },
   },
   fr: {
+    'sentence-mining-chinese-videos': { title: 'Comment faire du sentence mining avec des vidéos en chinois', description: 'Choisissez une phrase dans une vidéo, vérifiez son sens, gardez son audio et son contexte, puis révisez-la.' },
     'chinese-story-too-hard': { title: 'Comment choisir des histoires en chinois adaptées à votre niveau de lecture', description: 'Choisissez une histoire que vous comprenez en cherchant seulement quelques mots. Lisez un paragraphe pour vérifier le vocabulaire et les phrases.' },
     'choose-a-chinese-video': { title: 'Comment choisir des vidéos en chinois pour travailler l’écoute', description: 'Vérifiez ce que vous comprenez, si le son et les sous-titres sont clairs, et si le sujet vous intéresse.' },
     'read-without-translating-every-word': { title: 'Quand chercher un mot en lisant en chinois', description: 'Un court passage montre quels mots vous pouvez deviner, laisser de côté ou chercher dans le dictionnaire.' },
   },
   'pt-BR': {
+    'sentence-mining-chinese-videos': { title: 'Como fazer sentence mining com vídeos em chinês', description: 'Veja como escolher uma frase de um vídeo, conferir seu significado, guardar o áudio e o contexto e revisar depois.' },
     'chinese-story-too-hard': { title: 'Como escolher histórias em chinês para o seu nível de leitura', description: 'Escolha histórias que você consiga acompanhar consultando poucas palavras. Leia um parágrafo para avaliar o vocabulário e as frases.' },
     'choose-a-chinese-video': { title: 'Como escolher vídeos em chinês para praticar a escuta', description: 'Veja quanto você entende, se o áudio e as legendas são claros e se o assunto interessa.' },
     'read-without-translating-every-word': { title: 'Quando consultar uma palavra ao ler em chinês', description: 'Use um trecho curto para decidir quais palavras deduzir, deixar passar ou consultar no dicionário.' },
   },
   vi: {
+    'sentence-mining-chinese-videos': { title: 'Cách học câu từ video tiếng Trung bằng sentence mining', description: 'Chọn một câu trong video, kiểm tra nghĩa, lưu âm thanh và ngữ cảnh, rồi ôn lại bằng một ví dụ cụ thể.' },
     'chinese-story-too-hard': { title: 'Cách chọn truyện tiếng Trung phù hợp với trình độ đọc', description: 'Chọn truyện bạn hiểu được mạch nội dung và chỉ thỉnh thoảng cần tra từ. Đọc thử một đoạn để kiểm tra từ vựng và cấu trúc câu.' },
     'choose-a-chinese-video': { title: 'Cách chọn video tiếng Trung để luyện nghe', description: 'Kiểm tra mức độ hiểu, chất lượng âm thanh và phụ đề, rồi xem chủ đề có đủ hấp dẫn không.' },
     'read-without-translating-every-word': { title: 'Khi nào nên tra từ lúc đọc tiếng Trung', description: 'Qua một đoạn văn ngắn, hãy xem từ nào có thể đoán, bỏ qua hoặc cần tra từ điển.' },
   },
   id: {
+    'sentence-mining-chinese-videos': { title: 'Cara sentence mining dari video Mandarin', description: 'Pelajari cara memilih kalimat dari video, mengecek artinya, menyimpan audio dan konteks, lalu mengulanginya.' },
     'chinese-story-too-hard': { title: 'Cara memilih cerita Mandarin sesuai kemampuan membaca', description: 'Pilih cerita yang bisa kamu ikuti dengan sesekali membuka kamus. Coba satu paragraf untuk menilai kosakata dan struktur kalimatnya.' },
     'choose-a-chinese-video': { title: 'Cara memilih video Mandarin untuk latihan mendengarkan', description: 'Periksa seberapa banyak yang kamu pahami, kejernihan audio dan takarir, serta minatmu pada topiknya.' },
     'read-without-translating-every-word': { title: 'Kapan perlu mencari arti kata saat membaca bahasa Mandarin', description: 'Lewat satu bacaan pendek, lihat kata mana yang bisa ditebak, dilewati, atau dicari di kamus.' },
   },
   ja: {
+    'sentence-mining-chinese-videos': { title: '中国語動画でセンテンスマイニングをする方法', description: '動画から例文を選び、意味を調べ、音声や文脈と一緒に保存して復習するまでの手順を紹介します。' },
     'chinese-story-too-hard': { title: '読解レベルに合った中国語の物語の選び方', description: '時々単語を調べれば内容を追える物語を選びましょう。一段落を試しに読み、語彙と文の難しさを確かめます。' },
     'choose-a-chinese-video': { title: 'リスニング練習に使う中国語動画の選び方', description: '理解できる内容か、音声と字幕は明瞭か、最後まで見たい題材かを確認します。' },
     'read-without-translating-every-word': { title: '中国語を読むとき、単語を調べるべき場面', description: '短い文章を使い、推測できる語、読み飛ばせる語、辞書で調べる語を見分けます。' },
   },
   ko: {
+    'sentence-mining-chinese-videos': { title: '중국어 영상으로 문장을 수집하고 복습하는 방법', description: '영상에서 문장을 고르고 뜻을 확인한 뒤, 음성과 상황을 함께 저장하고 복습하는 과정을 살펴보세요.' },
     'chinese-story-too-hard': { title: '읽기 수준에 맞는 중국어 이야기 고르는 법', description: '가끔 단어를 찾아보면서 내용을 따라갈 수 있는 이야기를 고르세요. 한 문단을 읽어 보고 어휘와 문장의 난이도를 확인하세요.' },
     'choose-a-chinese-video': { title: '듣기 연습용 중국어 영상 고르는 법', description: '얼마나 이해되는지, 음성과 자막이 명확한지, 관심 있는 주제인지 확인해 보세요.' },
     'read-without-translating-every-word': { title: '중국어를 읽을 때 단어를 찾아봐야 하는 순간', description: '짧은 글을 통해 뜻을 짐작하거나 넘어가거나 사전에서 찾아볼 단어를 구분해 보세요.' },
   },
   th: {
+    'sentence-mining-chinese-videos': { title: 'วิธีเก็บประโยคจากวิดีโอภาษาจีนด้วย Sentence Mining', description: 'ดูวิธีเลือกประโยคจากวิดีโอ ตรวจความหมาย เก็บเสียงและบริบท แล้วนำกลับมาทบทวนผ่านตัวอย่างหนึ่งบทสนทนา' },
     'chinese-story-too-hard': { title: 'วิธีเลือกเรื่องภาษาจีนให้เหมาะกับระดับการอ่านของคุณ', description: 'เลือกเรื่องที่อ่านเข้าใจได้โดยเปิดพจนานุกรมเป็นครั้งคราว ลองอ่านหนึ่งย่อหน้าเพื่อดูความยากของคำศัพท์และประโยค' },
     'choose-a-chinese-video': { title: 'วิธีเลือกวิดีโอภาษาจีนเพื่อฝึกฟัง', description: 'ดูว่าคุณเข้าใจได้แค่ไหน เสียงและคำบรรยายชัดหรือไม่ และเนื้อหาน่าสนใจพอไหม' },
     'read-without-translating-every-word': { title: 'ควรเปิดพจนานุกรมเมื่อไรขณะอ่านภาษาจีน', description: 'ลองอ่านบทความสั้น ๆ แล้วแยกว่าคำไหนเดาได้ ข้ามได้ หรือควรค้นความหมาย' },

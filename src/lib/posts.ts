@@ -112,6 +112,7 @@ export async function getPost(slug: string, locale: Locale = defaultLocale): Pro
   const imageDimensions: Record<string, [number, number]> = {
     '/images/moyu-caption-lookup.webp': [750, 1631],
     '/images/miaozi-reader-lookup.webp': [900, 385],
+    '/images/moyu-review-card.webp': [750, 1631],
   }
   const contentHtml = withHanzi.replace(/<img src="([^"]+)" alt="([^"]*)">/g, (tag, src: string) => {
     const dimensions = imageDimensions[src]
