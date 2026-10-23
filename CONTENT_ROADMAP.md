@@ -16,6 +16,7 @@ promising but needs a stronger angle or evidence; Parked = avoid for now.
 | [When to Look Up a Word While Reading Chinese](https://arel.dev/en/blog/read-without-translating-every-word/) | Which unknown words actually block this passage? | Miaozi |
 | [How to Choose Chinese Stories at Your Reading Level](https://arel.dev/en/blog/chinese-story-too-hard/) — October 7, 2026 | How do I choose Chinese stories at my reading level? Two original passages show how vocabulary and sentence patterns affect the choice. | Miaozi |
 | [How to Sentence Mine From Chinese Videos](https://arel.dev/en/blog/sentence-mining-chinese-videos/) — October 15, 2026 | How do I choose a sentence from a video, save enough context, and review it later? | Moyu |
+| [Should You Read Chinese With Pinyin?](https://arel.dev/en/blog/read-chinese-with-pinyin/) — October 23, 2026 | When should I show pinyin, and how do I tell pronunciation trouble from missing meaning? Two original rainy-day examples let readers try it. | Miaozi |
 
 The October 7 guide uses two original breakfast-shop passages and a
 fresh-paragraph check. Its examples illustrate reading difficulty without
@@ -26,16 +27,15 @@ reading-versus-study distinction is supported by the
 
 ## Queued
 
-No further article is queued. Choose the next topic from Research after
-checking its sources and overlap with the four published guides.
+No article is currently queued. Choose the next topic from Research after
+checking its sources and overlap with the five published guides.
+
 
 ## Research
 
 | Working question | Why it could be useful | What is missing before it moves to Queued |
 | --- | --- | --- |
-| Should I leave pinyin on while reading Chinese? | Readers need a way to use pinyin for pronunciation without letting it replace character reading. Could show the same original passage with support on, then off. | Existing [pinyin advice](https://www.hsk.guide/blog/reading-chinese-without-pinyin) already covers the general answer. Find a genuinely different demonstration and confirm what Miaozi's reader currently supports. |
 | Should I listen to a Chinese story before or after reading it? | Miaozi stories have audio and text, so a concrete story walkthrough could help someone choose an order based on whether they want listening or reading practice. | Test a real story and explain the tradeoffs without claiming one sequence works best for everyone. Check current search results and avoid repeating a generic reading routine. |
-| Why don't Chinese captions always match the speech? | A real clip could show where written captions compress or tidy what was said, and how a learner should use them. This connects naturally to Moyu. | Secure a clip we can quote or reproduce, check its audio and captions, and verify the linguistic explanation. Avoid overlap with our video-selection guide and [Moyu's reading-versus-listening article](https://moyuchinese.com/en/blog/why-can-i-read-chinese-but-not-understand-spoken-chinese). |
 
 ## Parked
 
@@ -45,6 +45,9 @@ checking its sources and overlap with the four published guides.
   already cover nearby intent. Arel needs a different, demonstrable answer.
 - More pages just to meet a weekly cadence. The current site is new in its
   Chinese-learning form; Search Console needs time to show useful query data.
+- “Why don't Chinese captions always match the speech?”: the October 23
+  overlap check found [Miaozi's October 15 guide](https://miaozi.co/en/blog/chinese-subtitles-dont-match-audio)
+  now answers this directly. Avoid publishing a second version on Arel.
 
 ## How to choose the next article
 
@@ -125,3 +128,70 @@ screenshot, a locally optimized cat cover, and the shared Moyu CTA. Existing
 guides link to it where saving a sentence is the next step. Translated listing
 previews point to the English article; no English fallback locale routes are
 published. The selected search term remains “sentence mining.”
+
+### Completed brief: Should You Read Chinese With Pinyin? — October 23, 2026
+
+- **Reader and query:** a learner who can follow a story with pinyin but
+  struggles when it is hidden; “should I read Chinese with pinyin” and
+  “when to stop using pinyin.”
+- **Direct answer:** keep pinyin available for pronunciation, try familiar
+  text without it, and reveal help for the words that stop you. There is no
+  fixed character count or date in this guide for switching it off.
+- **Contribution:** an original rainy-day passage distinguishes recognizing
+  a spoken word from knowing its written form, and pronunciation uncertainty
+  from missing meaning. A second sentence reuses 雨伞 / 雨傘 in a new context
+  so remembering the first passage is not mistaken for character recognition.
+- **Scope and overlap:** the word-lookup guide asks when meaning justifies a
+  dictionary interruption; this guide asks how much pronunciation support to
+  show. Moyu's pinyin-versus-zhuyin article compares systems. Miaozi's
+  reading-resource guide only briefly covers reducing pronunciation help.
+- **Evidence:** Chung's 2007 character-presentation study (EdUHK repository
+  abstract, not a full-paper review), MOE dictionary entries for 雨傘 and 發現,
+  and the local Miaozi reader-settings source. Do not treat a
+  character-learning experiment as proof of a universal story-reading rule.
+- **Visual and links:** a matching cat lifting a pronunciation flap in a book;
+  working Chinese examples with the existing script, disclosure, and browser
+  audio controls. Link to the word-lookup and story-level guides, Miaozi's
+  reader, and the shared Moyu end CTA.
+
+This is a worked example, not a new reading feature or a timed study program.
+
+### Research and publication notes: 2026-10-23
+
+Published **Should You Read Chinese With Pinyin?** after checking the complete
+English article lists in Arel, Moyu, and Miaozi, and searching “reading Chinese
+with pinyin,” “when to stop using pinyin,” and close variants. Current results
+already cover gradual withdrawal and reading settings. This article therefore
+uses an original two-passage check: recognize 雨伞 / 雨傘 in a new sentence,
+then distinguish a missing pronunciation from a missing meaning. No search
+volume, ranking gap, fixed learning timeline, or measured learning outcome is
+claimed.
+
+Sources checked:
+
+- [Chung's 2007 study abstract in the EdUHK repository](https://repository.eduhk.hk/en/publications/presentation-factors-in-the-learning-of-chinese-characters-the-or/).
+  The article explicitly limits its interpretation to character presentation;
+  neither a full-paper review nor proof of a story-reading method is claimed.
+- MOE concise dictionary entries for [雨傘](https://dict.concised.moe.edu.tw/dictView.jsp?ID=44335&la=1&powerMode=0)
+  and [發現](https://dict.concised.moe.edu.tw/dictView.jsp?ID=5170&la=0&powerMode=0).
+  Both scripts, pinyin, translation, and the explanations were checked together
+  in editorial review; no independent native-speaker review is claimed.
+- Miaozi's local `reader-shell.tsx` and `use-reader-settings.ts` contain
+  separate pinyin and translation settings. The live reader's search-rendered
+  page was accessible, but an interactive browser check encountered Cloudflare
+  verification. The final article links to stories without describing an
+  untested live settings workflow.
+
+The cover was made with the built-in image generator using the existing cat
+as its style reference. Prompt: the ivory and rust cat lifts a pronunciation
+flap above a line in an open book, sparse warm-cream 3:2 composition, hand-drawn
+charcoal outlines, no lettering, fake interface, or decorative symbols. The
+optimized 960 × 640 WebP is `public/images/guides/read-chinese-with-pinyin-v1.webp`.
+It illustrates the topic rather than serving as product evidence.
+
+The page reuses the existing script switch, pronunciation disclosures, browser
+audio, contents links, and Moyu CTA. All nine translated listing previews link
+to the English article; no untranslated locale article routes are added. The
+word-lookup guide links to the new demonstration. The older caption-mismatch
+idea is now parked because Miaozi has published it; the audio-first story idea
+still needs a tested example before drafting.

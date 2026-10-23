@@ -52,3 +52,7 @@ After looking them up, read the sentence again: **[[audio:走到门口，她才�
 
 > [!CHECK]
 > Try describing what happened in one sentence: “She went to the café with a book, found it closed, and read in the park instead.” If you can say that, you understood the paragraph. If you’re still unsure why she went to the park, reread the sentence about the café before looking up more words.
+
+If a word looks familiar with pinyin but you can't read it without that help,
+try the examples in [Should You Read Chinese With Pinyin?](/en/blog/read-chinese-with-pinyin/).
+They help you separate a pronunciation question from a missing meaning.
